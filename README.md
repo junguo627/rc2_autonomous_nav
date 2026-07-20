@@ -16,7 +16,7 @@
 │
 ├── FASTLIO2_ROS2（lio算法包）
 │
-├──path_planner.py (自瞄算法)
+├──path_planner.py (决策算法)
 ```
 
 ## 二、环境
