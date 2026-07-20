@@ -1,0 +1,1 @@
+Invoking command in '/home/ubuntu-nuc/rc2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/interface -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/interface

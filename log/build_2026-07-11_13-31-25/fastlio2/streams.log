@@ -1,0 +1,474 @@
+[0.008s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2 -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/fastlio2
+[0.013s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.013s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.013s]   CMake.
+[0.013s] 
+[0.013s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.013s]   to tell CMake that the project requires at least <min> but has been updated
+[0.013s]   to work with policies introduced by <max> or earlier.
+[0.013s] 
+[0.013s] [0m
+[0.055s] -- The C compiler identification is GNU 11.4.0
+[0.114s] -- The CXX compiler identification is GNU 11.4.0
+[0.124s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.188s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.188s] -- Detecting C compile features
+[0.189s] -- Detecting C compile features - done
+[0.198s] -- Detecting CXX compiler ABI info
+[0.255s] -- Detecting CXX compiler ABI info - done
+[0.269s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.269s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.277s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.374s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.458s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.502s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.507s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.515s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.528s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.545s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.591s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.594s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.669s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[0.701s] -- Found FastRTPS: /opt/ros/humble/include
+[0.745s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.754s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.806s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.808s] -- Found Threads: TRUE
+[0.911s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.950s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.098s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.129s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.157s] -- Found livox_ros_driver2: 1.0.0 (/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[1.230s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[1.230s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.230s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.230s]   cmake_policy command to set the policy and suppress this warning.
+[1.230s] 
+[1.230s]   CMake variable EIGEN_ROOT is set to:
+[1.230s] 
+[1.230s]     /usr/include/eigen3
+[1.230s] 
+[1.230s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.230s]   .cmake module might still use it.
+[1.230s] Call Stack (most recent call first):
+[1.230s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[1.230s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[1.230s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.230s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.230s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.231s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)
+[1.231s]   CMakeLists.txt:30 (find_package)
+[1.231s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.231s] [0m
+[1.237s] -- Checking for module 'eigen3'
+[1.254s] --   Found eigen3, version 3.4.0
+[1.288s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")
+[1.288s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.289s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):
+[1.289s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.289s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.289s]   set the policy and suppress this warning.
+[1.289s] 
+[1.289s] Call Stack (most recent call first):
+[1.289s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)
+[1.289s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[1.290s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.290s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.290s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.290s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)
+[1.290s]   CMakeLists.txt:30 (find_package)
+[1.290s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.290s] [0m
+[1.331s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[1.331s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.331s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.332s]   cmake_policy command to set the policy and suppress this warning.
+[1.332s] 
+[1.332s]   CMake variable FLANN_ROOT is set to:
+[1.332s] 
+[1.332s]     /usr
+[1.332s] 
+[1.332s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.332s]   .cmake module might still use it.
+[1.332s] Call Stack (most recent call first):
+[1.332s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[1.332s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[1.333s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[1.335s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.335s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.336s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.336s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)
+[1.336s]   CMakeLists.txt:30 (find_package)
+[1.336s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.336s] [0m
+[1.352s] -- Checking for module 'flann'
+[1.366s] --   Found flann, version 1.9.1
+[1.417s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+[1.417s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.749s] -- Checking for module 'libusb-1.0'
+[2.768s] --   Found libusb-1.0, version 1.0.25
+[2.813s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+[2.815s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.903s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.574s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):
+[3.574s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[3.574s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[3.574s]   set the policy and suppress this warning.
+[3.574s] 
+[3.574s] Call Stack (most recent call first):
+[3.574s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)
+[3.575s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[3.575s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.575s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[3.575s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.575s]   /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)
+[3.575s]   CMakeLists.txt:30 (find_package)
+[3.575s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.575s] [0m
+[3.597s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.609s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.620s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.199s] -- Found Qhull version 8.0.2
+[4.741s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.382s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+[5.385s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+[5.388s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+[5.392s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+[5.395s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+[5.398s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+[5.399s] -- Found PCL_2D: /usr/include/pcl-1.12
+[5.400s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12
+[5.403s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+[5.407s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+[5.410s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+[5.414s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+[5.417s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+[5.421s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+[5.424s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+[5.428s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+[5.431s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+[5.435s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+[5.439s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+[5.442s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+[5.444s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12
+[5.445s] -- Found PCL_MODELER: /usr/include/pcl-1.12
+[5.446s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12
+[5.450s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+[5.453s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+[5.956s] [33mCMake Warning (dev) at CMakeLists.txt:35 (find_package):
+[5.957s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[5.957s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[5.957s]   command to set the policy and suppress this warning.
+[5.957s] 
+[5.957s]   CMake variable PCL_ROOT is set to:
+[5.957s] 
+[5.957s]     /usr
+[5.957s] 
+[5.957s]   For compatibility, CMake is ignoring the variable.
+[5.957s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.957s] [0m
+[6.009s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.172s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.173s] -- Configured cppcheck include dirs: 
+[6.173s] -- Configured cppcheck exclude dirs and/or files: 
+[6.174s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.175s] -- Added test 'lint_cmake' to check CMake code style
+[6.176s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.177s] -- Added test 'uncrustify' to check C / C++ code style
+[6.178s] -- Configured uncrustify additional arguments: 
+[6.178s] -- Added test 'xmllint' to check XML markup files
+[6.180s] -- Configuring done (6.2s)
+[6.237s] -- Generating done (0.1s)
+[6.238s] [33mCMake Warning:
+[6.238s]   Manually-specified variables were not used by the project:
+[6.238s] 
+[6.238s]     DISTRO_ROS
+[6.238s]     ROS_EDITION
+[6.238s] 
+[6.238s] [0m
+[6.246s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/fastlio2
+[6.277s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2 -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/fastlio2
+[6.280s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/fastlio2 -- -j8 -l8
+[6.320s] [ 11%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/lio_node.cpp.o[0m
+[40.136s] [ 44%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/lidar_processor.cpp.o[0m
+[40.137s] [ 44%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/utils.cpp.o[0m
+[40.137s] [ 44%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/map_builder.cpp.o[0m
+[40.137s] [ 55%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/ikd_Tree.cpp.o[0m
+[40.137s] [ 66%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/imu_processor.cpp.o[0m
+[40.137s] [ 77%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/ieskf.cpp.o[0m
+[43.926s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::multi_thread_rebuild() [with PointType = pcl::PointXYZ][m[K’:
+[43.926s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.926s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:329:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_old[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.926s]   329 |             int [01;35m[Kvalid_old[m[K = old_root_node->TreeSize - old_root_node->invalid_point_num;
+[43.927s]       |                 [01;35m[K^~~~~~~~~[m[K
+[43.927s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:330:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_new[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.927s]   330 |             int [01;35m[Kvalid_new[m[K = new_root_node->TreeSize - new_root_node->invalid_point_num;
+[43.927s]       |                 [01;35m[K^~~~~~~~~[m[K
+[43.927s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:231:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_node_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.927s]   231 |     KD_TREE_NODE *father_ptr, **[01;35m[Knew_node_ptr[m[K;
+[43.927s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[43.930s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Rebuild(KD_TREE<PointType>::KD_TREE_NODE**) [with PointType = pcl::PointXYZ][m[K’:
+[43.930s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.930s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:751:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize_rec[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.930s]   751 |         int [01;35m[Ksize_rec[m[K = (*root)->TreeSize;
+[43.930s]       |             [01;35m[K^~~~~~~~[m[K
+[43.931s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool, bool) [with PointType = pcl::PointXYZ][m[K’:
+[43.931s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.931s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:802:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.931s]   802 |     struct timespec [01;35m[KTimeout[m[K;
+[43.931s]       |                     [01;35m[K^~~~~~~[m[K
+[43.932s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool) [with PointType = pcl::PointXYZ][m[K’:
+[43.932s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.932s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:867:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.932s]   867 |     struct timespec [01;35m[KTimeout[m[K;
+[43.932s]       |                     [01;35m[K^~~~~~~[m[K
+[43.932s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool, int) [with PointType = pcl::PointXYZ][m[K’:
+[43.932s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.933s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1006:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.933s]  1006 |     struct timespec [01;35m[KTimeout[m[K;
+[43.933s]       |                     [01;35m[K^~~~~~~[m[K
+[43.933s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool) [with PointType = pcl::PointXYZ][m[K’:
+[43.933s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.934s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:946:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.934s]   946 |     struct timespec [01;35m[KTimeout[m[K;
+[43.934s]       |                     [01;35m[K^~~~~~~[m[K
+[43.934s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Search(KD_TREE<PointType>::KD_TREE_NODE*, int, PointType, KD_TREE<PointType>::MANUAL_HEAP&, float) [with PointType = pcl::PointXYZ][m[K’:
+[43.934s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.934s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1097:63:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[43.934s]  1097 |     if (q.size() < k_nearest || [01;35m[Kdist_left_node < q.top().dist && dist_right_node < q.top().dist[m[K)
+[43.934s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.935s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1094:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_search_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.935s]  1094 |     int [01;35m[Kcur_search_counter[m[K;
+[43.935s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[43.946s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Add_Points(KD_TREE<PointType>::PointVector&, bool) [with PointType = pcl::PointXYZ; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >][m[K’:
+[43.947s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.947s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:485:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.947s]   485 |     for (int i = 0; [01;35m[Ki < PointToAdd.size()[m[K; i++)
+[43.947s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[43.947s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:502:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.947s]   502 |             for (int index = 0; [01;35m[Kindex < Downsample_Storage.size()[m[K; index++)
+[43.947s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.947s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:478:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KNewPointSize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.947s]   478 |     int [01;35m[KNewPointSize[m[K = PointToAdd.size();
+[43.948s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[43.948s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:479:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktree_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.948s]   479 |     int [01;35m[Ktree_size[m[K = size();
+[43.948s]       |         [01;35m[K^~~~~~~~~[m[K
+[43.948s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZ][m[K’:
+[43.948s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.948s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:576:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.948s]   576 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[43.948s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[43.948s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_Points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZ; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >][m[K’:
+[43.948s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.948s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:604:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.949s]   604 |     for (int i = 0; [01;35m[Ki < PointToDel.size()[m[K; i++)
+[43.949s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[43.949s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZ][m[K’:
+[43.949s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.949s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:633:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.949s]   633 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[43.949s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[43.949s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::acquire_removed_points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZ; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >][m[K’:
+[43.949s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[43.949s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:662:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.949s]   662 |     for (int i = 0; [01;35m[Ki < Points_deleted.size()[m[K; i++)
+[43.949s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.950s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:666:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.950s]   666 |     for (int i = 0; [01;35m[Ki < Multithread_Points_deleted.size()[m[K; i++)
+[43.950s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.954s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::multi_thread_rebuild() [with PointType = pcl::PointXYZI][m[K’:
+[43.954s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.954s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:329:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_old[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.954s]   329 |             int [01;35m[Kvalid_old[m[K = old_root_node->TreeSize - old_root_node->invalid_point_num;
+[43.954s]       |                 [01;35m[K^~~~~~~~~[m[K
+[43.954s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:330:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_new[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.954s]   330 |             int [01;35m[Kvalid_new[m[K = new_root_node->TreeSize - new_root_node->invalid_point_num;
+[43.954s]       |                 [01;35m[K^~~~~~~~~[m[K
+[43.954s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:231:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_node_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.955s]   231 |     KD_TREE_NODE *father_ptr, **[01;35m[Knew_node_ptr[m[K;
+[43.955s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[43.958s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Rebuild(KD_TREE<PointType>::KD_TREE_NODE**) [with PointType = pcl::PointXYZI][m[K’:
+[43.958s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.958s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:751:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize_rec[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.958s]   751 |         int [01;35m[Ksize_rec[m[K = (*root)->TreeSize;
+[43.958s]       |             [01;35m[K^~~~~~~~[m[K
+[43.959s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool, bool) [with PointType = pcl::PointXYZI][m[K’:
+[43.959s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.959s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:802:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.959s]   802 |     struct timespec [01;35m[KTimeout[m[K;
+[43.959s]       |                     [01;35m[K^~~~~~~[m[K
+[43.960s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool) [with PointType = pcl::PointXYZI][m[K’:
+[43.960s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.960s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:867:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.960s]   867 |     struct timespec [01;35m[KTimeout[m[K;
+[43.960s]       |                     [01;35m[K^~~~~~~[m[K
+[43.960s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool, int) [with PointType = pcl::PointXYZI][m[K’:
+[43.960s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.961s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1006:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.961s]  1006 |     struct timespec [01;35m[KTimeout[m[K;
+[43.961s]       |                     [01;35m[K^~~~~~~[m[K
+[43.961s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool) [with PointType = pcl::PointXYZI][m[K’:
+[43.962s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.962s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:946:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.962s]   946 |     struct timespec [01;35m[KTimeout[m[K;
+[43.962s]       |                     [01;35m[K^~~~~~~[m[K
+[43.962s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Search(KD_TREE<PointType>::KD_TREE_NODE*, int, PointType, KD_TREE<PointType>::MANUAL_HEAP&, float) [with PointType = pcl::PointXYZI][m[K’:
+[43.962s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.962s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1097:63:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[43.962s]  1097 |     if (q.size() < k_nearest || [01;35m[Kdist_left_node < q.top().dist && dist_right_node < q.top().dist[m[K)
+[43.962s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.963s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1094:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_search_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.963s]  1094 |     int [01;35m[Kcur_search_counter[m[K;
+[43.963s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[43.973s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Add_Points(KD_TREE<PointType>::PointVector&, bool) [with PointType = pcl::PointXYZI; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >][m[K’:
+[43.973s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.973s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:485:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.973s]   485 |     for (int i = 0; [01;35m[Ki < PointToAdd.size()[m[K; i++)
+[43.973s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[43.973s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:502:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.973s]   502 |             for (int index = 0; [01;35m[Kindex < Downsample_Storage.size()[m[K; index++)
+[43.973s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.974s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:478:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KNewPointSize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.974s]   478 |     int [01;35m[KNewPointSize[m[K = PointToAdd.size();
+[43.974s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[43.974s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:479:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktree_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.974s]   479 |     int [01;35m[Ktree_size[m[K = size();
+[43.974s]       |         [01;35m[K^~~~~~~~~[m[K
+[43.974s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZI][m[K’:
+[43.975s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.975s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:576:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.975s]   576 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[43.975s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[43.975s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_Points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZI; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >][m[K’:
+[43.975s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.975s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:604:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.975s]   604 |     for (int i = 0; [01;35m[Ki < PointToDel.size()[m[K; i++)
+[43.975s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[43.975s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZI][m[K’:
+[43.975s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.975s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:633:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.975s]   633 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[43.975s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[43.976s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::acquire_removed_points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZI; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >][m[K’:
+[43.976s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[43.976s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:662:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.976s]   662 |     for (int i = 0; [01;35m[Ki < Points_deleted.size()[m[K; i++)
+[43.976s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.976s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:666:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[43.976s]   666 |     for (int i = 0; [01;35m[Ki < Multithread_Points_deleted.size()[m[K; i++)
+[43.976s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.980s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::multi_thread_rebuild() [with PointType = pcl::PointXYZINormal][m[K’:
+[43.981s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[43.981s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:329:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_old[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.981s]   329 |             int [01;35m[Kvalid_old[m[K = old_root_node->TreeSize - old_root_node->invalid_point_num;
+[43.981s]       |                 [01;35m[K^~~~~~~~~[m[K
+[43.981s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:330:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_new[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.981s]   330 |             int [01;35m[Kvalid_new[m[K = new_root_node->TreeSize - new_root_node->invalid_point_num;
+[43.981s]       |                 [01;35m[K^~~~~~~~~[m[K
+[43.981s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:231:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_node_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.981s]   231 |     KD_TREE_NODE *father_ptr, **[01;35m[Knew_node_ptr[m[K;
+[43.981s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[43.984s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Rebuild(KD_TREE<PointType>::KD_TREE_NODE**) [with PointType = pcl::PointXYZINormal][m[K’:
+[43.984s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[43.984s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:751:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize_rec[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.984s]   751 |         int [01;35m[Ksize_rec[m[K = (*root)->TreeSize;
+[43.984s]       |             [01;35m[K^~~~~~~~[m[K
+[43.985s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool, bool) [with PointType = pcl::PointXYZINormal][m[K’:
+[43.985s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[43.985s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:802:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.985s]   802 |     struct timespec [01;35m[KTimeout[m[K;
+[43.985s]       |                     [01;35m[K^~~~~~~[m[K
+[43.986s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool) [with PointType = pcl::PointXYZINormal][m[K’:
+[43.986s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[43.986s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:867:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.986s]   867 |     struct timespec [01;35m[KTimeout[m[K;
+[43.986s]       |                     [01;35m[K^~~~~~~[m[K
+[43.987s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool, int) [with PointType = pcl::PointXYZINormal][m[K’:
+[43.987s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[43.987s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1006:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.987s]  1006 |     struct timespec [01;35m[KTimeout[m[K;
+[43.987s]       |                     [01;35m[K^~~~~~~[m[K
+[43.988s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool) [with PointType = pcl::PointXYZINormal][m[K’:
+[43.988s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[43.988s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:946:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.988s]   946 |     struct timespec [01;35m[KTimeout[m[K;
+[43.988s]       |                     [01;35m[K^~~~~~~[m[K
+[43.990s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Search(KD_TREE<PointType>::KD_TREE_NODE*, int, PointType, KD_TREE<PointType>::MANUAL_HEAP&, float) [with PointType = pcl::PointXYZINormal][m[K’:
+[43.990s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[43.990s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1097:63:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[43.990s]  1097 |     if (q.size() < k_nearest || [01;35m[Kdist_left_node < q.top().dist && dist_right_node < q.top().dist[m[K)
+[43.990s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.990s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1094:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_search_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.990s]  1094 |     int [01;35m[Kcur_search_counter[m[K;
+[43.990s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[44.000s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Add_Points(KD_TREE<PointType>::PointVector&, bool) [with PointType = pcl::PointXYZINormal; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >][m[K’:
+[44.000s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[44.000s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:485:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.000s]   485 |     for (int i = 0; [01;35m[Ki < PointToAdd.size()[m[K; i++)
+[44.000s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[44.000s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:502:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.000s]   502 |             for (int index = 0; [01;35m[Kindex < Downsample_Storage.size()[m[K; index++)
+[44.000s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[44.001s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:478:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KNewPointSize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[44.001s]   478 |     int [01;35m[KNewPointSize[m[K = PointToAdd.size();
+[44.001s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[44.001s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:479:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktree_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[44.001s]   479 |     int [01;35m[Ktree_size[m[K = size();
+[44.001s]       |         [01;35m[K^~~~~~~~~[m[K
+[44.001s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZINormal][m[K’:
+[44.001s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[44.001s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:576:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.001s]   576 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[44.001s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[44.002s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_Points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZINormal; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >][m[K’:
+[44.002s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[44.002s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:604:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.002s]   604 |     for (int i = 0; [01;35m[Ki < PointToDel.size()[m[K; i++)
+[44.002s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[44.002s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZINormal][m[K’:
+[44.002s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[44.002s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:633:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.002s]   633 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[44.002s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[44.003s] /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::acquire_removed_points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZINormal; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >][m[K’:
+[44.003s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[44.003s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:662:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.003s]   662 |     for (int i = 0; [01;35m[Ki < Points_deleted.size()[m[K; i++)
+[44.003s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[44.003s] [01m[K/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2/src/map_builder/ikd_Tree.cpp:666:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.003s]   666 |     for (int i = 0; [01;35m[Ki < Multithread_Points_deleted.size()[m[K; i++)
+[44.003s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[44.585s] [ 88%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/commons.cpp.o[0m
+[56.505s] [100%] [32m[1mLinking CXX executable lio_node[0m
+[57.124s] [100%] Built target lio_node
+[57.129s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/fastlio2 -- -j8 -l8
+[57.131s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/fastlio2
+[57.133s] -- Install configuration: "Release"
+[57.133s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/lib/fastlio2/lio_node
+[57.135s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/fastlio2/lib/fastlio2/lio_node" to ""
+[57.135s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/launch
+[57.135s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/launch/lio_launch.py
+[57.135s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/launch/lio2_launch.py
+[57.135s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/rviz
+[57.135s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/rviz/fastlio2.rviz
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/config
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/config/lio.yaml
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/ament_index/resource_index/package_run_dependencies/fastlio2
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/ament_index/resource_index/parent_prefix_path/fastlio2
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/ament_prefix_path.sh
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/ament_prefix_path.dsv
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/path.sh
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/path.dsv
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.bash
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.sh
+[57.136s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.zsh
+[57.137s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.dsv
+[57.137s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.dsv
+[57.137s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/ament_index/resource_index/packages/fastlio2
+[57.137s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/cmake/fastlio2Config.cmake
+[57.137s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/cmake/fastlio2Config-version.cmake
+[57.137s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.xml
+[57.139s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/fastlio2

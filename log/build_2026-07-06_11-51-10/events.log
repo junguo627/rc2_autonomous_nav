@@ -1,0 +1,156 @@
+[0.000000] (-) TimerEvent: {}
+[0.000143] (-) JobUnselected: {'identifier': 'auto_aim_interfaces'}
+[0.000166] (-) JobUnselected: {'identifier': 'fastlio2'}
+[0.000180] (-) JobUnselected: {'identifier': 'hba'}
+[0.000191] (-) JobUnselected: {'identifier': 'interface'}
+[0.000200] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000210] (-) JobUnselected: {'identifier': 'livox_sdk2'}
+[0.000220] (-) JobUnselected: {'identifier': 'localizer'}
+[0.000229] (-) JobUnselected: {'identifier': 'meiling_detect'}
+[0.000239] (-) JobUnselected: {'identifier': 'pgo'}
+[0.000250] (meiling_control) JobQueued: {'identifier': 'meiling_control', 'dependencies': OrderedDict([('auto_aim_interfaces', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces')])}
+[0.000688] (meiling_control) JobStarted: {'identifier': 'meiling_control'}
+[0.008140] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'cmake'}
+[0.008562] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'build'}
+[0.009022] (meiling_control) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/ubuntu-nuc/rc2_ws/build/meiling_control', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/meiling_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('USER', 'ubuntu-nuc'), ('SSH_CLIENT', '10.255.180.150 56763 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('SSH_TTY', '/dev/pts/2'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '5'), ('RMW_FASTRTPS_USE_SHM', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/meiling_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.255.180.150 56763 10.255.180.243 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.019489] (meiling_control) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.019635] (meiling_control) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.019677] (meiling_control) StderrLine: {'line': b'  CMake.\n'}
+[0.019713] (meiling_control) StderrLine: {'line': b'\n'}
+[0.019749] (meiling_control) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.019784] (meiling_control) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.019821] (meiling_control) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.019855] (meiling_control) StderrLine: {'line': b'\n'}
+[0.019888] (meiling_control) StderrLine: {'line': b'\x1b[0m\n'}
+[0.024418] (meiling_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099841] (-) TimerEvent: {}
+[0.152137] (meiling_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.176912] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.179051] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.183775] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.191546] (meiling_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.199948] (-) TimerEvent: {}
+[0.201505] (meiling_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.229318] (meiling_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.230503] (meiling_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.300090] (-) TimerEvent: {}
+[0.315470] (meiling_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.359730] (meiling_control) StdoutLine: {'line': b'-- Found auto_aim_interfaces: 0.0.1 (/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake)\n'}
+[0.400236] (-) TimerEvent: {}
+[0.433815] (meiling_control) StdoutLine: {'line': b'-- Configuring done (0.4s)\n'}
+[0.441087] (meiling_control) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.442627] (meiling_control) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/meiling_control\n'}
+[0.465027] (meiling_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o\x1b[0m\n'}
+[0.465318] (meiling_control) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/meiling_node.dir/src/luoji.cpp.o\x1b[0m\n'}
+[0.500335] (-) TimerEvent: {}
+[0.600573] (-) TimerEvent: {}
+[0.700808] (-) TimerEvent: {}
+[0.801088] (-) TimerEvent: {}
+[0.901392] (-) TimerEvent: {}
+[1.001676] (-) TimerEvent: {}
+[1.101975] (-) TimerEvent: {}
+[1.202227] (-) TimerEvent: {}
+[1.302467] (-) TimerEvent: {}
+[1.402707] (-) TimerEvent: {}
+[1.502946] (-) TimerEvent: {}
+[1.603161] (-) TimerEvent: {}
+[1.703404] (-) TimerEvent: {}
+[1.803655] (-) TimerEvent: {}
+[1.903898] (-) TimerEvent: {}
+[2.004198] (-) TimerEvent: {}
+[2.104497] (-) TimerEvent: {}
+[2.204747] (-) TimerEvent: {}
+[2.305037] (-) TimerEvent: {}
+[2.405282] (-) TimerEvent: {}
+[2.505516] (-) TimerEvent: {}
+[2.605751] (-) TimerEvent: {}
+[2.706035] (-) TimerEvent: {}
+[2.806297] (-) TimerEvent: {}
+[2.906606] (-) TimerEvent: {}
+[3.006884] (-) TimerEvent: {}
+[3.107173] (-) TimerEvent: {}
+[3.207475] (-) TimerEvent: {}
+[3.307767] (-) TimerEvent: {}
+[3.408064] (-) TimerEvent: {}
+[3.508380] (-) TimerEvent: {}
+[3.608607] (-) TimerEvent: {}
+[3.708895] (-) TimerEvent: {}
+[3.809193] (-) TimerEvent: {}
+[3.909475] (-) TimerEvent: {}
+[4.009757] (-) TimerEvent: {}
+[4.110036] (-) TimerEvent: {}
+[4.210321] (-) TimerEvent: {}
+[4.310616] (-) TimerEvent: {}
+[4.410911] (-) TimerEvent: {}
+[4.511152] (-) TimerEvent: {}
+[4.611400] (-) TimerEvent: {}
+[4.711693] (-) TimerEvent: {}
+[4.811938] (-) TimerEvent: {}
+[4.912242] (-) TimerEvent: {}
+[5.012462] (-) TimerEvent: {}
+[5.112702] (-) TimerEvent: {}
+[5.212977] (-) TimerEvent: {}
+[5.313243] (-) TimerEvent: {}
+[5.413466] (-) TimerEvent: {}
+[5.513699] (-) TimerEvent: {}
+[5.613971] (-) TimerEvent: {}
+[5.714246] (-) TimerEvent: {}
+[5.814497] (-) TimerEvent: {}
+[5.914793] (-) TimerEvent: {}
+[6.015052] (-) TimerEvent: {}
+[6.115301] (-) TimerEvent: {}
+[6.215554] (-) TimerEvent: {}
+[6.315785] (-) TimerEvent: {}
+[6.416055] (-) TimerEvent: {}
+[6.516341] (-) TimerEvent: {}
+[6.616607] (-) TimerEvent: {}
+[6.716869] (-) TimerEvent: {}
+[6.817176] (-) TimerEvent: {}
+[6.917400] (-) TimerEvent: {}
+[7.017699] (-) TimerEvent: {}
+[7.117952] (-) TimerEvent: {}
+[7.218203] (-) TimerEvent: {}
+[7.318529] (-) TimerEvent: {}
+[7.418833] (-) TimerEvent: {}
+[7.519124] (-) TimerEvent: {}
+[7.619434] (-) TimerEvent: {}
+[7.719711] (-) TimerEvent: {}
+[7.819998] (-) TimerEvent: {}
+[7.920286] (-) TimerEvent: {}
+[8.020521] (-) TimerEvent: {}
+[8.120806] (-) TimerEvent: {}
+[8.221097] (-) TimerEvent: {}
+[8.321386] (-) TimerEvent: {}
+[8.421667] (-) TimerEvent: {}
+[8.476888] (meiling_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable meiling_node\x1b[0m\n'}
+[8.521765] (-) TimerEvent: {}
+[8.622008] (-) TimerEvent: {}
+[8.722252] (-) TimerEvent: {}
+[8.822481] (-) TimerEvent: {}
+[8.878180] (meiling_control) StdoutLine: {'line': b'[100%] Built target meiling_node\n'}
+[8.882286] (meiling_control) CommandEnded: {'returncode': 0}
+[8.882908] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'install'}
+[8.885899] (meiling_control) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/ubuntu-nuc/rc2_ws/build/meiling_control'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/meiling_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('USER', 'ubuntu-nuc'), ('SSH_CLIENT', '10.255.180.150 56763 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('SSH_TTY', '/dev/pts/2'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '5'), ('RMW_FASTRTPS_USE_SHM', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/meiling_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.255.180.150 56763 10.255.180.243 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[8.888818] (meiling_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.888991] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/meiling_control/meiling_node\n'}
+[8.891999] (meiling_control) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/meiling_control/meiling_node" to ""\n'}
+[8.892097] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control//launch\n'}
+[8.892147] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control//launch/meiling_launch.py\n'}
+[8.892237] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/package_run_dependencies/meiling_control\n'}
+[8.892279] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/parent_prefix_path/meiling_control\n'}
+[8.892321] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/ament_prefix_path.sh\n'}
+[8.892362] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/ament_prefix_path.dsv\n'}
+[8.892452] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/path.sh\n'}
+[8.892491] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/path.dsv\n'}
+[8.892531] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.bash\n'}
+[8.892569] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.sh\n'}
+[8.892607] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.zsh\n'}
+[8.892645] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.dsv\n'}
+[8.892721] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.dsv\n'}
+[8.892760] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/packages/meiling_control\n'}
+[8.892798] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/cmake/meiling_controlConfig.cmake\n'}
+[8.892835] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/cmake/meiling_controlConfig-version.cmake\n'}
+[8.892870] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.xml\n'}
+[8.893568] (meiling_control) CommandEnded: {'returncode': 0}
+[8.905155] (meiling_control) JobEnded: {'identifier': 'meiling_control', 'rc': 0}
+[8.905659] (-) EventReactorShutdown: {}

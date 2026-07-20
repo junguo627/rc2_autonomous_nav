@@ -1,0 +1,21 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In constructor ‘[01m[KSUM::SUM()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:30:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kx0[m[K’ was not declared in this scope; did you mean ‘[01m[Ky0[m[K’?
+   30 |         f_x=get<0>([01;31m[Kx0[m[K)+dy_x*j;
+      |                    [01;31m[K^~[m[K
+      |                    [32m[Ky0[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::sum_begin()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:109:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+  109 |     b_loc([01;31m[Kc[m[K);
+      |           [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

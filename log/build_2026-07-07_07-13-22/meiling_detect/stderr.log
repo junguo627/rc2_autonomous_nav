@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+  File "/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages/meiling_detect/detect_node.py", line 6
+    """
+       ^
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xa1 in position 15: invalid start byte
+

@@ -1,0 +1,31 @@
+[0.014s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2 -- -j8 -l8
+[0.055s] [  7%] Built target livox_interfaces2__rosidl_generator_c
+[0.060s] [  8%] Built target livox_interfaces2__cpp
+[0.063s] [ 12%] Built target livox_ros_driver2_node
+[0.069s] [ 12%] Built target ament_cmake_python_copy_livox_ros_driver2
+[0.084s] [ 19%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[0.089s] [ 26%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[0.089s] [ 33%] Built target livox_interfaces2__rosidl_typesupport_c
+[0.091s] [ 40%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[0.092s] [ 47%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[0.102s] [ 54%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[0.112s] [ 54%] Built target livox_interfaces2
+[0.126s] [ 56%] Built target livox_interfaces2__py
+[0.137s] [ 84%] Built target livox_ros_driver2
+[0.137s] Built target livox_interfaces2__rosidl_generator_py
+[0.139s] gmake[2]: CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/build.make: No such file or directory
+[0.139s] gmake[2]: *** No rule to make target 'CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/build.make'.  Stop.
+[0.139s] gmake[1]: *** [CMakeFiles/Makefile2:697: CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/all] Error 2
+[0.139s] gmake[1]: *** Waiting for unfinished jobs....
+[0.139s] CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/build.make:70: CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/flags.make: No such file or directory
+[0.139s] gmake[2]: *** No rule to make target 'CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/flags.make'.  Stop.
+[0.139s] gmake[1]: *** [CMakeFiles/Makefile2:660: CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/all] Error 2
+[0.143s] CMake Error: Target DependInfo.cmake file not found
+[0.144s] gmake[2]: CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/build.make: No such file or directory
+[0.144s] gmake[2]: *** No rule to make target 'CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/build.make'.  Stop.
+[0.144s] gmake[1]: *** [CMakeFiles/Makefile2:623: CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/all] Error 2
+[0.306s] running egg_info
+[0.307s] error: [Errno 2] No such file or directory
+[0.322s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_livox_ros_driver2_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_livox_ros_driver2_egg] Error 1
+[0.322s] gmake[1]: *** [CMakeFiles/Makefile2:552: CMakeFiles/ament_cmake_python_build_livox_ros_driver2_egg.dir/all] Error 2
+[0.322s] gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces -- -j8 -l8
+Invoked command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces' returned '0': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces -- -j8 -l8
+Invoking command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces
+Invoked command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces' returned '0': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces

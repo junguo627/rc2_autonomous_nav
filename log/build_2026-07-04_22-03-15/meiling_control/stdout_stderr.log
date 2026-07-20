@@ -1,0 +1,1673 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found auto_aim_interfaces: 0.0.1 (/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake)
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/meiling_control
+[ 33%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/luoji.cpp.o[0m
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:132:12:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #int
+  132 |           #[01;31m[Kint[m[K yn=shibie_msg.yn;
+      |            [01;31m[K^~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:[m[K In member function ‘[01m[Kstd::tuple<int, int, int> gohome::begin(my_imf&, std::tuple<float, float>, std::vector<std::vector<gez> >&)[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:84:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+   84 |     tuple<int,int> fhz_m=make_tuple(a_n,end_pd,[01;31m[Kn[m[K);
+      |                                                [01;31m[K^[m[K
+      |                                                [32m[Kyn[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:85:12:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kfhz_m[m[K’ from ‘[01m[Ktuple<[01;32m[Kint, int[m[K>[m[K’ to ‘[01m[Ktuple<[01;32m[Kint, int, int[m[K>[m[K’
+   85 |     return [01;31m[Kfhz_m[m[K;
+      |            [01;31m[K^~~~~[m[K
+      |            [01;31m[K|[m[K
+      |            [01;31m[Ktuple<int, int>[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:110:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid SUM::sum_gohome(std::tuple<int, int, int>, int, int, int)[m[K’
+  110 | void [01;31m[KSUM[m[K::sum_gohome(tuple<int,int,int> fhz_m,int a_n,int end_pd,int an){
+      |      [01;31m[K^~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:90:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid SUM::sum_gohome(std::tuple<int, int, int>, int, int, int, std::tuple<float, float>)[m[K’
+   90 |     void [01;36m[Ksum_gohome[m[K(tuple<int,int,int> fhz_m,int a_n,int end_pd,int an,tuple<float,float> c);
+      |          [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:50:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SUM[m[K’ defined here
+   50 | class [01;36m[KSUM[m[K: public rclcpp::Node{
+      |       [01;36m[K^~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::sum_begin()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget<0>(__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(std::pair<_Tp1, _Tp2>&)[m[K’
+  223 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(std::pair<_Tp1, _Tp2>&&)[m[K’
+  228 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(const std::pair<_Tp1, _Tp2>&)[m[K’
+  233 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(const std::pair<_Tp1, _Tp2>&&)[m[K’
+  238 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  247 |     [01;36m[Kget[m[K(pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  252 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  257 |     [01;36m[Kget[m[K(pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  262 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  267 |     [01;36m[Kget[m[K(pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  272 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  277 |     [01;36m[Kget[m[K(pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  282 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp& std::get(std::array<_Tp, _Nm>&)[m[K’
+  361 |     [01;36m[Kget[m[K(array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp&& std::get(std::array<_Tp, _Nm>&&)[m[K’
+  369 |     [01;36m[Kget[m[K(array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp& std::get(const std::array<_Tp, _Nm>&)[m[K’
+  377 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp&& std::get(const std::array<_Tp, _Nm>&&)[m[K’
+  385 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1393 |     [01;36m[Kget[m[K(tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1399 |     [01;36m[Kget[m[K(const tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1405 |     [01;36m[Kget[m[K(tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1414 |     [01;36m[Kget[m[K(const tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1449 |     [01;36m[Kget[m[K(tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1460 |     [01;36m[Kget[m[K(tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1471 |     [01;36m[Kget[m[K(const tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1483 |     [01;36m[Kget[m[K(const tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(std::variant<_Types ...>&)[m[K’
+ 1676 |     [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1687 |     [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(const std::variant<_Types ...>&)[m[K’
+ 1698 |     [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1709 |     [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<[01;36m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+ 1117 |     constexpr _Tp& [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |                    [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1126 |     constexpr _Tp&& [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |                     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+ 1136 |     constexpr const _Tp& [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |                          [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1145 |     constexpr const _Tp&& [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |                           [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<[01;31m[Kget<0>(a[0][0])[m[K||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |           [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:17:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget<0>(__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(std::pair<_Tp1, _Tp2>&)[m[K’
+  223 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(std::pair<_Tp1, _Tp2>&&)[m[K’
+  228 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(const std::pair<_Tp1, _Tp2>&)[m[K’
+  233 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(const std::pair<_Tp1, _Tp2>&&)[m[K’
+  238 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  247 |     [01;36m[Kget[m[K(pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  252 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  257 |     [01;36m[Kget[m[K(pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  262 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  267 |     [01;36m[Kget[m[K(pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  272 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  277 |     [01;36m[Kget[m[K(pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  282 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp& std::get(std::array<_Tp, _Nm>&)[m[K’
+  361 |     [01;36m[Kget[m[K(array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp&& std::get(std::array<_Tp, _Nm>&&)[m[K’
+  369 |     [01;36m[Kget[m[K(array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp& std::get(const std::array<_Tp, _Nm>&)[m[K’
+  377 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp&& std::get(const std::array<_Tp, _Nm>&&)[m[K’
+  385 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1393 |     [01;36m[Kget[m[K(tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1399 |     [01;36m[Kget[m[K(const tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1405 |     [01;36m[Kget[m[K(tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1414 |     [01;36m[Kget[m[K(const tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1449 |     [01;36m[Kget[m[K(tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1460 |     [01;36m[Kget[m[K(tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1471 |     [01;36m[Kget[m[K(const tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1483 |     [01;36m[Kget[m[K(const tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(std::variant<_Types ...>&)[m[K’
+ 1676 |     [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1687 |     [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(const std::variant<_Types ...>&)[m[K’
+ 1698 |     [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1709 |     [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;36m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+ 1117 |     constexpr _Tp& [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |                    [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1126 |     constexpr _Tp&& [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |                     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+ 1136 |     constexpr const _Tp& [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |                          [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1145 |     constexpr const _Tp&& [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |                           [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>[01;31m[Kget<0>(a[0][4])[m[K||y<get<1>(a[0][0])||y>get<1>(a[0][5])){
+      |                              [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:36:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K0[m[K’
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget<1>(__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(std::pair<_Tp1, _Tp2>&)[m[K’
+  223 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(std::pair<_Tp1, _Tp2>&&)[m[K’
+  228 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(const std::pair<_Tp1, _Tp2>&)[m[K’
+  233 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(const std::pair<_Tp1, _Tp2>&&)[m[K’
+  238 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  247 |     [01;36m[Kget[m[K(pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  252 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  257 |     [01;36m[Kget[m[K(pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  262 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  267 |     [01;36m[Kget[m[K(pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  272 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  277 |     [01;36m[Kget[m[K(pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  282 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp& std::get(std::array<_Tp, _Nm>&)[m[K’
+  361 |     [01;36m[Kget[m[K(array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp&& std::get(std::array<_Tp, _Nm>&&)[m[K’
+  369 |     [01;36m[Kget[m[K(array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp& std::get(const std::array<_Tp, _Nm>&)[m[K’
+  377 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp&& std::get(const std::array<_Tp, _Nm>&&)[m[K’
+  385 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1393 |     [01;36m[Kget[m[K(tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1399 |     [01;36m[Kget[m[K(const tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1405 |     [01;36m[Kget[m[K(tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1414 |     [01;36m[Kget[m[K(const tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1449 |     [01;36m[Kget[m[K(tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1460 |     [01;36m[Kget[m[K(tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1471 |     [01;36m[Kget[m[K(const tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1483 |     [01;36m[Kget[m[K(const tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(std::variant<_Types ...>&)[m[K’
+ 1676 |     [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1687 |     [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(const std::variant<_Types ...>&)[m[K’
+ 1698 |     [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1709 |     [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;36m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+ 1117 |     constexpr _Tp& [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |                    [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1126 |     constexpr _Tp&& [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |                     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+ 1136 |     constexpr const _Tp& [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |                          [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1145 |     constexpr const _Tp&& [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |                           [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<[01;31m[Kget<1>(a[0][0])[m[K||y>get<1>(a[0][5])){
+      |                                                 [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:55:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget<1>(__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(std::pair<_Tp1, _Tp2>&)[m[K’
+  223 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(std::pair<_Tp1, _Tp2>&&)[m[K’
+  228 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(const std::pair<_Tp1, _Tp2>&)[m[K’
+  233 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(const std::pair<_Tp1, _Tp2>&&)[m[K’
+  238 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  247 |     [01;36m[Kget[m[K(pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  252 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  257 |     [01;36m[Kget[m[K(pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  262 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  267 |     [01;36m[Kget[m[K(pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  272 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  277 |     [01;36m[Kget[m[K(pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:38[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  282 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp& std::get(std::array<_Tp, _Nm>&)[m[K’
+  361 |     [01;36m[Kget[m[K(array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp&& std::get(std::array<_Tp, _Nm>&&)[m[K’
+  369 |     [01;36m[Kget[m[K(array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp& std::get(const std::array<_Tp, _Nm>&)[m[K’
+  377 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp&& std::get(const std::array<_Tp, _Nm>&&)[m[K’
+  385 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1393 |     [01;36m[Kget[m[K(tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1399 |     [01;36m[Kget[m[K(const tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1405 |     [01;36m[Kget[m[K(tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1414 |     [01;36m[Kget[m[K(const tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1449 |     [01;36m[Kget[m[K(tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1460 |     [01;36m[Kget[m[K(tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1471 |     [01;36m[Kget[m[K(const tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:4[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1483 |     [01;36m[Kget[m[K(const tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(std::variant<_Types ...>&)[m[K’
+ 1676 |     [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1687 |     [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(const std::variant<_Types ...>&)[m[K’
+ 1698 |     [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1709 |     [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<gez>, gez>::value_type[m[K’ {aka ‘[01m[Kgez[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;36m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;36m[K~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+ 1117 |     constexpr _Tp& [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |                    [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1126 |     constexpr _Tp&& [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |                     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+ 1136 |     constexpr const _Tp& [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |                          [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:7[m[K,
+                 from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1145 |     constexpr const _Tp&& [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |                           [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+  141 |     if (x<get<0>(a[0][0])||x>get<0>(a[0][4])||y<get<1>(a[0][0])||y>[01;31m[Kget<1>(a[0][5])[m[K){
+      |                                                                    [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:141:74:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K1[m[K’
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:180:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kout_loop[m[K’
+  180 |                     continue[01;31m[K [m[K[32m[Kout_loop[m[K;
+      |                             [01;31m[K^[m[K[32m[K~~~~~~~~[m[K
+      |                             [32m[K;[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:180:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kout_loop[m[K’ was not declared in this scope
+  180 |                     continue [01;31m[Kout_loop[m[K;
+      |                              [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:93: CMakeFiles/meiling_node.dir/src/luoji.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

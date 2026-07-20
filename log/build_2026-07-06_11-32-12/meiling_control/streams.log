@@ -1,0 +1,49 @@
+[0.036s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/meiling_control -- -j8 -l8
+[0.248s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.248s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.248s]   CMake.
+[0.248s] 
+[0.248s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.248s]   to tell CMake that the project requires at least <min> but has been updated
+[0.248s]   to work with policies introduced by <max> or earlier.
+[0.249s] 
+[0.249s] [0m
+[0.249s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.249s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.249s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.249s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.249s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.249s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.249s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.277s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.278s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.383s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.429s] -- Found auto_aim_interfaces: 0.0.1 (/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake)
+[0.512s] -- Configuring done (0.5s)
+[0.519s] -- Generating done (0.0s)
+[0.521s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/meiling_control
+[0.545s] [ 33%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o[0m
+[0.545s] [ 66%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/luoji.cpp.o[0m
+[2.504s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In constructor ‘[01m[KSUM::SUM()[m[K’:
+[2.504s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:46:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgez::gez(float&, float&, int&, std::tuple<float, float>&)[m[K’
+[2.504s]    46 |             ff.push_back(gez(c_x,c_y,t,h[01;31m[K)[m[K);
+[2.504s]       |                                         [01;31m[K^[m[K
+[2.504s] In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[2.504s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:33:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgez::gez(float, float, int, std::vector<std::vector<int> >)[m[K’
+[2.504s]    33 |         [01;36m[Kgez[m[K(float x,float y,int t,vector<vector<int>> h);
+[2.504s]       |         [01;36m[K^~~[m[K
+[2.504s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:33:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kstd::tuple<float, float>[m[K’ to ‘[01m[Kstd::vector<std::vector<int> >[m[K’
+[2.504s]    33 |         gez(float x,float y,int t,[01;36m[Kvector<vector<int>> h[m[K);
+[2.504s]       |                                   [01;36m[K~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.505s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:32:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgez::gez()[m[K’
+[2.505s]    32 |         [01;36m[Kgez[m[K();
+[2.505s]       |         [01;36m[K^~~[m[K
+[2.505s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:32:9:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 4 provided
+[2.505s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:30:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr gez::gez(const gez&)[m[K’
+[2.505s]    30 | class [01;36m[Kgez[m[K{
+[2.505s]       |       [01;36m[K^~~[m[K
+[2.505s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:30:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[5.100s] gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+[5.100s] gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+[5.100s] gmake: *** [Makefile:146: all] Error 2
+[5.102s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/meiling_control -- -j8 -l8

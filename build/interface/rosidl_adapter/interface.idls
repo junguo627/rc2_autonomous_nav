@@ -1,0 +1,5 @@
+/home/ubuntu-nuc/rc2_ws/build/interface/rosidl_adapter/interface:srv/SaveMaps.idl
+/home/ubuntu-nuc/rc2_ws/build/interface/rosidl_adapter/interface:srv/Relocalize.idl
+/home/ubuntu-nuc/rc2_ws/build/interface/rosidl_adapter/interface:srv/IsValid.idl
+/home/ubuntu-nuc/rc2_ws/build/interface/rosidl_adapter/interface:srv/RefineMap.idl
+/home/ubuntu-nuc/rc2_ws/build/interface/rosidl_adapter/interface:srv/SavePoses.idl

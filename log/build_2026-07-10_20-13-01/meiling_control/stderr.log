@@ -1,0 +1,23 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    DISTRO_ROS
+    ROS_EDITION
+
+[0m
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:464:17:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+  464 |     rclcpp::spin[01;31m[K([m[Kn);
+      |                 [01;31m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:465:23:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+  465 |     rclcpp::shutdown()[01;31m[K;[m[K
+      |                       [01;31m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:466:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  466 |     [01;31m[Kreturn[m[K 0;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:467:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  467 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

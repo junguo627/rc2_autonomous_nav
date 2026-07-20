@@ -1,0 +1,53 @@
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:[m[K In member function ‘[01m[Kvoid SUM::qianjin(gez&, std::tuple<float, float>)[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kqj_pd[m[K’ was not declared in this scope
+   49 |     [01;31m[Kqj_pd[m[K(get<0>(d.z),get<1>(d.z));
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::publish_fas()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:70:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_current_grid[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_current_dir_name[m[K’?
+   70 |     m.n = [01;31m[Kget_current_grid[m[K();
+      |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |           [32m[Kget_current_dir_name[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K At global scope:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:87:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint SUM::get_current_grid()[m[K’
+   87 | int [01;31m[KSUM[m[K::get_current_grid(){
+      |     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:87:5:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kint SUM::get_current_grid()[m[K’
+In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SUM[m[K’ defined here
+   30 | class [01;36m[KSUM[m[K: public rclcpp::Node{
+      |       [01;36m[K^~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::timer_cb()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:118:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy[m[K’ was not declared in this scope; did you mean ‘[01m[Kny[m[K’?
+  118 |         if([01;31m[Kcy[m[K==5){ sm=RET; cout<<"arrive y5"<<endl; return; }
+      |            [01;31m[K^~[m[K
+      |            [32m[Kny[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kfy[m[K’ was not declared in this scope; did you mean ‘[01m[Kfy_[m[K’?
+  119 |         cout<<"CHK_FWD g:"<<b.b<<" fg:"<<[01;31m[Kfy[m[K*10+fx<<" h:"<<abs(a[fy][fx].h-a[cy][cx].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+      |                                          [01;31m[K^~[m[K
+      |                                          [32m[Kfy_[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kfx[m[K’ was not declared in this scope; did you mean ‘[01m[Kfx_[m[K’?
+  119 |         cout<<"CHK_FWD g:"<<b.b<<" fg:"<<fy*10+[01;31m[Kfx[m[K<<" h:"<<abs(a[fy][fx].h-a[cy][cx].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+      |                                                [01;31m[K^~[m[K
+      |                                                [32m[Kfx_[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy[m[K’ was not declared in this scope; did you mean ‘[01m[Kny[m[K’?
+  119 | K_FWD g:"<<b.b<<" fg:"<<fy*10+fx<<" h:"<<abs(a[fy][fx].h-a[[01;31m[Kcy[m[K][cx].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+      |                                                            [01;31m[K^~[m[K
+      |                                                            [32m[Kny[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kcx[m[K’ was not declared in this scope; did you mean ‘[01m[Knx[m[K’?
+  119 | D g:"<<b.b<<" fg:"<<fy*10+fx<<" h:"<<abs(a[fy][fx].h-a[cy][[01;31m[Kcx[m[K].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+      |                                                            [01;31m[K^~[m[K
+      |                                                            [32m[Knx[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:228:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  228 | int main(int argc, char* argv[])[01;31m[K{[m[K
+      |                                 [01;31m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:234:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  234 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:100:21:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  100 | void SUM::timer_cb()[01;36m[K{[m[K
+      |                     [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:93: CMakeFiles/meiling_node.dir/src/luoji.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

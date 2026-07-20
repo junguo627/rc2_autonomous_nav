@@ -1,0 +1,394 @@
+[0.000000] (-) TimerEvent: {}
+[0.000517] (-) JobUnselected: {'identifier': 'auto_aim_interfaces'}
+[0.000535] (-) JobUnselected: {'identifier': 'hba'}
+[0.000546] (-) JobUnselected: {'identifier': 'interface'}
+[0.000554] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000565] (-) JobUnselected: {'identifier': 'livox_sdk2'}
+[0.000574] (-) JobUnselected: {'identifier': 'localizer'}
+[0.000585] (-) JobUnselected: {'identifier': 'meiling_control'}
+[0.000594] (-) JobUnselected: {'identifier': 'meiling_detect'}
+[0.000613] (-) JobUnselected: {'identifier': 'pgo'}
+[0.000624] (fastlio2) JobQueued: {'identifier': 'fastlio2', 'dependencies': OrderedDict([('livox_ros_driver2', '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2')])}
+[0.000638] (fastlio2) JobStarted: {'identifier': 'fastlio2'}
+[0.010090] (fastlio2) JobProgress: {'identifier': 'fastlio2', 'progress': 'cmake'}
+[0.011702] (fastlio2) Command: {'cmd': ['/usr/local/bin/cmake', '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/fastlio2'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/fastlio2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-201_agent'), ('USER', 'ubuntu-nuc'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc/rc2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('GTK_MODULES', 'gail:atk-bridge'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '4078'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9facfc20f215d2339c8807326a4a9a54'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu-nuc'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('RMW_FASTRTPS_USE_SHM', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/home/ubuntu-nuc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntunuc:@/tmp/.ICE-unix/4078,unix/ubuntunuc:/tmp/.ICE-unix/4078'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f46ddb5c_b083_45d1_82e5_e228f49ad9a8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_EFFORT', 'max'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6ZFVR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_SESSION_ID', 'ecccac41-4eff-4cbf-b092-ce8bccb8d399'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/fastlio2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9facfc20f215d2339c8807326a4a9a54'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ubuntu-nuc/.local/share/claude/versions/2.1.201'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.051132] (fastlio2) StderrLine: {'line': b'CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.051270] (fastlio2) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.051310] (fastlio2) StderrLine: {'line': b'  CMake.\n'}
+[0.051346] (fastlio2) StderrLine: {'line': b'\n'}
+[0.051380] (fastlio2) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.051414] (fastlio2) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.051449] (fastlio2) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.051483] (fastlio2) StderrLine: {'line': b'\n'}
+[0.051516] (fastlio2) StderrLine: {'line': b'\n'}
+[0.066402] (fastlio2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099838] (-) TimerEvent: {}
+[0.199993] (-) TimerEvent: {}
+[0.209863] (fastlio2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.226918] (fastlio2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.263025] (fastlio2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.266664] (fastlio2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.274122] (fastlio2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.285142] (fastlio2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.299047] (fastlio2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300047] (-) TimerEvent: {}
+[0.338928] (fastlio2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.341119] (fastlio2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400202] (-) TimerEvent: {}
+[0.441143] (fastlio2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500346] (-) TimerEvent: {}
+[0.502437] (fastlio2) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.522304] (fastlio2) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.600481] (-) TimerEvent: {}
+[0.618768] (fastlio2) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.638274] (fastlio2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.659149] (fastlio2) StdoutLine: {'line': b'-- Found livox_ros_driver2: 1.0.0 (/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)\n'}
+[0.700624] (-) TimerEvent: {}
+[0.702010] (fastlio2) StderrLine: {'line': b'CMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):\n'}
+[0.702111] (fastlio2) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[0.702161] (fastlio2) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[0.702197] (fastlio2) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.702231] (fastlio2) StderrLine: {'line': b'\n'}
+[0.702265] (fastlio2) StderrLine: {'line': b'  CMake variable EIGEN_ROOT is set to:\n'}
+[0.702299] (fastlio2) StderrLine: {'line': b'\n'}
+[0.702332] (fastlio2) StderrLine: {'line': b'    /usr/include/eigen3\n'}
+[0.702366] (fastlio2) StderrLine: {'line': b'\n'}
+[0.702399] (fastlio2) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[0.702433] (fastlio2) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[0.702467] (fastlio2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.702500] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)\n'}
+[0.702532] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)\n'}
+[0.702565] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.702602] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[0.702635] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.702669] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)\n'}
+[0.702701] (fastlio2) StderrLine: {'line': b'  CMakeLists.txt:30 (find_package)\n'}
+[0.702734] (fastlio2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.702772] (fastlio2) StderrLine: {'line': b'\n'}
+[0.707123] (fastlio2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.707334] (fastlio2) StderrLine: {'line': b'CMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):\n'}
+[0.707384] (fastlio2) StderrLine: {'line': b'  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake\n'}
+[0.707422] (fastlio2) StderrLine: {'line': b'  --help-policy CMP0167" for policy details.  Use the cmake_policy command to\n'}
+[0.707458] (fastlio2) StderrLine: {'line': b'  set the policy and suppress this warning.\n'}
+[0.707495] (fastlio2) StderrLine: {'line': b'\n'}
+[0.707530] (fastlio2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.707565] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)\n'}
+[0.707602] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)\n'}
+[0.707637] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.707673] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[0.707708] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.707745] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)\n'}
+[0.707788] (fastlio2) StderrLine: {'line': b'  CMakeLists.txt:30 (find_package)\n'}
+[0.707823] (fastlio2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.707858] (fastlio2) StderrLine: {'line': b'\n'}
+[0.720646] (fastlio2) StderrLine: {'line': b'CMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):\n'}
+[0.720796] (fastlio2) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[0.720841] (fastlio2) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[0.720877] (fastlio2) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.720913] (fastlio2) StderrLine: {'line': b'\n'}
+[0.720947] (fastlio2) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[0.720982] (fastlio2) StderrLine: {'line': b'\n'}
+[0.721016] (fastlio2) StderrLine: {'line': b'    /usr\n'}
+[0.721050] (fastlio2) StderrLine: {'line': b'\n'}
+[0.721085] (fastlio2) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[0.721120] (fastlio2) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[0.721155] (fastlio2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.721190] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)\n'}
+[0.721223] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)\n'}
+[0.721258] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)\n'}
+[0.721292] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.721327] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[0.721361] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.721396] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)\n'}
+[0.721431] (fastlio2) StderrLine: {'line': b'  CMakeLists.txt:30 (find_package)\n'}
+[0.721466] (fastlio2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.721500] (fastlio2) StderrLine: {'line': b'\n'}
+[0.741865] (fastlio2) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.800716] (-) TimerEvent: {}
+[0.900873] (-) TimerEvent: {}
+[1.001060] (-) TimerEvent: {}
+[1.101235] (-) TimerEvent: {}
+[1.181484] (fastlio2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.186855] (fastlio2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.201314] (-) TimerEvent: {}
+[1.301457] (-) TimerEvent: {}
+[1.400652] (fastlio2) StderrLine: {'line': b'CMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):\n'}
+[1.400807] (fastlio2) StderrLine: {'line': b'  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake\n'}
+[1.400865] (fastlio2) StderrLine: {'line': b'  --help-policy CMP0167" for policy details.  Use the cmake_policy command to\n'}
+[1.400900] (fastlio2) StderrLine: {'line': b'  set the policy and suppress this warning.\n'}
+[1.400935] (fastlio2) StderrLine: {'line': b'\n'}
+[1.400970] (fastlio2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.401006] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)\n'}
+[1.401041] (fastlio2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)\n'}
+[1.401074] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[1.401109] (fastlio2) StderrLine: {'line': b'  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[1.401145] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[1.401180] (fastlio2) StderrLine: {'line': b'  /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake:41 (include)\n'}
+[1.401215] (fastlio2) StderrLine: {'line': b'  CMakeLists.txt:30 (find_package)\n'}
+[1.401249] (fastlio2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.401283] (fastlio2) StderrLine: {'line': b'\n'}
+[1.401516] (-) TimerEvent: {}
+[1.410785] (fastlio2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.415961] (fastlio2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.421588] (fastlio2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.501620] (-) TimerEvent: {}
+[1.601801] (-) TimerEvent: {}
+[1.638425] (fastlio2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.701882] (-) TimerEvent: {}
+[1.802036] (-) TimerEvent: {}
+[1.857551] (fastlio2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.902128] (-) TimerEvent: {}
+[2.002323] (-) TimerEvent: {}
+[2.097822] (fastlio2) StderrLine: {'line': b'CMake Warning (dev) at CMakeLists.txt:35 (find_package):\n'}
+[2.097937] (fastlio2) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[2.097975] (fastlio2) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[2.098008] (fastlio2) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[2.098041] (fastlio2) StderrLine: {'line': b'\n'}
+[2.098074] (fastlio2) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[2.098106] (fastlio2) StderrLine: {'line': b'\n'}
+[2.098140] (fastlio2) StderrLine: {'line': b'    /usr\n'}
+[2.098173] (fastlio2) StderrLine: {'line': b'\n'}
+[2.098205] (fastlio2) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[2.098239] (fastlio2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.098273] (fastlio2) StderrLine: {'line': b'\n'}
+[2.102429] (-) TimerEvent: {}
+[2.117369] (fastlio2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.198112] (fastlio2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.198291] (fastlio2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.198333] (fastlio2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.198726] (fastlio2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.199311] (fastlio2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.199672] (fastlio2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.200558] (fastlio2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.200622] (fastlio2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.201100] (fastlio2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.202481] (-) TimerEvent: {}
+[2.202548] (fastlio2) StdoutLine: {'line': b'-- Configuring done (2.2s)\n'}
+[2.257549] (fastlio2) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.261051] (fastlio2) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/fastlio2\n'}
+[2.273706] (fastlio2) CommandEnded: {'returncode': 0}
+[2.274286] (fastlio2) JobProgress: {'identifier': 'fastlio2', 'progress': 'build'}
+[2.274911] (fastlio2) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/ubuntu-nuc/rc2_ws/build/fastlio2', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/fastlio2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-201_agent'), ('USER', 'ubuntu-nuc'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc/rc2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('GTK_MODULES', 'gail:atk-bridge'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '4078'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9facfc20f215d2339c8807326a4a9a54'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu-nuc'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('RMW_FASTRTPS_USE_SHM', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/home/ubuntu-nuc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntunuc:@/tmp/.ICE-unix/4078,unix/ubuntunuc:/tmp/.ICE-unix/4078'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f46ddb5c_b083_45d1_82e5_e228f49ad9a8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_EFFORT', 'max'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6ZFVR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_SESSION_ID', 'ecccac41-4eff-4cbf-b092-ce8bccb8d399'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/fastlio2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9facfc20f215d2339c8807326a4a9a54'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ubuntu-nuc/.local/share/claude/versions/2.1.201'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[2.302603] (-) TimerEvent: {}
+[2.383250] (fastlio2) StdoutLine: {'line': b'[ 11%] Building CXX object CMakeFiles/lio_node.dir/src/lio_node.cpp.o\n'}
+[2.402696] (-) TimerEvent: {}
+[2.502930] (-) TimerEvent: {}
+[2.603082] (-) TimerEvent: {}
+[2.703240] (-) TimerEvent: {}
+[2.803398] (-) TimerEvent: {}
+[2.903595] (-) TimerEvent: {}
+[3.003794] (-) TimerEvent: {}
+[3.103972] (-) TimerEvent: {}
+[3.204144] (-) TimerEvent: {}
+[3.304329] (-) TimerEvent: {}
+[3.404505] (-) TimerEvent: {}
+[3.504669] (-) TimerEvent: {}
+[3.604830] (-) TimerEvent: {}
+[3.704991] (-) TimerEvent: {}
+[3.805176] (-) TimerEvent: {}
+[3.905334] (-) TimerEvent: {}
+[4.005492] (-) TimerEvent: {}
+[4.105652] (-) TimerEvent: {}
+[4.205825] (-) TimerEvent: {}
+[4.305984] (-) TimerEvent: {}
+[4.406195] (-) TimerEvent: {}
+[4.506406] (-) TimerEvent: {}
+[4.606567] (-) TimerEvent: {}
+[4.706728] (-) TimerEvent: {}
+[4.806942] (-) TimerEvent: {}
+[4.907124] (-) TimerEvent: {}
+[5.007289] (-) TimerEvent: {}
+[5.107448] (-) TimerEvent: {}
+[5.207605] (-) TimerEvent: {}
+[5.307820] (-) TimerEvent: {}
+[5.407979] (-) TimerEvent: {}
+[5.508177] (-) TimerEvent: {}
+[5.608352] (-) TimerEvent: {}
+[5.708536] (-) TimerEvent: {}
+[5.808769] (-) TimerEvent: {}
+[5.908930] (-) TimerEvent: {}
+[6.009138] (-) TimerEvent: {}
+[6.109312] (-) TimerEvent: {}
+[6.209478] (-) TimerEvent: {}
+[6.309645] (-) TimerEvent: {}
+[6.409838] (-) TimerEvent: {}
+[6.509992] (-) TimerEvent: {}
+[6.610191] (-) TimerEvent: {}
+[6.710389] (-) TimerEvent: {}
+[6.810605] (-) TimerEvent: {}
+[6.910828] (-) TimerEvent: {}
+[7.010998] (-) TimerEvent: {}
+[7.111160] (-) TimerEvent: {}
+[7.211315] (-) TimerEvent: {}
+[7.311470] (-) TimerEvent: {}
+[7.411628] (-) TimerEvent: {}
+[7.511838] (-) TimerEvent: {}
+[7.611999] (-) TimerEvent: {}
+[7.712162] (-) TimerEvent: {}
+[7.812288] (-) TimerEvent: {}
+[7.912496] (-) TimerEvent: {}
+[8.012660] (-) TimerEvent: {}
+[8.112815] (-) TimerEvent: {}
+[8.212981] (-) TimerEvent: {}
+[8.313136] (-) TimerEvent: {}
+[8.413315] (-) TimerEvent: {}
+[8.513486] (-) TimerEvent: {}
+[8.613703] (-) TimerEvent: {}
+[8.713928] (-) TimerEvent: {}
+[8.814086] (-) TimerEvent: {}
+[8.914244] (-) TimerEvent: {}
+[9.014405] (-) TimerEvent: {}
+[9.114583] (-) TimerEvent: {}
+[9.214756] (-) TimerEvent: {}
+[9.314939] (-) TimerEvent: {}
+[9.415116] (-) TimerEvent: {}
+[9.515273] (-) TimerEvent: {}
+[9.615432] (-) TimerEvent: {}
+[9.715600] (-) TimerEvent: {}
+[9.815768] (-) TimerEvent: {}
+[9.915928] (-) TimerEvent: {}
+[10.016157] (-) TimerEvent: {}
+[10.116352] (-) TimerEvent: {}
+[10.216523] (-) TimerEvent: {}
+[10.316708] (-) TimerEvent: {}
+[10.416881] (-) TimerEvent: {}
+[10.517049] (-) TimerEvent: {}
+[10.617210] (-) TimerEvent: {}
+[10.717374] (-) TimerEvent: {}
+[10.817529] (-) TimerEvent: {}
+[10.917687] (-) TimerEvent: {}
+[11.017830] (-) TimerEvent: {}
+[11.117990] (-) TimerEvent: {}
+[11.218151] (-) TimerEvent: {}
+[11.318353] (-) TimerEvent: {}
+[11.418522] (-) TimerEvent: {}
+[11.518702] (-) TimerEvent: {}
+[11.618894] (-) TimerEvent: {}
+[11.719059] (-) TimerEvent: {}
+[11.819219] (-) TimerEvent: {}
+[11.919377] (-) TimerEvent: {}
+[12.019540] (-) TimerEvent: {}
+[12.119696] (-) TimerEvent: {}
+[12.219828] (-) TimerEvent: {}
+[12.319996] (-) TimerEvent: {}
+[12.420209] (-) TimerEvent: {}
+[12.520396] (-) TimerEvent: {}
+[12.620561] (-) TimerEvent: {}
+[12.720737] (-) TimerEvent: {}
+[12.820929] (-) TimerEvent: {}
+[12.921082] (-) TimerEvent: {}
+[13.021253] (-) TimerEvent: {}
+[13.121415] (-) TimerEvent: {}
+[13.221572] (-) TimerEvent: {}
+[13.321730] (-) TimerEvent: {}
+[13.421898] (-) TimerEvent: {}
+[13.522071] (-) TimerEvent: {}
+[13.622239] (-) TimerEvent: {}
+[13.722415] (-) TimerEvent: {}
+[13.822602] (-) TimerEvent: {}
+[13.922821] (-) TimerEvent: {}
+[14.022975] (-) TimerEvent: {}
+[14.123133] (-) TimerEvent: {}
+[14.223292] (-) TimerEvent: {}
+[14.323445] (-) TimerEvent: {}
+[14.423597] (-) TimerEvent: {}
+[14.523776] (-) TimerEvent: {}
+[14.623933] (-) TimerEvent: {}
+[14.724096] (-) TimerEvent: {}
+[14.824259] (-) TimerEvent: {}
+[14.924460] (-) TimerEvent: {}
+[15.024609] (-) TimerEvent: {}
+[15.124776] (-) TimerEvent: {}
+[15.224934] (-) TimerEvent: {}
+[15.325089] (-) TimerEvent: {}
+[15.425250] (-) TimerEvent: {}
+[15.525457] (-) TimerEvent: {}
+[15.625663] (-) TimerEvent: {}
+[15.725826] (-) TimerEvent: {}
+[15.825992] (-) TimerEvent: {}
+[15.926165] (-) TimerEvent: {}
+[16.026326] (-) TimerEvent: {}
+[16.126500] (-) TimerEvent: {}
+[16.226675] (-) TimerEvent: {}
+[16.326873] (-) TimerEvent: {}
+[16.427042] (-) TimerEvent: {}
+[16.527202] (-) TimerEvent: {}
+[16.627366] (-) TimerEvent: {}
+[16.727526] (-) TimerEvent: {}
+[16.827734] (-) TimerEvent: {}
+[16.927862] (-) TimerEvent: {}
+[17.028060] (-) TimerEvent: {}
+[17.128225] (-) TimerEvent: {}
+[17.228387] (-) TimerEvent: {}
+[17.328577] (-) TimerEvent: {}
+[17.428792] (-) TimerEvent: {}
+[17.529007] (-) TimerEvent: {}
+[17.629210] (-) TimerEvent: {}
+[17.729426] (-) TimerEvent: {}
+[17.829589] (-) TimerEvent: {}
+[17.929745] (-) TimerEvent: {}
+[18.029927] (-) TimerEvent: {}
+[18.130084] (-) TimerEvent: {}
+[18.230245] (-) TimerEvent: {}
+[18.330449] (-) TimerEvent: {}
+[18.430605] (-) TimerEvent: {}
+[18.530827] (-) TimerEvent: {}
+[18.630997] (-) TimerEvent: {}
+[18.731146] (-) TimerEvent: {}
+[18.831329] (-) TimerEvent: {}
+[18.931493] (-) TimerEvent: {}
+[19.031648] (-) TimerEvent: {}
+[19.131805] (-) TimerEvent: {}
+[19.231978] (-) TimerEvent: {}
+[19.332144] (-) TimerEvent: {}
+[19.432309] (-) TimerEvent: {}
+[19.532507] (-) TimerEvent: {}
+[19.632670] (-) TimerEvent: {}
+[19.732839] (-) TimerEvent: {}
+[19.833003] (-) TimerEvent: {}
+[19.933166] (-) TimerEvent: {}
+[20.033326] (-) TimerEvent: {}
+[20.133490] (-) TimerEvent: {}
+[20.233667] (-) TimerEvent: {}
+[20.333876] (-) TimerEvent: {}
+[20.434070] (-) TimerEvent: {}
+[20.534283] (-) TimerEvent: {}
+[20.634446] (-) TimerEvent: {}
+[20.734598] (-) TimerEvent: {}
+[20.785863] (fastlio2) StdoutLine: {'line': b'[ 22%] Linking CXX executable lio_node\n'}
+[20.834741] (-) TimerEvent: {}
+[20.934919] (-) TimerEvent: {}
+[21.035093] (-) TimerEvent: {}
+[21.135345] (-) TimerEvent: {}
+[21.235580] (-) TimerEvent: {}
+[21.335763] (-) TimerEvent: {}
+[21.431845] (fastlio2) StdoutLine: {'line': b'[100%] Built target lio_node\n'}
+[21.435800] (-) TimerEvent: {}
+[21.436263] (fastlio2) CommandEnded: {'returncode': 0}
+[21.437077] (fastlio2) JobProgress: {'identifier': 'fastlio2', 'progress': 'install'}
+[21.440737] (fastlio2) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/ubuntu-nuc/rc2_ws/build/fastlio2'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/fastlio2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-201_agent'), ('USER', 'ubuntu-nuc'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc/rc2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('GTK_MODULES', 'gail:atk-bridge'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '4078'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9facfc20f215d2339c8807326a4a9a54'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu-nuc'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('RMW_FASTRTPS_USE_SHM', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/home/ubuntu-nuc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntunuc:@/tmp/.ICE-unix/4078,unix/ubuntunuc:/tmp/.ICE-unix/4078'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f46ddb5c_b083_45d1_82e5_e228f49ad9a8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_EFFORT', 'max'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6ZFVR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_SESSION_ID', 'ecccac41-4eff-4cbf-b092-ce8bccb8d399'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/fastlio2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9facfc20f215d2339c8807326a4a9a54'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ubuntu-nuc/.local/share/claude/versions/2.1.201'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[21.443220] (fastlio2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[21.443615] (fastlio2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[21.443835] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/lib/fastlio2/lio_node\n'}
+[21.444080] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/launch/lio2_launch.py\n'}
+[21.444217] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/launch/lio_launch.py\n'}
+[21.444427] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/rviz/fastlio2.rviz\n'}
+[21.444592] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/config/lio.yaml\n'}
+[21.444764] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/ament_index/resource_index/package_run_dependencies/fastlio2\n'}
+[21.445171] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/ament_index/resource_index/parent_prefix_path/fastlio2\n'}
+[21.445302] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/ament_prefix_path.sh\n'}
+[21.445431] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/ament_prefix_path.dsv\n'}
+[21.445558] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/path.sh\n'}
+[21.445710] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/environment/path.dsv\n'}
+[21.445841] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.bash\n'}
+[21.445972] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.sh\n'}
+[21.446093] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.zsh\n'}
+[21.446224] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/local_setup.dsv\n'}
+[21.446386] (fastlio2) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.dsv\n'}
+[21.449656] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/ament_index/resource_index/packages/fastlio2\n'}
+[21.449887] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/cmake/fastlio2Config.cmake\n'}
+[21.449962] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/cmake/fastlio2Config-version.cmake\n'}
+[21.450021] (fastlio2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.xml\n'}
+[21.450897] (fastlio2) CommandEnded: {'returncode': 0}
+[21.464048] (fastlio2) JobEnded: {'identifier': 'fastlio2', 'rc': 0}
+[21.464406] (-) EventReactorShutdown: {}

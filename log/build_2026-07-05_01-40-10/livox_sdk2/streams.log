@@ -1,0 +1,129 @@
+[0.014s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2 -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/livox_sdk2
+[0.016s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.017s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.017s]   CMake.
+[0.017s] 
+[0.017s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.017s]   to tell CMake that the project requires at least <min> but has been updated
+[0.017s]   to work with policies introduced by <max> or earlier.
+[0.017s] 
+[0.017s] [0m
+[0.064s] -- The C compiler identification is GNU 11.4.0
+[0.128s] -- The CXX compiler identification is GNU 11.4.0
+[0.134s] -- Detecting C compiler ABI info
+[0.190s] -- Detecting C compiler ABI info - done
+[0.206s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.206s] -- Detecting C compile features
+[0.207s] -- Detecting C compile features - done
+[0.219s] -- Detecting CXX compiler ABI info
+[0.288s] -- Detecting CXX compiler ABI info - done
+[0.310s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.310s] -- Detecting CXX compile features
+[0.311s] -- Detecting CXX compile features - done
+[0.316s] -- main project dir: /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2
+[0.316s] [0mCMake Deprecation Warning at sdk_core/CMakeLists.txt:1 (cmake_minimum_required):
+[0.316s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.317s]   CMake.
+[0.317s] 
+[0.317s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.317s]   to tell CMake that the project requires at least <min> but has been updated
+[0.317s]   to work with policies introduced by <max> or earlier.
+[0.317s] 
+[0.317s] [0m
+[0.317s] [0mCMake Deprecation Warning at samples/CMakeLists.txt:1 (cmake_minimum_required):
+[0.317s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.318s]   CMake.
+[0.318s] 
+[0.318s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.318s]   to tell CMake that the project requires at least <min> but has been updated
+[0.318s]   to work with policies introduced by <max> or earlier.
+[0.318s] 
+[0.318s] [0m
+[0.318s] -- main project dir: /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2/samples
+[0.318s] [0mCMake Deprecation Warning at samples/livox_lidar_quick_start/CMakeLists.txt:1 (cmake_minimum_required):
+[0.318s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.318s]   CMake.
+[0.318s] 
+[0.318s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.318s]   to tell CMake that the project requires at least <min> but has been updated
+[0.319s]   to work with policies introduced by <max> or earlier.
+[0.319s] 
+[0.319s] [0m
+[0.319s] [0mCMake Deprecation Warning at samples/multi_lidars_upgrade/CMakeLists.txt:1 (cmake_minimum_required):
+[0.319s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.319s]   CMake.
+[0.319s] 
+[0.319s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.319s]   to tell CMake that the project requires at least <min> but has been updated
+[0.319s]   to work with policies introduced by <max> or earlier.
+[0.320s] 
+[0.320s] [0m
+[0.320s] [0mCMake Deprecation Warning at samples/logger/CMakeLists.txt:1 (cmake_minimum_required):
+[0.320s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.320s]   CMake.
+[0.320s] 
+[0.320s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.320s]   to tell CMake that the project requires at least <min> but has been updated
+[0.320s]   to work with policies introduced by <max> or earlier.
+[0.320s] 
+[0.320s] [0m
+[0.320s] [0mCMake Deprecation Warning at samples/debug_point_cloud/CMakeLists.txt:1 (cmake_minimum_required):
+[0.320s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.321s]   CMake.
+[0.321s] 
+[0.321s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.321s]   to tell CMake that the project requires at least <min> but has been updated
+[0.321s]   to work with policies introduced by <max> or earlier.
+[0.321s] 
+[0.321s] [0m
+[0.321s] [0mCMake Deprecation Warning at samples/lidar_cmd_observer/CMakeLists.txt:1 (cmake_minimum_required):
+[0.321s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.321s]   CMake.
+[0.321s] 
+[0.322s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.322s]   to tell CMake that the project requires at least <min> but has been updated
+[0.322s]   to work with policies introduced by <max> or earlier.
+[0.322s] 
+[0.322s] [0m
+[0.322s] [0mCMake Deprecation Warning at samples/livox_lidar_rmc_time_sync/CMakeLists.txt:1 (cmake_minimum_required):
+[0.322s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.322s]   CMake.
+[0.322s] 
+[0.322s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.322s]   to tell CMake that the project requires at least <min> but has been updated
+[0.322s]   to work with policies introduced by <max> or earlier.
+[0.322s] 
+[0.322s] [0m
+[0.322s] -- Configuring done (0.3s)
+[0.342s] -- Generating done (0.0s)
+[0.342s] [33mCMake Warning:
+[0.342s]   Manually-specified variables were not used by the project:
+[0.342s] 
+[0.342s]     DISTRO_ROS
+[0.342s]     ROS_EDITION
+[0.342s] 
+[0.343s] [0m
+[0.346s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/livox_sdk2
+[0.351s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2 -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/livox_sdk2
+[0.353s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_sdk2 -- -j8 -l8
+[0.384s] [  1%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/__/3rdparty/FastCRC/FastCRCsw.cpp.o[0m
+[0.384s] [  2%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/__/3rdparty/FastCRC/FastCRCsw.cpp.o[0m
+[0.384s] [  3%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/livox_lidar_sdk.cpp.o[0m
+[0.384s] [  4%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/livox_lidar_sdk.cpp.o[0m
+[0.388s] [  5%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/params_check.cpp.o[0m
+[0.388s] [  7%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/device_manager.cpp.o[0m
+[0.388s] [  8%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/device_manager.cpp.o[0m
+[0.388s] [  9%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/params_check.cpp.o[0m
+[0.571s] [ 10%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/parse_cfg_file.cpp.o[0m
+[0.578s] [ 11%] [32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/parse_cfg_file.cpp.o[0m
+[1.561s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:107: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/livox_lidar_sdk.cpp.o] Interrupt
+[1.561s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:121: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/params_check.cpp.o] Interrupt
+[1.562s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:135: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/parse_cfg_file.cpp.o] Interrupt
+[1.562s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:135: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/parse_cfg_file.cpp.o] Interrupt
+[1.562s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:93: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/device_manager.cpp.o] Interrupt
+[1.562s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:107: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/livox_lidar_sdk.cpp.o] Interrupt
+[1.563s] gmake[1]: *** [CMakeFiles/Makefile2:266: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/all] Interrupt
+[1.563s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:93: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/device_manager.cpp.o] Interrupt
+[1.568s] gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:121: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/params_check.cpp.o] Interrupt
+[1.568s] gmake[1]: *** [CMakeFiles/Makefile2:298: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/all] Interrupt
+[1.569s] gmake: *** [Makefile:136: all] Interrupt

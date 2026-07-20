@@ -1,0 +1,575 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "liblivox_ros_driver2__rosidl_typesupport_cpp.so"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"ament_execute_extensions",
+			"rosidl_generate_interfaces",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package",
+			"ament_auto_find_build_dependencies",
+			"add_dependencies",
+			"add_compile_options",
+			"add_definitions"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cExport.cmake",
+			"/opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake",
+			"/opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake",
+			"/opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake",
+			"/opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake",
+			"/opt/ros/humble/share/rcutils/cmake/rcutilsExport.cmake",
+			"/opt/ros/humble/share/rcutils/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake",
+			"/opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/humble/share/rosidl_generator_cpp/cmake/rosidl_generator_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 241,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 286,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 140,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 121,
+				"parent" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 225,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 67,
+				"parent" : 10
+			},
+			{
+				"file" : 12,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 12,
+				"line" : 41,
+				"parent" : 12
+			},
+			{
+				"file" : 11,
+				"parent" : 13
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 21,
+				"parent" : 14
+			},
+			{
+				"file" : 10,
+				"parent" : 15
+			},
+			{
+				"command" : 1,
+				"file" : 10,
+				"line" : 41,
+				"parent" : 16
+			},
+			{
+				"file" : 9,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 13,
+				"parent" : 18
+			},
+			{
+				"file" : 8,
+				"parent" : 19
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 41,
+				"parent" : 20
+			},
+			{
+				"file" : 7,
+				"parent" : 21
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 22
+			},
+			{
+				"file" : 6,
+				"parent" : 23
+			},
+			{
+				"command" : 1,
+				"file" : 6,
+				"line" : 41,
+				"parent" : 24
+			},
+			{
+				"file" : 5,
+				"parent" : 25
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 9,
+				"parent" : 26
+			},
+			{
+				"file" : 4,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 56,
+				"parent" : 28
+			},
+			{
+				"command" : 1,
+				"file" : 6,
+				"line" : 41,
+				"parent" : 24
+			},
+			{
+				"file" : 17,
+				"parent" : 30
+			},
+			{
+				"command" : 7,
+				"file" : 17,
+				"line" : 21,
+				"parent" : 31
+			},
+			{
+				"file" : 16,
+				"parent" : 32
+			},
+			{
+				"command" : 1,
+				"file" : 16,
+				"line" : 41,
+				"parent" : 33
+			},
+			{
+				"file" : 15,
+				"parent" : 34
+			},
+			{
+				"command" : 1,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 35
+			},
+			{
+				"file" : 14,
+				"parent" : 36
+			},
+			{
+				"command" : 6,
+				"file" : 14,
+				"line" : 56,
+				"parent" : 37
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 18,
+				"parent" : 39
+			},
+			{
+				"command" : 9,
+				"file" : 18,
+				"line" : 139,
+				"parent" : 40
+			},
+			{
+				"command" : 10,
+				"file" : 3,
+				"line" : 207,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 3,
+				"line" : 218,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 3,
+				"line" : 258,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 118,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 21,
+				"parent" : 46
+			},
+			{
+				"command" : 7,
+				"file" : 21,
+				"line" : 21,
+				"parent" : 47
+			},
+			{
+				"file" : 20,
+				"parent" : 48
+			},
+			{
+				"command" : 1,
+				"file" : 20,
+				"line" : 41,
+				"parent" : 49
+			},
+			{
+				"file" : 19,
+				"parent" : 50
+			},
+			{
+				"command" : 11,
+				"file" : 19,
+				"line" : 25,
+				"parent" : 51
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu++14 -fPIC"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "-Wno-unused-parameter"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 43,
+					"define" : "BUILDING_ROS2"
+				},
+				{
+					"backtrace" : 44,
+					"define" : "DISABLE_PCAP"
+				},
+				{
+					"backtrace" : 45,
+					"define" : "RCUTILS_ENABLE_FAULT_INJECTION"
+				},
+				{
+					"define" : "ROSIDL_TYPESUPPORT_CPP_BUILDING_DLL"
+				},
+				{
+					"backtrace" : 52,
+					"define" : "ROS_PACKAGE_NAME=\"livox_ros_driver2\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 45,
+					"path" : "/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2/rosidl_generator_cpp"
+				},
+				{
+					"backtrace" : 45,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/builtin_interfaces"
+				},
+				{
+					"backtrace" : 45,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_runtime_cpp"
+				},
+				{
+					"backtrace" : 45,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 45,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rcutils"
+				},
+				{
+					"backtrace" : 45,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 45,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/std_msgs"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_cpp"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_c"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					53
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 41,
+			"id" : "livox_interfaces2__cpp::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "livox_interfaces2__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-rpath,/opt/ros/humble/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "/opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/opt/ros/humble/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/opt/ros/humble/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 38,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-rpath-link,/opt/ros/humble/lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "livox_interfaces2__rosidl_typesupport_cpp",
+	"nameOnDisk" : "liblivox_ros_driver2__rosidl_typesupport_cpp.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_msg__type_support.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

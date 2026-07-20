@@ -1,0 +1,18 @@
+[ 11%] Built target interface__rosidl_generator_c
+[ 12%] Built target interface__cpp
+[ 12%] Built target ament_cmake_python_copy_interface
+[ 23%] Built target interface__rosidl_typesupport_introspection_c
+[ 34%] Built target interface__rosidl_typesupport_cpp
+[ 50%] Built target interface__rosidl_typesupport_introspection_cpp
+[ 61%] Built target interface__rosidl_typesupport_c
+[ 68%] Built target interface__rosidl_typesupport_fastrtps_c
+[ 79%] Built target interface__rosidl_typesupport_fastrtps_cpp
+[ 79%] Built target interface
+gmake[2]: *** No rule to make target 'rosidl_adapter/interface/srv/SaveMaps.idl', needed by 'rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:725: interface__py/CMakeFiles/interface__py.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+running egg_info
+error: [Errno 2] No such file or directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_interface_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_interface_egg] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:546: CMakeFiles/ament_cmake_python_build_interface_egg.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

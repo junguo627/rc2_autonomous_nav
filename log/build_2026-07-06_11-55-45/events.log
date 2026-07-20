@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000562] (-) JobUnselected: {'identifier': 'auto_aim_interfaces'}
+[0.000584] (-) JobUnselected: {'identifier': 'fastlio2'}
+[0.000600] (-) JobUnselected: {'identifier': 'hba'}
+[0.000610] (-) JobUnselected: {'identifier': 'interface'}
+[0.000623] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000633] (-) JobUnselected: {'identifier': 'livox_sdk2'}
+[0.000644] (-) JobUnselected: {'identifier': 'localizer'}
+[0.000653] (-) JobUnselected: {'identifier': 'meiling_detect'}
+[0.000663] (-) JobUnselected: {'identifier': 'pgo'}
+[0.000675] (meiling_control) JobQueued: {'identifier': 'meiling_control', 'dependencies': OrderedDict([('auto_aim_interfaces', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces')])}
+[0.000692] (meiling_control) JobStarted: {'identifier': 'meiling_control'}
+[0.008657] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'cmake'}
+[0.009150] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'build'}
+[0.009633] (meiling_control) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/ubuntu-nuc/rc2_ws/build/meiling_control', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/meiling_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('USER', 'ubuntu-nuc'), ('SSH_CLIENT', '10.255.180.150 56763 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('SSH_TTY', '/dev/pts/2'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '5'), ('RMW_FASTRTPS_USE_SHM', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/meiling_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.255.180.150 56763 10.255.180.243 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.020179] (meiling_control) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.020327] (meiling_control) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.020370] (meiling_control) StderrLine: {'line': b'  CMake.\n'}
+[0.020407] (meiling_control) StderrLine: {'line': b'\n'}
+[0.020451] (meiling_control) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.020493] (meiling_control) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.020532] (meiling_control) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.020568] (meiling_control) StderrLine: {'line': b'\n'}
+[0.020602] (meiling_control) StderrLine: {'line': b'\x1b[0m\n'}
+[0.024879] (meiling_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099793] (-) TimerEvent: {}
+[0.162889] (meiling_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.186918] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.188993] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.193794] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.199894] (-) TimerEvent: {}
+[0.201785] (meiling_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.212185] (meiling_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.241509] (meiling_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.242753] (meiling_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299990] (-) TimerEvent: {}
+[0.333525] (meiling_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.379875] (meiling_control) StdoutLine: {'line': b'-- Found auto_aim_interfaces: 0.0.1 (/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake)\n'}
+[0.400078] (-) TimerEvent: {}
+[0.460851] (meiling_control) StdoutLine: {'line': b'-- Configuring done (0.4s)\n'}
+[0.468881] (meiling_control) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.470621] (meiling_control) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/meiling_control\n'}
+[0.495124] (meiling_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o\x1b[0m\n'}
+[0.495492] (meiling_control) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/meiling_node.dir/src/luoji.cpp.o\x1b[0m\n'}
+[0.500189] (-) TimerEvent: {}
+[0.600491] (-) TimerEvent: {}
+[0.700724] (-) TimerEvent: {}
+[0.800969] (-) TimerEvent: {}
+[0.901216] (-) TimerEvent: {}
+[1.001459] (-) TimerEvent: {}
+[1.101703] (-) TimerEvent: {}
+[1.201984] (-) TimerEvent: {}
+[1.302237] (-) TimerEvent: {}
+[1.402523] (-) TimerEvent: {}
+[1.502767] (-) TimerEvent: {}
+[1.603019] (-) TimerEvent: {}
+[1.703294] (-) TimerEvent: {}
+[1.803618] (-) TimerEvent: {}
+[1.903903] (-) TimerEvent: {}
+[2.004202] (-) TimerEvent: {}
+[2.104525] (-) TimerEvent: {}
+[2.204837] (-) TimerEvent: {}
+[2.305129] (-) TimerEvent: {}
+[2.405424] (-) TimerEvent: {}
+[2.505733] (-) TimerEvent: {}
+[2.506586] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SUM::sum_begin()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.506801] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:151:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kf_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_x\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.506874] (meiling_control) StderrLine: {'line': b'  151 |             zhuangxiang(c_x, c_y, 1, \x1b[01;31m\x1b[Kf_x\x1b[m\x1b[K, f_y);\n'}
+[2.506938] (meiling_control) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.506999] (meiling_control) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[Kp_x\x1b[m\x1b[K\n'}
+[2.510577] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:151:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kf_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_y\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.510750] (meiling_control) StderrLine: {'line': b'  151 |             zhuangxiang(c_x, c_y, 1, f_x, \x1b[01;31m\x1b[Kf_y\x1b[m\x1b[K);\n'}
+[2.510815] (meiling_control) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.510876] (meiling_control) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[Kp_y\x1b[m\x1b[K\n'}
+[2.514888] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:172:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kl_h\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.515058] (meiling_control) StderrLine: {'line': b'  172 |                             if (\x1b[01;31m\x1b[Kl_h\x1b[m\x1b[K == -1) {\n'}
+[2.515123] (meiling_control) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.515514] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:204:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.515626] (meiling_control) StderrLine: {'line': b'  204 |             } \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K {\n'}
+[2.515684] (meiling_control) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.519719] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kc_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_x\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.519898] (meiling_control) StderrLine: {'line': b'  209 |                     zhuangxiang(\x1b[01;31m\x1b[Kc_x\x1b[m\x1b[K, c_y, d, f_x, f_y);\n'}
+[2.519967] (meiling_control) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.520033] (meiling_control) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[Kp_x\x1b[m\x1b[K\n'}
+[2.523713] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kc_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_y\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.523887] (meiling_control) StderrLine: {'line': b'  209 |                     zhuangxiang(c_x, \x1b[01;31m\x1b[Kc_y\x1b[m\x1b[K, d, f_x, f_y);\n'}
+[2.523952] (meiling_control) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.524016] (meiling_control) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[Kp_y\x1b[m\x1b[K\n'}
+[2.527560] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kf_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_x\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.527744] (meiling_control) StderrLine: {'line': b'  209 |                     zhuangxiang(c_x, c_y, d, \x1b[01;31m\x1b[Kf_x\x1b[m\x1b[K, f_y);\n'}
+[2.527811] (meiling_control) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.527879] (meiling_control) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[Kp_x\x1b[m\x1b[K\n'}
+[2.531421] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kf_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_y\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.531603] (meiling_control) StderrLine: {'line': b'  209 |                     zhuangxiang(c_x, c_y, d, f_x, \x1b[01;31m\x1b[Kf_y\x1b[m\x1b[K);\n'}
+[2.531670] (meiling_control) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.531732] (meiling_control) StderrLine: {'line': b'      |                                                   \x1b[32m\x1b[Kp_y\x1b[m\x1b[K\n'}
+[2.534435] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K:\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K\xe5\xae\xb8\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.534603] (meiling_control) StderrLine: {'line': b'  222 |                         cout<<"\xe6\x9d\x9e\xee\x84\x80\xe6\x82\x9c:"<<(d==4?"\xe9\x8d\x99?:"\x1b[01;31m\x1b[K\xe5\xae\xb8\x1b[m\x1b[K?)<<endl;\n'}
+[2.534662] (meiling_control) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.534717] (meiling_control) StderrLine: {'line': b'      |                                                     \x1b[32m\x1b[K:\x1b[m\x1b[K\n'}
+[2.538952] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K\xe5\xae\xb8\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.539139] (meiling_control) StderrLine: {'line': b'  222 |                         cout<<"\xe6\x9d\x9e\xee\x84\x80\xe6\x82\x9c:"<<(d==4?"\xe9\x8d\x99?:"\x1b[01;31m\x1b[K\xe5\xae\xb8\x1b[m\x1b[K?)<<endl;\n'}
+[2.539194] (meiling_control) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.539246] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.539296] (meiling_control) StderrLine: {'line': b'  222 |                         cout<<"\xe6\x9d\x9e\xee\x84\x80\xe6\x82\x9c:"<<(d==4?"\xe9\x8d\x99?:"\xe5\xae\xb8?\x1b[01;31m\x1b[K)\x1b[m\x1b[K<<endl;\n'}
+[2.539347] (meiling_control) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.539398] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K:\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.539455] (meiling_control) StderrLine: {'line': b'  222 |                         cout<<"\xe6\x9d\x9e\xee\x84\x80\xe6\x82\x9c:"<<(d==4?"\xe9\x8d\x99?:"\xe5\xae\xb8?\x1b[01;31m\x1b[K)\x1b[m\x1b[K<<endl;\n'}
+[2.539510] (meiling_control) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.539559] (meiling_control) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K:\x1b[m\x1b[K\n'}
+[2.539607] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.541521] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.541660] (meiling_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:272:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.541713] (meiling_control) StderrLine: {'line': b'  272 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[2.541765] (meiling_control) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.605833] (-) TimerEvent: {}
+[2.706129] (-) TimerEvent: {}
+[2.806431] (-) TimerEvent: {}
+[2.906749] (-) TimerEvent: {}
+[3.007054] (-) TimerEvent: {}
+[3.107334] (-) TimerEvent: {}
+[3.207626] (-) TimerEvent: {}
+[3.307916] (-) TimerEvent: {}
+[3.408215] (-) TimerEvent: {}
+[3.508519] (-) TimerEvent: {}
+[3.608828] (-) TimerEvent: {}
+[3.709137] (-) TimerEvent: {}
+[3.809423] (-) TimerEvent: {}
+[3.909756] (-) TimerEvent: {}
+[4.010058] (-) TimerEvent: {}
+[4.110371] (-) TimerEvent: {}
+[4.210691] (-) TimerEvent: {}
+[4.310992] (-) TimerEvent: {}
+[4.411306] (-) TimerEvent: {}
+[4.511631] (-) TimerEvent: {}
+[4.611907] (-) TimerEvent: {}
+[4.712191] (-) TimerEvent: {}
+[4.812479] (-) TimerEvent: {}
+[4.912761] (-) TimerEvent: {}
+[5.013051] (-) TimerEvent: {}
+[5.113357] (-) TimerEvent: {}
+[5.169336] (meiling_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1\n'}
+[5.169553] (meiling_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2\n'}
+[5.169636] (meiling_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.171030] (meiling_control) CommandEnded: {'returncode': 2}
+[5.184076] (meiling_control) JobEnded: {'identifier': 'meiling_control', 'rc': 2}
+[5.194461] (-) EventReactorShutdown: {}

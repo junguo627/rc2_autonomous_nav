@@ -1,0 +1,54 @@
+[0.034s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/meiling_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/meiling_control
+[0.045s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.045s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.045s]   CMake.
+[0.045s] 
+[0.046s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.046s]   to tell CMake that the project requires at least <min> but has been updated
+[0.046s]   to work with policies introduced by <max> or earlier.
+[0.046s] 
+[0.046s] [0m
+[0.159s] -- The C compiler identification is GNU 11.4.0
+[0.323s] -- The CXX compiler identification is GNU 11.4.0
+[0.353s] -- Detecting C compiler ABI info
+[0.509s] -- Detecting C compiler ABI info - done
+[0.550s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.554s] -- Detecting C compile features
+[0.554s] -- Detecting C compile features - done
+[0.580s] -- Detecting CXX compiler ABI info
+[0.738s] -- Detecting CXX compiler ABI info - done
+[0.781s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.786s] -- Detecting CXX compile features
+[0.786s] -- Detecting CXX compile features - done
+[0.808s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.119s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.448s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.581s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.590s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.605s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.644s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.705s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.823s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.828s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.018s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[2.128s] -- Found FastRTPS: /opt/ros/humble/include
+[2.264s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.297s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.453s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.453s] -- Found Threads: TRUE
+[2.649s] -- Found auto_aim_interfaces: 0.0.1 (/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake)
+[2.966s] -- Configuring done (2.9s)
+[2.999s] -- Generating done (0.0s)
+[2.999s] [33mCMake Warning:
+[2.999s]   Manually-specified variables were not used by the project:
+[2.999s] 
+[2.999s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.999s] 
+[2.999s] [0m
+[3.006s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/meiling_control
+[3.047s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/meiling_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/meiling_control
+[3.048s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/meiling_control -- -j8 -l8
+[3.119s] [ 33%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o[0m
+[3.120s] [ 66%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/luoji.cpp.o[0m
+[27.315s] [100%] [32m[1mLinking CXX executable meiling_node[0m
+[28.096s] [100%] Built target meiling_node

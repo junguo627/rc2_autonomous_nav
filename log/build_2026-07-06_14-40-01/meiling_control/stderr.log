@@ -1,0 +1,38 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:52:11:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   52 |     cout<<[01;35m[K"[m[K濮婂懏鐏勬潻鎰攽缂佹挻娼?<<endl;
+      |           [01;35m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:52:11:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   52 |     cout<<[01;31m[K"濮婂懏鐏勬潻鎰攽缂佹挻娼?<<endl;[m[K
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In destructor ‘[01m[Kvirtual SUM::~SUM()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:53:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+   53 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::sum_begin()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:228:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[K瀹[m[K’
+  228 |                         cout<<"鏉烆剙鎮?"<<(d==4?"閸?:"[01;31m[K瀹[m[K?)<<endl;
+      |                                                        [01;31m[K^[m[K[32m[K~[m[K
+      |                                                        [32m[K:[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:228:56:[m[K [01;31m[Kerror: [m[K‘[01m[K瀹[m[K’ was not declared in this scope
+  228 |                         cout<<"鏉烆剙鎮?"<<(d==4?"閸?:"[01;31m[K瀹[m[K?)<<endl;
+      |                                                        [01;31m[K^~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:228:59:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  228 |                         cout<<"鏉烆剙鎮?"<<(d==4?"閸?:"瀹?[01;31m[K)[m[K<<endl;
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:228:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[K)[m[K’ token
+  228 |                         cout<<"鏉烆剙鎮?"<<(d==4?"閸?:"瀹?[01;31m[K)[m[K<<endl;
+      |                                                           [01;31m[K^[m[K
+      |                                                           [32m[K:[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:228:59:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

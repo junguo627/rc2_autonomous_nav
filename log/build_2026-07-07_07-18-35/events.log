@@ -1,0 +1,372 @@
+[0.000000] (-) TimerEvent: {}
+[0.000562] (-) JobUnselected: {'identifier': 'fastlio2'}
+[0.000585] (-) JobUnselected: {'identifier': 'hba'}
+[0.000599] (-) JobUnselected: {'identifier': 'interface'}
+[0.000610] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000621] (-) JobUnselected: {'identifier': 'livox_sdk2'}
+[0.000631] (-) JobUnselected: {'identifier': 'localizer'}
+[0.000641] (-) JobUnselected: {'identifier': 'meiling_detect'}
+[0.000650] (-) JobUnselected: {'identifier': 'pgo'}
+[0.000663] (auto_aim_interfaces) JobQueued: {'identifier': 'auto_aim_interfaces', 'dependencies': OrderedDict()}
+[0.000677] (meiling_control) JobQueued: {'identifier': 'meiling_control', 'dependencies': OrderedDict([('auto_aim_interfaces', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces')])}
+[0.000691] (auto_aim_interfaces) JobStarted: {'identifier': 'auto_aim_interfaces'}
+[0.007084] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'cmake'}
+[0.008125] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'build'}
+[0.008149] (auto_aim_interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('USER', 'ubuntu-nuc'), ('SSH_CLIENT', '10.255.180.150 55287 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc/rc2_ws/src/meiling_detect/meiling_detect'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('SSH_TTY', '/dev/pts/1'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('RMW_FASTRTPS_USE_SHM', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.255.180.150 55287 10.255.180.243 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.029014] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] Built target auto_aim_interfaces__cpp\n'}
+[0.029197] (auto_aim_interfaces) StdoutLine: {'line': b'[ 12%] Built target auto_aim_interfaces__rosidl_generator_c\n'}
+[0.032983] (auto_aim_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_auto_aim_interfaces\n'}
+[0.038765] (auto_aim_interfaces) StdoutLine: {'line': b'[ 23%] Built target auto_aim_interfaces__rosidl_typesupport_cpp\n'}
+[0.039311] (auto_aim_interfaces) StdoutLine: {'line': b'[ 34%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.039472] (auto_aim_interfaces) StdoutLine: {'line': b'[ 44%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.043179] (auto_aim_interfaces) StdoutLine: {'line': b'[ 55%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.043425] (auto_aim_interfaces) StdoutLine: {'line': b'[ 65%] Built target auto_aim_interfaces__rosidl_typesupport_c\n'}
+[0.043627] (auto_aim_interfaces) StdoutLine: {'line': b'[ 76%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.052570] (auto_aim_interfaces) StdoutLine: {'line': b'[ 76%] Built target auto_aim_interfaces\n'}
+[0.061383] (auto_aim_interfaces) StdoutLine: {'line': b'[ 78%] Built target auto_aim_interfaces__py\n'}
+[0.072296] (auto_aim_interfaces) StdoutLine: {'line': b'[ 87%] Built target auto_aim_interfaces__rosidl_generator_py\n'}
+[0.085090] (auto_aim_interfaces) StdoutLine: {'line': b'[ 95%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.085274] (auto_aim_interfaces) StdoutLine: {'line': b'[ 95%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.085587] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target auto_aim_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.099738] (-) TimerEvent: {}
+[0.199994] (-) TimerEvent: {}
+[0.226053] (auto_aim_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.226549] (auto_aim_interfaces) StdoutLine: {'line': b'writing auto_aim_interfaces.egg-info/PKG-INFO\n'}
+[0.226736] (auto_aim_interfaces) StdoutLine: {'line': b'writing dependency_links to auto_aim_interfaces.egg-info/dependency_links.txt\n'}
+[0.226783] (auto_aim_interfaces) StdoutLine: {'line': b'writing top-level names to auto_aim_interfaces.egg-info/top_level.txt\n'}
+[0.228585] (auto_aim_interfaces) StdoutLine: {'line': b"reading manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[0.229007] (auto_aim_interfaces) StdoutLine: {'line': b"writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[0.245776] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_auto_aim_interfaces_egg\n'}
+[0.250872] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[0.251716] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'install'}
+[0.255193] (auto_aim_interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('USER', 'ubuntu-nuc'), ('SSH_CLIENT', '10.255.180.150 55287 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc/rc2_ws/src/meiling_detect/meiling_detect'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('SSH_TTY', '/dev/pts/1'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('RMW_FASTRTPS_USE_SHM', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.255.180.150 55287 10.255.180.243 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.258025] (auto_aim_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.258144] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/rosidl_interfaces/auto_aim_interfaces\n'}
+[0.258195] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[0.258270] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[0.258383] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.h\n'}
+[0.258428] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/offset.h\n'}
+[0.258467] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.258511] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/fas.h\n'}
+[0.258554] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[0.258599] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__functions.c\n'}
+[0.258637] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.h\n'}
+[0.258677] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__functions.c\n'}
+[0.258715] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__struct.h\n'}
+[0.258757] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.h\n'}
+[0.258799] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__functions.h\n'}
+[0.258871] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.h\n'}
+[0.258911] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.c\n'}
+[0.259038] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__struct.h\n'}
+[0.259078] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__functions.h\n'}
+[0.259129] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.h\n'}
+[0.259172] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.h\n'}
+[0.259293] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.sh\n'}
+[0.259332] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.dsv\n'}
+[0.259370] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so\n'}
+[0.259409] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[0.259446] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[0.259484] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.259522] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[0.259560] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_fastrtps_c.h\n'}
+[0.259598] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_fastrtps_c.h\n'}
+[0.259644] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[0.259681] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.259719] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[0.259757] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[0.259794] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[0.259832] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[0.259869] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.c\n'}
+[0.259906] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_introspection_c.h\n'}
+[0.260079] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.c\n'}
+[0.260119] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.c\n'}
+[0.260158] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_introspection_c.h\n'}
+[0.260196] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.260238] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.260277] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so\n'}
+[0.260316] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[0.260356] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[0.260395] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.260446] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/offset.hpp\n'}
+[0.260554] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.hpp\n'}
+[0.260599] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/fas.hpp\n'}
+[0.260674] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[0.260713] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__builder.hpp\n'}
+[0.260755] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.hpp\n'}
+[0.260792] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__builder.hpp\n'}
+[0.260830] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.hpp\n'}
+[0.260868] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.hpp\n'}
+[0.260906] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__struct.hpp\n'}
+[0.260944] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__traits.hpp\n'}
+[0.261040] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__traits.hpp\n'}
+[0.261093] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__struct.hpp\n'}
+[0.261130] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__traits.hpp\n'}
+[0.261166] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.hpp\n'}
+[0.261202] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__builder.hpp\n'}
+[0.261237] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[0.261274] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[0.261309] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.261345] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[0.261380] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.261415] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/dds_fastrtps\n'}
+[0.261450] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.261487] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.261523] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.261559] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[0.261595] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[0.261630] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[0.261665] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.261701] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.261737] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.cpp\n'}
+[0.261774] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.cpp\n'}
+[0.261811] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.261845] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.cpp\n'}
+[0.261879] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.261914] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.261950] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.sh\n'}
+[0.261984] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.dsv\n'}
+[0.262027] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info\n'}
+[0.262063] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[0.262098] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[0.262132] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[0.262168] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[0.262202] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces\n'}
+[0.262236] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py\n'}
+[0.262269] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so\n'}
+[0.262303] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.262339] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg\n'}
+[0.262373] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_fas_s.c\n'}
+[0.262411] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py\n'}
+[0.262447] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_offset_s.c\n'}
+[0.262485] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_offset.py\n'}
+[0.262521] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target_s.c\n'}
+[0.262557] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_fas.py\n'}
+[0.262592] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py\n'}
+[0.262628] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.262664] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.262700] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.262734] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.262774] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.285719] (auto_aim_interfaces) StdoutLine: {'line': b"Listing '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces'...\n"}
+[0.285837] (auto_aim_interfaces) StdoutLine: {'line': b"Listing '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg'...\n"}
+[0.289004] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.289144] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.289282] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.289410] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so\n'}
+[0.289517] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Fas.idl\n'}
+[0.289574] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.idl\n'}
+[0.289639] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Offset.idl\n'}
+[0.289724] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Fas.msg\n'}
+[0.289789] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.msg\n'}
+[0.289936] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Offset.msg\n'}
+[0.289972] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/package_run_dependencies/auto_aim_interfaces\n'}
+[0.290043] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/parent_prefix_path/auto_aim_interfaces\n'}
+[0.290086] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.sh\n'}
+[0.290151] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.290189] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.sh\n'}
+[0.290228] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.dsv\n'}
+[0.290265] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.bash\n'}
+[0.290302] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.sh\n'}
+[0.290339] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.zsh\n'}
+[0.290375] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.dsv\n'}
+[0.290413] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv\n'}
+[0.290450] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/packages/auto_aim_interfaces\n'}
+[0.290486] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.290524] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.290561] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.290598] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.290713] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.290776] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.290812] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.290849] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.290884] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.290919] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.290954] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.290988] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.291030] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.291066] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.291101] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.291136] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.291170] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.291207] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.291242] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.291277] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.291312] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.291348] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.291384] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.291419] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.291454] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig.cmake\n'}
+[0.291488] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig-version.cmake\n'}
+[0.291525] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.xml\n'}
+[0.292094] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[0.300035] (-) TimerEvent: {}
+[0.306426] (auto_aim_interfaces) JobEnded: {'identifier': 'auto_aim_interfaces', 'rc': 0}
+[0.306732] (meiling_control) JobStarted: {'identifier': 'meiling_control'}
+[0.312410] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'cmake'}
+[0.312827] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'build'}
+[0.313008] (meiling_control) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/ubuntu-nuc/rc2_ws/build/meiling_control', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/meiling_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('USER', 'ubuntu-nuc'), ('SSH_CLIENT', '10.255.180.150 55287 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc/rc2_ws/src/meiling_detect/meiling_detect'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('SSH_TTY', '/dev/pts/1'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('RMW_FASTRTPS_USE_SHM', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/meiling_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.255.180.150 55287 10.255.180.243 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.326706] (meiling_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400135] (-) TimerEvent: {}
+[0.457734] (meiling_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.481445] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.483518] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.487984] (meiling_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.495549] (meiling_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500200] (-) TimerEvent: {}
+[0.505426] (meiling_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.533727] (meiling_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.534994] (meiling_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600320] (-) TimerEvent: {}
+[0.623040] (meiling_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.668729] (meiling_control) StdoutLine: {'line': b'-- Found auto_aim_interfaces: 0.0.1 (/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake)\n'}
+[0.700400] (-) TimerEvent: {}
+[0.746796] (meiling_control) StdoutLine: {'line': b'-- Configuring done (0.4s)\n'}
+[0.754610] (meiling_control) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.756356] (meiling_control) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/meiling_control\n'}
+[0.780027] (meiling_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o\x1b[0m\n'}
+[0.780444] (meiling_control) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/meiling_node.dir/src/luoji.cpp.o\x1b[0m\n'}
+[0.800507] (-) TimerEvent: {}
+[0.900806] (-) TimerEvent: {}
+[1.001074] (-) TimerEvent: {}
+[1.101459] (-) TimerEvent: {}
+[1.201694] (-) TimerEvent: {}
+[1.301974] (-) TimerEvent: {}
+[1.402246] (-) TimerEvent: {}
+[1.502555] (-) TimerEvent: {}
+[1.602812] (-) TimerEvent: {}
+[1.703117] (-) TimerEvent: {}
+[1.803391] (-) TimerEvent: {}
+[1.903643] (-) TimerEvent: {}
+[2.003894] (-) TimerEvent: {}
+[2.104111] (-) TimerEvent: {}
+[2.204398] (-) TimerEvent: {}
+[2.304650] (-) TimerEvent: {}
+[2.404912] (-) TimerEvent: {}
+[2.505122] (-) TimerEvent: {}
+[2.605381] (-) TimerEvent: {}
+[2.705678] (-) TimerEvent: {}
+[2.805933] (-) TimerEvent: {}
+[2.906236] (-) TimerEvent: {}
+[3.006481] (-) TimerEvent: {}
+[3.106709] (-) TimerEvent: {}
+[3.206941] (-) TimerEvent: {}
+[3.307195] (-) TimerEvent: {}
+[3.407474] (-) TimerEvent: {}
+[3.507721] (-) TimerEvent: {}
+[3.608007] (-) TimerEvent: {}
+[3.708261] (-) TimerEvent: {}
+[3.808500] (-) TimerEvent: {}
+[3.908738] (-) TimerEvent: {}
+[4.008976] (-) TimerEvent: {}
+[4.109247] (-) TimerEvent: {}
+[4.209494] (-) TimerEvent: {}
+[4.309733] (-) TimerEvent: {}
+[4.409972] (-) TimerEvent: {}
+[4.510228] (-) TimerEvent: {}
+[4.610504] (-) TimerEvent: {}
+[4.710790] (-) TimerEvent: {}
+[4.811046] (-) TimerEvent: {}
+[4.911331] (-) TimerEvent: {}
+[5.011560] (-) TimerEvent: {}
+[5.111804] (-) TimerEvent: {}
+[5.212113] (-) TimerEvent: {}
+[5.312396] (-) TimerEvent: {}
+[5.412701] (-) TimerEvent: {}
+[5.512944] (-) TimerEvent: {}
+[5.613191] (-) TimerEvent: {}
+[5.713450] (-) TimerEvent: {}
+[5.813706] (-) TimerEvent: {}
+[5.913944] (-) TimerEvent: {}
+[6.014203] (-) TimerEvent: {}
+[6.114453] (-) TimerEvent: {}
+[6.214711] (-) TimerEvent: {}
+[6.315028] (-) TimerEvent: {}
+[6.415332] (-) TimerEvent: {}
+[6.515589] (-) TimerEvent: {}
+[6.615881] (-) TimerEvent: {}
+[6.716140] (-) TimerEvent: {}
+[6.816392] (-) TimerEvent: {}
+[6.916658] (-) TimerEvent: {}
+[7.017071] (-) TimerEvent: {}
+[7.117381] (-) TimerEvent: {}
+[7.217638] (-) TimerEvent: {}
+[7.317930] (-) TimerEvent: {}
+[7.418174] (-) TimerEvent: {}
+[7.518493] (-) TimerEvent: {}
+[7.618724] (-) TimerEvent: {}
+[7.718958] (-) TimerEvent: {}
+[7.819298] (-) TimerEvent: {}
+[7.919624] (-) TimerEvent: {}
+[8.019885] (-) TimerEvent: {}
+[8.120211] (-) TimerEvent: {}
+[8.220490] (-) TimerEvent: {}
+[8.320728] (-) TimerEvent: {}
+[8.421000] (-) TimerEvent: {}
+[8.521223] (-) TimerEvent: {}
+[8.621444] (-) TimerEvent: {}
+[8.721680] (-) TimerEvent: {}
+[8.821911] (-) TimerEvent: {}
+[8.922175] (-) TimerEvent: {}
+[9.022476] (-) TimerEvent: {}
+[9.122705] (-) TimerEvent: {}
+[9.222982] (-) TimerEvent: {}
+[9.323218] (-) TimerEvent: {}
+[9.423439] (-) TimerEvent: {}
+[9.523664] (-) TimerEvent: {}
+[9.623894] (-) TimerEvent: {}
+[9.724135] (-) TimerEvent: {}
+[9.824362] (-) TimerEvent: {}
+[9.924670] (-) TimerEvent: {}
+[10.024943] (-) TimerEvent: {}
+[10.125224] (-) TimerEvent: {}
+[10.225511] (-) TimerEvent: {}
+[10.325777] (-) TimerEvent: {}
+[10.426012] (-) TimerEvent: {}
+[10.526248] (-) TimerEvent: {}
+[10.626470] (-) TimerEvent: {}
+[10.726743] (-) TimerEvent: {}
+[10.826982] (-) TimerEvent: {}
+[10.927226] (-) TimerEvent: {}
+[11.027459] (-) TimerEvent: {}
+[11.127689] (-) TimerEvent: {}
+[11.227938] (-) TimerEvent: {}
+[11.328209] (-) TimerEvent: {}
+[11.428460] (-) TimerEvent: {}
+[11.528755] (-) TimerEvent: {}
+[11.628995] (-) TimerEvent: {}
+[11.729235] (-) TimerEvent: {}
+[11.829488] (-) TimerEvent: {}
+[11.837753] (meiling_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable meiling_node\x1b[0m\n'}
+[11.929656] (-) TimerEvent: {}
+[12.029911] (-) TimerEvent: {}
+[12.130196] (-) TimerEvent: {}
+[12.230435] (-) TimerEvent: {}
+[12.330676] (-) TimerEvent: {}
+[12.430918] (-) TimerEvent: {}
+[12.454525] (meiling_control) StdoutLine: {'line': b'[100%] Built target meiling_node\n'}
+[12.458766] (meiling_control) CommandEnded: {'returncode': 0}
+[12.459437] (meiling_control) JobProgress: {'identifier': 'meiling_control', 'progress': 'install'}
+[12.459602] (meiling_control) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/ubuntu-nuc/rc2_ws/build/meiling_control'], 'cwd': '/home/ubuntu-nuc/rc2_ws/build/meiling_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('USER', 'ubuntu-nuc'), ('SSH_CLIENT', '10.255.180.150 55287 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu-nuc'), ('OLDPWD', '/home/ubuntu-nuc/rc2_ws/src/meiling_detect/meiling_detect'), ('NVM_BIN', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin'), ('SSH_TTY', '/dev/pts/1'), ('NVM_INC', '/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/include/node'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('OPENAI_API_KEY', 'sk-9e0ab76b0092428ca6bd1c071d50ec32'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/ubuntu-nuc/.nvm'), ('COLCON_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install:/home/ubuntu-nuc/rc_ws/install'), ('CLAUDE_CODE_EFFORT_LEVEL', 'max'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu-nuc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('RMW_FASTRTPS_USE_SHM', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.local/bin:/home/ubuntu-nuc/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('RMW_FASTRTPS_USE_QOS_FROM_XML', '0'), ('ANTHROPIC_AUTH_TOKEN', 'sk-d261a3fc37b44be39cb3f0c12f3593bb'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu-nuc/rc2_ws/build/meiling_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.255.180.150 55287 10.255.180.243 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MVCAM_SDK_VERSION', ''), ('COLCON', '1'), ('CLAUDE_CODE_SUBAGENT_MODEL', 'deepseek-v4-flash'), ('CMAKE_PREFIX_PATH', '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[12.462957] (meiling_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.463162] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/meiling_control/meiling_node\n'}
+[12.467773] (meiling_control) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/meiling_control/meiling_node" to ""\n'}
+[12.467991] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control//launch\n'}
+[12.468077] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control//launch/meiling_launch.py\n'}
+[12.468147] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/package_run_dependencies/meiling_control\n'}
+[12.468213] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/parent_prefix_path/meiling_control\n'}
+[12.468333] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/ament_prefix_path.sh\n'}
+[12.468398] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/ament_prefix_path.dsv\n'}
+[12.468477] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/path.sh\n'}
+[12.468544] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/path.dsv\n'}
+[12.468612] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.bash\n'}
+[12.468677] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.sh\n'}
+[12.468738] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.zsh\n'}
+[12.468799] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.dsv\n'}
+[12.468861] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.dsv\n'}
+[12.468922] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/packages/meiling_control\n'}
+[12.469015] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/cmake/meiling_controlConfig.cmake\n'}
+[12.469123] (meiling_control) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/cmake/meiling_controlConfig-version.cmake\n'}
+[12.469182] (meiling_control) StdoutLine: {'line': b'-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.xml\n'}
+[12.469730] (meiling_control) CommandEnded: {'returncode': 0}
+[12.477201] (meiling_control) JobEnded: {'identifier': 'meiling_control', 'rc': 0}
+[12.477807] (-) EventReactorShutdown: {}

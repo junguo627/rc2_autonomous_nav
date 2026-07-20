@@ -1,0 +1,316 @@
+[0.006s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces': /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/auto_aim_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces
+[0.010s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.010s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.010s]   CMake.
+[0.010s] 
+[0.010s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.010s]   to tell CMake that the project requires at least <min> but has been updated
+[0.010s]   to work with policies introduced by <max> or earlier.
+[0.010s] 
+[0.010s] 
+[0.015s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.149s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.150s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.153s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.177s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.483s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.722s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.050s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.051s] CMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[1.051s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.051s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.051s]   the cmake_policy command to set the policy and suppress this warning.
+[1.051s] 
+[1.051s] Call Stack (most recent call first):
+[1.051s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.051s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.051s]   CMakeLists.txt:7 (rosidl_generate_interfaces)
+[1.051s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.051s] 
+[1.063s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.063s] CMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[1.063s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.063s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.063s]   the cmake_policy command to set the policy and suppress this warning.
+[1.063s] 
+[1.063s] Call Stack (most recent call first):
+[1.063s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.063s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.063s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.063s]   CMakeLists.txt:7 (rosidl_generate_interfaces)
+[1.063s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.063s] 
+[1.075s] CMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[1.075s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.075s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.076s]   the cmake_policy command to set the policy and suppress this warning.
+[1.076s] 
+[1.076s] Call Stack (most recent call first):
+[1.076s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.076s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.076s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.076s]   CMakeLists.txt:7 (rosidl_generate_interfaces)
+[1.076s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.076s] 
+[1.077s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.077s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.077s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.090s] -- Configuring done (1.1s)
+[1.114s] -- Generating done (0.0s)
+[1.114s] CMake Warning:
+[1.114s]   Manually-specified variables were not used by the project:
+[1.114s] 
+[1.114s]     CATKIN_SYMLINK_INSTALL
+[1.114s] 
+[1.114s] 
+[1.119s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces
+[1.123s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces' returned '0': /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/auto_aim_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces
+[1.124s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces -- -j8 -l8
+[1.141s] [  2%] Generating C code for ROS interfaces
+[1.145s] [  4%] Generating C++ code for ROS interfaces
+[1.147s] [  4%] Built target ament_cmake_python_copy_auto_aim_interfaces
+[1.346s] running egg_info
+[1.346s] creating auto_aim_interfaces.egg-info
+[1.347s] writing auto_aim_interfaces.egg-info/PKG-INFO
+[1.347s] writing dependency_links to auto_aim_interfaces.egg-info/dependency_links.txt
+[1.347s] writing top-level names to auto_aim_interfaces.egg-info/top_level.txt
+[1.347s] writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[1.349s] reading manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[1.349s] writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[1.367s] [  4%] Built target ament_cmake_python_build_auto_aim_interfaces_egg
+[1.395s] [  4%] Built target auto_aim_interfaces__cpp
+[1.399s] [  6%] Generating C++ type support for eProsima Fast-RTPS
+[1.399s] [  8%] Generating C++ introspection for ROS interfaces
+[1.399s] [ 10%] Generating C++ type support dispatch for ROS interfaces
+[1.404s] [ 12%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/fas__functions.c.o
+[1.404s] [ 14%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/target__functions.c.o
+[1.404s] [ 17%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/offset__functions.c.o
+[1.452s] [ 19%] Linking C shared library libauto_aim_interfaces__rosidl_generator_c.so
+[1.471s] [ 19%] Built target auto_aim_interfaces__rosidl_generator_c
+[1.475s] [ 21%] Generating C type support for eProsima Fast-RTPS
+[1.477s] [ 25%] Generating C type support dispatch for ROS interfaces
+[1.477s] [ 25%] Generating C introspection for ROS interfaces
+[1.633s] [ 29%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/offset__type_support.cpp.o
+[1.633s] [ 29%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/fas__type_support.cpp.o
+[1.634s] [ 31%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/target__type_support.cpp.o
+[1.691s] [ 34%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/fas__type_support.cpp.o
+[1.739s] [ 36%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/fas__type_support.cpp.o
+[1.815s] [ 38%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/fas__type_support.cpp.o
+[1.842s] [ 40%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/target__type_support.cpp.o
+[1.876s] [ 42%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/offset__type_support.cpp.o
+[1.905s] [ 44%] Linking CXX shared library libauto_aim_interfaces__rosidl_typesupport_c.so
+[1.919s] [ 48%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/fas__type_support_c.cpp.o
+[1.919s] [ 48%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/fas__type_support.c.o
+[1.943s] [ 48%] Built target auto_aim_interfaces__rosidl_typesupport_c
+[1.948s] [ 51%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/target__type_support.cpp.o
+[1.950s] [ 53%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/target__type_support.c.o
+[1.984s] [ 55%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/offset__type_support.c.o
+[2.026s] [ 57%] Linking C shared library libauto_aim_interfaces__rosidl_typesupport_introspection_c.so
+[2.036s] [ 59%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o
+[2.052s] [ 59%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c
+[2.057s] [ 61%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/target__type_support_c.cpp.o
+[2.096s] [ 63%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/offset__type_support.cpp.o
+[2.118s] [ 65%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/offset__type_support.cpp.o
+[2.121s] [ 68%] Linking CXX shared library libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.157s] [ 70%] Building CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/offset__type_support_c.cpp.o
+[2.180s] [ 70%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_cpp
+[2.463s] [ 72%] Linking CXX shared library libauto_aim_interfaces__rosidl_typesupport_cpp.so
+[2.486s] [ 72%] Built target auto_aim_interfaces__rosidl_typesupport_cpp
+[2.526s] [ 74%] Linking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.534s] [ 76%] Linking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.586s] [ 76%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c
+[2.592s] [ 76%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.600s] [ 76%] Built target auto_aim_interfaces
+[2.608s] [ 78%] Generating Python code for ROS interfaces
+[2.962s] [ 78%] Built target auto_aim_interfaces__py
+[2.969s] [ 80%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_fas_s.c.o
+[2.969s] [ 82%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_target_s.c.o
+[2.970s] [ 85%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_offset_s.c.o
+[3.042s] [ 87%] Linking C shared library rosidl_generator_py/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so
+[3.063s] [ 87%] Built target auto_aim_interfaces__rosidl_generator_py
+[3.071s] [ 93%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c.o
+[3.071s] [ 93%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o
+[3.071s] [ 93%] Building C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[3.136s] [ 95%] Linking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.137s] [ 97%] Linking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.138s] [100%] Linking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.153s] [100%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.154s] [100%] Built target auto_aim_interfaces__rosidl_typesupport_c__pyext
+[3.155s] [100%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.159s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces' returned '0': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces -- -j8 -l8
+[3.163s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces
+[3.167s] -- Install configuration: ""
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/rosidl_interfaces/auto_aim_interfaces
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.h
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/offset.h
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/fas.h
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__functions.c
+[3.167s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__functions.c
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__struct.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__functions.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.c
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__struct.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__functions.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.h
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.sh
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.dsv
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so
+[3.168s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so" to ""
+[3.168s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[3.168s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[3.168s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.169s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_fastrtps_c.h
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_fastrtps_c.h
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.169s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.169s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[3.169s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[3.169s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.c
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_introspection_c.h
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.c
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.c
+[3.169s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_introspection_c.h
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so
+[3.170s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so
+[3.170s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so" to ""
+[3.170s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[3.170s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/offset.hpp
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.hpp
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/fas.hpp
+[3.170s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__builder.hpp
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.hpp
+[3.170s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__builder.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__struct.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__traits.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__traits.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__struct.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__traits.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__builder.hpp
+[3.171s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[3.171s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.171s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_fastrtps_cpp.hpp
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/dds_fastrtps
+[3.171s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_fastrtps_cpp.hpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.172s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.172s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[3.172s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[3.172s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__rosidl_typesupport_introspection_cpp.hpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/fas__type_support.cpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__type_support.cpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/offset__rosidl_typesupport_introspection_cpp.hpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.cpp
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.172s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.172s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so
+[3.173s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.sh
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.dsv
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_fas_s.c
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_offset_s.c
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_offset.py
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target_s.c
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_fas.py
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.173s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.174s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c
+[3.174s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.200s] Listing '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces'...
+[3.200s] Compiling '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py'...
+[3.200s] Listing '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg'...
+[3.200s] Compiling '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py'...
+[3.200s] Compiling '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_fas.py'...
+[3.200s] Compiling '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_offset.py'...
+[3.200s] Compiling '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py'...
+[3.204s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.204s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.204s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.205s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.205s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.205s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.205s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so
+[3.205s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so" to ""
+[3.205s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Fas.idl
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.idl
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Offset.idl
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Fas.msg
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.msg
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Offset.msg
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/package_run_dependencies/auto_aim_interfaces
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/parent_prefix_path/auto_aim_interfaces
+[3.206s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.sh
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.dsv
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.sh
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.dsv
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.bash
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.sh
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.zsh
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.dsv
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/ament_index/resource_index/packages/auto_aim_interfaces
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport.cmake
+[3.207s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cppExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.208s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.209s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.209s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.209s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig.cmake
+[3.209s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig-version.cmake
+[3.209s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.xml
+[3.210s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces' returned '0': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces

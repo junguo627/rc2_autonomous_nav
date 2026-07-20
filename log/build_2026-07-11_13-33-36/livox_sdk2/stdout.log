@@ -1,0 +1,19 @@
+-- main project dir: /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2
+-- main project dir: /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2/samples
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/livox_sdk2
+[ 42%] Built target livox_lidar_sdk_static
+[ 44%] Built target livox_lidar_quick_start
+[ 47%] Built target lidar_cmd_observer
+[ 49%] Built target logger
+[ 51%] Built target multi_lidars_upgrade
+[ 55%] Built target livox_lidar_rmc_time_sync
+[ 57%] Built target debug_point_cloud
+[100%] Built target livox_lidar_sdk_shared
+-- Install configuration: ""
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_def.h
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_api.h
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_cfg.h
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so

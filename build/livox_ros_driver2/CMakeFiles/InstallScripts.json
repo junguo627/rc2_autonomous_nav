@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2/cmake_install.cmake",
+		"/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2/livox_interfaces2__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

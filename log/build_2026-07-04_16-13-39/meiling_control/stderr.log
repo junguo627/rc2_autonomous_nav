@@ -1,0 +1,17 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:[m[K In member function ‘[01m[Kvoid SUM::qianjin(gez&, std::tuple<float, float>)[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcont[m[K’ was not declared in this scope
+  130 |     [01;31m[Kcont[m[K<<b.b<<endl;
+      |     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:93: CMakeFiles/meiling_node.dir/src/luoji.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

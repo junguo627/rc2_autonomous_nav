@@ -1,0 +1,412 @@
+[0.014s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/interface -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/interface
+[0.019s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.019s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.019s]   CMake.
+[0.019s] 
+[0.019s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.019s]   to tell CMake that the project requires at least <min> but has been updated
+[0.019s]   to work with policies introduced by <max> or earlier.
+[0.019s] 
+[0.019s] [0m
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.104s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.151s] -- Detecting C compiler ABI info - done
+[0.163s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.163s] -- Detecting C compile features
+[0.164s] -- Detecting C compile features - done
+[0.172s] -- Detecting CXX compiler ABI info
+[0.225s] -- Detecting CXX compiler ABI info - done
+[0.245s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.245s] -- Detecting CXX compile features
+[0.245s] -- Detecting CXX compile features - done
+[0.252s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.400s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.552s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.657s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.672s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.696s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.730s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.756s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.804s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.715s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.220s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.586s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.591s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[3.591s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[3.591s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[3.591s]   the cmake_policy command to set the policy and suppress this warning.
+[3.591s] 
+[3.591s] Call Stack (most recent call first):
+[3.591s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[3.591s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[3.591s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[3.591s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.591s] [0m
+[3.610s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[3.613s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.614s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[3.614s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[3.614s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[3.614s]   the cmake_policy command to set the policy and suppress this warning.
+[3.614s] 
+[3.614s] Call Stack (most recent call first):
+[3.615s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[3.615s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[3.615s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[3.615s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[3.615s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.615s] [0m
+[3.658s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[3.658s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[3.658s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[3.658s]   the cmake_policy command to set the policy and suppress this warning.
+[3.658s] 
+[3.658s] Call Stack (most recent call first):
+[3.658s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[3.658s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[3.658s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[3.658s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[3.658s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.659s] [0m
+[3.679s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[3.679s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.679s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.680s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.725s] -- Found PythonExtra: .so
+[3.862s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.920s] -- Added test 'lint_cmake' to check CMake code style
+[3.921s] -- Added test 'xmllint' to check XML markup files
+[3.928s] -- Configuring done (3.9s)
+[4.049s] -- Generating done (0.1s)
+[4.049s] [33mCMake Warning:
+[4.050s]   Manually-specified variables were not used by the project:
+[4.050s] 
+[4.050s]     DISTRO_ROS
+[4.050s]     ROS_EDITION
+[4.050s] 
+[4.050s] [0m
+[4.065s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/interface
+[4.090s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/interface -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/interface
+[4.091s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/interface -- -j8 -l8
+[4.152s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.168s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.172s] [  3%] Built target ament_cmake_python_copy_interface
+[4.946s] running egg_info
+[4.961s] creating interface.egg-info
+[4.961s] writing interface.egg-info/PKG-INFO
+[4.961s] writing dependency_links to interface.egg-info/dependency_links.txt
+[4.961s] writing top-level names to interface.egg-info/top_level.txt
+[4.961s] writing manifest file 'interface.egg-info/SOURCES.txt'
+[4.971s] reading manifest file 'interface.egg-info/SOURCES.txt'
+[4.971s] writing manifest file 'interface.egg-info/SOURCES.txt'
+[5.030s] [  3%] Built target ament_cmake_python_build_interface_egg
+[6.003s] [  4%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/save_maps__functions.c.o[0m
+[6.005s] [  6%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/relocalize__functions.c.o[0m
+[6.009s] [  7%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/refine_map__functions.c.o[0m
+[6.013s] [  9%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/is_valid__functions.c.o[0m
+[6.027s] [ 11%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/save_poses__functions.c.o[0m
+[6.242s] [ 12%] [32m[1mLinking C shared library libinterface__rosidl_generator_c.so[0m
+[6.255s] [ 12%] Built target interface__cpp
+[6.273s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.276s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.283s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.339s] [ 17%] Built target interface__rosidl_generator_c
+[6.366s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.367s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.377s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.526s] [ 25%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/is_valid__type_support.cpp.o[0m
+[7.526s] [ 26%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/save_maps__type_support.cpp.o[0m
+[7.528s] [ 26%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/relocalize__type_support.cpp.o[0m
+[7.666s] [ 28%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/save_maps__type_support.cpp.o[0m
+[7.722s] [ 30%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/save_maps__type_support.cpp.o[0m
+[7.735s] [ 31%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/relocalize__type_support.cpp.o[0m
+[7.802s] [ 33%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/is_valid__type_support.cpp.o[0m
+[7.885s] [ 34%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/refine_map__type_support.cpp.o[0m
+[7.946s] [ 36%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/save_poses__type_support.cpp.o[0m
+[7.989s] [ 38%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/relocalize__type_support.cpp.o[0m
+[8.010s] [ 39%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_c.so[0m
+[8.103s] [ 39%] Built target interface__rosidl_typesupport_c
+[8.116s] [ 41%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/refine_map__type_support.cpp.o[0m
+[8.199s] [ 42%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/save_maps__type_support.c.o[0m
+[8.219s] [ 44%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/save_maps__type_support.cpp.o[0m
+[8.254s] [ 46%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/save_maps__type_support_c.cpp.o[0m
+[8.278s] [ 47%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/relocalize__type_support.c.o[0m
+[8.321s] [ 49%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/relocalize__type_support_c.cpp.o[0m
+[8.353s] [ 50%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/is_valid__type_support.c.o[0m
+[8.353s] [ 52%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/save_poses__type_support.cpp.o[0m
+[8.444s] [ 53%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/refine_map__type_support.c.o[0m
+[8.519s] [ 55%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/save_poses__type_support.c.o[0m
+[8.591s] [ 57%] [32m[1mLinking C shared library libinterface__rosidl_typesupport_introspection_c.so[0m
+[8.643s] [ 57%] Built target interface__rosidl_typesupport_introspection_c
+[8.653s] [ 58%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/is_valid__type_support.cpp.o[0m
+[8.697s] [ 60%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/refine_map__type_support.cpp.o[0m
+[8.891s] [ 61%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/relocalize__type_support.cpp.o[0m
+[9.087s] [ 63%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/is_valid__type_support_c.cpp.o[0m
+[9.127s] [ 65%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/is_valid__type_support.cpp.o[0m
+[9.139s] [ 66%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/refine_map__type_support_c.cpp.o[0m
+[9.233s] [ 68%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_cpp.so[0m
+[9.326s] [ 69%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/save_poses__type_support_c.cpp.o[0m
+[9.334s] [ 69%] Built target interface__rosidl_typesupport_cpp
+[9.353s] [ 71%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/refine_map__type_support.cpp.o[0m
+[9.841s] [ 73%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/save_poses__type_support.cpp.o[0m
+[9.863s] [ 74%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/save_poses__type_support.cpp.o[0m
+[10.308s] [ 76%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_fastrtps_c.so[0m
+[10.542s] [ 76%] Built target interface__rosidl_typesupport_fastrtps_c
+[10.875s] [ 77%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_introspection_cpp.so[0m
+[10.896s] [ 79%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.016s] [ 79%] Built target interface__rosidl_typesupport_fastrtps_cpp
+[11.034s] [ 79%] Built target interface__rosidl_typesupport_introspection_cpp
+[11.062s] [ 79%] Built target interface
+[11.087s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.054s] [ 80%] Built target interface__py
+[13.090s] [ 82%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_save_maps_s.c.o[0m
+[13.103s] [ 84%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_is_valid_s.c.o[0m
+[13.103s] [ 85%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_refine_map_s.c.o[0m
+[13.103s] [ 87%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_relocalize_s.c.o[0m
+[13.103s] [ 88%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_save_poses_s.c.o[0m
+[13.374s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/interface/libinterface__rosidl_generator_py.so[0m
+[13.457s] [ 90%] Built target interface__rosidl_generator_py
+[13.485s] [ 92%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[13.496s] [ 93%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[13.500s] [ 95%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[13.730s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.792s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.818s] [ 98%] Built target interface__rosidl_typesupport_c__pyext
+[13.831s] [ 98%] Built target interface__rosidl_typesupport_introspection_c__pyext
+[13.857s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.922s] [100%] Built target interface__rosidl_typesupport_fastrtps_c__pyext
+[13.942s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/interface -- -j8 -l8
+[13.942s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/interface
+[13.947s] -- Install configuration: ""
+[13.947s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/ament_index/resource_index/rosidl_interfaces/interface
+[13.947s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface
+[13.947s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg
+[13.951s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg/rosidl_generator_c__visibility_control.h
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/refine_map.h
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/is_valid.h
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/save_maps.h
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/relocalize.h
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/save_poses.h
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__struct.h
+[13.955s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__struct.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__functions.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__struct.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__functions.c
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__type_support.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__struct.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__type_support.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__type_support.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__functions.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__functions.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__functions.c
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__type_support.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__struct.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__functions.c
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__functions.c
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__type_support.h
+[13.956s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__functions.h
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__functions.c
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__functions.h
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/library_path.sh
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/library_path.dsv
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_generator_c.so
+[13.957s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_generator_c.so" to ""
+[13.957s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface
+[13.957s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.957s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv
+[13.957s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_fastrtps_c.h
+[13.957s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_fastrtps_c.h
+[13.959s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_fastrtps_c.h
+[13.959s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_fastrtps_c.h
+[13.959s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_fastrtps_c.h
+[13.959s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so
+[13.959s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so" to ""
+[13.959s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface
+[13.960s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg
+[13.960s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[13.960s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv
+[13.960s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/is_valid.hpp
+[13.960s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/save_poses.hpp
+[13.960s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/refine_map.hpp
+[13.960s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/relocalize.hpp
+[13.960s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail
+[13.960s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__traits.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__type_support.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__traits.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__builder.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__type_support.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__type_support.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__traits.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__builder.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__type_support.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__struct.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__builder.hpp
+[13.961s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__struct.hpp
+[13.962s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__struct.hpp
+[13.962s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__builder.hpp
+[13.962s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__struct.hpp
+[13.962s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__type_support.hpp
+[13.962s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__traits.hpp
+[13.962s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__traits.hpp
+[13.962s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__builder.hpp
+[13.964s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__struct.hpp
+[13.964s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/save_maps.hpp
+[13.964s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface
+[13.964s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg
+[13.964s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.964s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv
+[13.964s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail
+[13.964s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_fastrtps_cpp.hpp
+[13.964s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/dds_fastrtps
+[13.964s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_fastrtps_cpp.hpp
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_fastrtps_cpp.hpp
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_fastrtps_cpp.hpp
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_fastrtps_cpp.hpp
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so
+[13.965s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[13.965s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface
+[13.965s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.965s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv
+[13.965s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__type_support.c
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__type_support.c
+[13.965s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_introspection_c.h
+[13.968s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_introspection_c.h
+[13.968s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__type_support.c
+[13.968s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_introspection_c.h
+[13.968s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__type_support.c
+[13.968s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_introspection_c.h
+[13.968s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_introspection_c.h
+[13.969s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__type_support.c
+[13.969s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so
+[13.969s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so" to ""
+[13.969s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_c.so
+[13.969s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_c.so" to ""
+[13.969s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface
+[13.969s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv
+[13.969s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail
+[13.969s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_introspection_cpp.hpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__type_support.cpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_introspection_cpp.hpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__type_support.cpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_poses__type_support.cpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_introspection_cpp.hpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__type_support.cpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_introspection_cpp.hpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_introspection_cpp.hpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/include/interface/interface/srv/detail/save_maps__type_support.cpp
+[13.970s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so
+[13.975s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so" to ""
+[13.975s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_cpp.so
+[13.975s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_typesupport_cpp.so" to ""
+[13.975s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/pythonpath.sh
+[13.975s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/pythonpath.dsv
+[13.975s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/top_level.txt
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/PKG-INFO
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.976s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_c.c
+[13.977s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/libinterface__rosidl_generator_py.so
+[13.977s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.977s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c
+[13.977s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv
+[13.977s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_relocalize.py
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_is_valid.py
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_poses.py
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_is_valid_s.c
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_relocalize_s.c
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/__init__.py
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_refine_map_s.c
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_poses_s.c
+[13.981s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_maps.py
+[13.982s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_maps_s.c
+[13.982s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_refine_map.py
+[14.092s] Listing '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface'...
+[14.092s] Compiling '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py'...
+[14.092s] Listing '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv'...
+[14.092s] Compiling '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/__init__.py'...
+[14.092s] Compiling '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_is_valid.py'...
+[14.092s] Compiling '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_refine_map.py'...
+[14.092s] Compiling '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_relocalize.py'...
+[14.092s] Compiling '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_maps.py'...
+[14.092s] Compiling '/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_poses.py'...
+[14.102s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.102s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.103s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.103s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.103s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.104s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.104s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_generator_py.so
+[14.104s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/interface/lib/libinterface__rosidl_generator_py.so" to ""
+[14.105s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SaveMaps.idl
+[14.105s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/Relocalize.idl
+[14.105s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/IsValid.idl
+[14.106s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/RefineMap.idl
+[14.106s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SavePoses.idl
+[14.106s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SaveMaps.srv
+[14.106s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SaveMaps_Request.msg
+[14.106s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SaveMaps_Response.msg
+[14.107s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/Relocalize.srv
+[14.107s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/Relocalize_Request.msg
+[14.107s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/Relocalize_Response.msg
+[14.108s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/IsValid.srv
+[14.108s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/IsValid_Request.msg
+[14.108s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/IsValid_Response.msg
+[14.108s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/RefineMap.srv
+[14.109s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/RefineMap_Request.msg
+[14.109s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/RefineMap_Response.msg
+[14.109s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SavePoses.srv
+[14.109s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SavePoses_Request.msg
+[14.110s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/srv/SavePoses_Response.msg
+[14.110s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/ament_index/resource_index/package_run_dependencies/interface
+[14.110s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/ament_index/resource_index/parent_prefix_path/interface
+[14.111s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/ament_prefix_path.sh
+[14.111s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/ament_prefix_path.dsv
+[14.111s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/path.sh
+[14.111s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/environment/path.dsv
+[14.112s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/local_setup.bash
+[14.112s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/local_setup.sh
+[14.112s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/local_setup.zsh
+[14.112s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/local_setup.dsv
+[14.113s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.dsv
+[14.113s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/ament_index/resource_index/packages/interface
+[14.113s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport.cmake
+[14.113s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport-noconfig.cmake
+[14.114s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[14.114s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[14.114s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cppExport.cmake
+[14.114s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.115s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[14.115s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport.cmake
+[14.115s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[14.115s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport.cmake
+[14.116s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport-noconfig.cmake
+[14.116s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport.cmake
+[14.116s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[14.116s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport.cmake
+[14.116s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport-noconfig.cmake
+[14.117s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport.cmake
+[14.117s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport-noconfig.cmake
+[14.118s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/rosidl_cmake-extras.cmake
+[14.118s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.118s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.118s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/ament_cmake_export_libraries-extras.cmake
+[14.119s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/ament_cmake_export_targets-extras.cmake
+[14.119s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.119s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.119s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interfaceConfig.cmake
+[14.119s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake/interfaceConfig-version.cmake
+[14.121s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.xml
+[14.139s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/interface

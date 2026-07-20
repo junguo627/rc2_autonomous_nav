@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ubuntu-nuc/rc2_ws/build/localizer/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

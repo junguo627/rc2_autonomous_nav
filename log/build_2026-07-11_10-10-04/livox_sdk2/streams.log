@@ -1,0 +1,18 @@
+[0.017s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_sdk2 -- -j8 -l8
+[0.114s] [ 42%] Built target livox_lidar_sdk_shared
+[0.118s] [ 84%] Built target livox_lidar_sdk_static
+[0.142s] [ 87%] Built target logger
+[0.149s] [ 89%] Built target livox_lidar_quick_start
+[0.150s] [ 91%] Built target multi_lidars_upgrade
+[0.152s] [ 94%] Built target debug_point_cloud
+[0.155s] [ 96%] Built target lidar_cmd_observer
+[0.155s] [100%] Built target livox_lidar_rmc_time_sync
+[0.161s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_sdk2 -- -j8 -l8
+[0.169s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_sdk2
+[0.172s] -- Install configuration: ""
+[0.172s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+[0.172s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_def.h
+[0.172s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_api.h
+[0.172s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_cfg.h
+[0.175s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so
+[0.177s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_sdk2

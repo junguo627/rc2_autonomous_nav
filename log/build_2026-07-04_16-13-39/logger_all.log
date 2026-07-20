@@ -1,0 +1,863 @@
+[0.076s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.076s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x78a1cea6fe80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78a1cebb5540>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78a1cebb5540>>, mixin_verb=('build',))
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.200s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu-nuc/rc2_ws'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(map/patches) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'ros'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extensions ['cmake', 'python']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'cmake'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/fastlio2) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/FASTLIO2_ROS2/fastlio2' with type 'ros.ament_cmake' and name 'fastlio2'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/hba) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/FASTLIO2_ROS2/hba' with type 'ros.ament_cmake' and name 'hba'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/interface) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/FASTLIO2_ROS2/interface' with type 'ros.ament_cmake' and name 'interface'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/localizer) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/FASTLIO2_ROS2/localizer' with type 'ros.ament_cmake' and name 'localizer'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/pgo) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/FASTLIO2_ROS2/pgo' with type 'ros.ament_cmake' and name 'pgo'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/FASTLIO2_ROS2/scripts) by extension 'python_setup_py'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'python'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Livox-SDK2' with type 'cmake' and name 'livox_sdk2'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/__pycache__) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_aim_interfaces) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/auto_aim_interfaces' with type 'ros.catkin' and name 'auto_aim_interfaces'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/livox_ros_driver2' with type 'ros.ament_cmake' and name 'livox_ros_driver2'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_control) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'src/meiling_control' with type 'ros.catkin' and name 'meiling_control'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/meiling_detect) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'src/meiling_detect' with type 'ros.ament_python' and name 'meiling_detect'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src_backup) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolo11n_wuqi/weights) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(yolo/yolov8n_wuqi/weights) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.268s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/ubuntu-nuc/rc2_ws/install
+[0.269s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/ubuntu-nuc/rc_ws/install
+[0.270s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 356 installed packages in /opt/ros/humble
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.300s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'livox_ros_driver2' is in: /home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2, /home/ubuntu-nuc/rc_ws/install/livox_ros_driver2
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding livox_ros_driver2
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.300s] DEBUG:colcon.colcon_core.verb:Building package 'auto_aim_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/auto_aim_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_target' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.301s] DEBUG:colcon.colcon_core.verb:Building package 'interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/interface', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/interface', 'symlink_install': False, 'test_result_base': None}
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_target' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_clean_first' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_force_configure' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'ament_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.301s] DEBUG:colcon.colcon_core.verb:Building package 'livox_ros_driver2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/livox_ros_driver2', 'symlink_install': False, 'test_result_base': None}
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_target' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_clean_first' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_force_configure' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'ament_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.301s] DEBUG:colcon.colcon_core.verb:Building package 'livox_sdk2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/Livox-SDK2', 'symlink_install': False, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'fastlio2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'fastlio2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/fastlio2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/fastlio2', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2', 'symlink_install': False, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'hba' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'hba' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/hba', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/hba', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/hba', 'symlink_install': False, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'localizer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'localizer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/localizer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/localizer', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/localizer', 'symlink_install': False, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'meiling_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/meiling_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/meiling_control', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/meiling_control', 'symlink_install': False, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'meiling_detect' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'meiling_detect' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/meiling_detect', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/meiling_detect', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/meiling_detect', 'symlink_install': False, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'pgo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'pgo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu-nuc/rc2_ws/build/pgo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu-nuc/rc2_ws/install/pgo', 'merge_install': False, 'path': '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/pgo', 'symlink_install': False, 'test_result_base': None}
+[0.303s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.304s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.305s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/interface' with build type 'ament_cmake'
+[0.305s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/interface'
+[0.306s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.306s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.306s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/auto_aim_interfaces' with build type 'catkin'
+[0.309s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/auto_aim_interfaces'
+[0.309s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.309s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.312s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/livox_ros_driver2' with build type 'ament_cmake'
+[0.312s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/livox_ros_driver2'
+[0.313s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.315s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/Livox-SDK2'
+[0.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.316s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/interface': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/interface -- -j8 -l8
+[0.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces -- -j8 -l8
+[0.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2 -- -j8 -l8
+[0.331s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_sdk2 -- -j8 -l8
+[0.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_sdk2 -- -j8 -l8
+[0.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_sdk2
+[0.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_sdk2)
+[0.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_sdk2
+[0.460s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2' for CMake module files
+[0.461s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2' for CMake config files
+[0.462s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib'
+[0.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_sdk2', 'ld_library_path_lib')
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.ps1'
+[0.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.dsv'
+[0.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.sh'
+[0.465s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/bin'
+[0.465s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/pkgconfig/livox_sdk2.pc'
+[0.466s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/python3.10/site-packages'
+[0.466s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/bin'
+[0.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/package.ps1'
+[0.468s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/package.dsv'
+[0.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/package.sh'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/package.bash'
+[0.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/livox_sdk2/package.zsh'
+[0.471s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/share/colcon-core/packages/livox_sdk2)
+[0.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces' returned '0': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces -- -j8 -l8
+[0.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces
+[0.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/interface -- -j8 -l8
+[0.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/interface': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/interface
+[0.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2 -- -j8 -l8
+[0.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2
+[0.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces' returned '0': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/auto_aim_interfaces
+[0.677s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'ros_package_path')
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ros_package_path.ps1'
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ros_package_path.dsv'
+[0.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ros_package_path.sh'
+[0.678s] Level 1:colcon.colcon_ros.task.catkin:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages'
+[0.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'catkin_pythonpath')
+[0.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/catkin_pythonpath.ps1'
+[0.678s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/catkin_pythonpath.dsv'
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/catkin_pythonpath.sh'
+[0.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'pkg_config_path')
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/pkg_config_path.ps1'
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/pkg_config_path.dsv'
+[0.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/pkg_config_path.sh'
+[0.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'pkg_config_path_multiarch')
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/pkg_config_path_multiarch.ps1'
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/pkg_config_path_multiarch.dsv'
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/pkg_config_path_multiarch.sh'
+[0.682s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auto_aim_interfaces)
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces' for CMake module files
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces' for CMake config files
+[0.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'cmake_prefix_path')
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.ps1'
+[0.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.dsv'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.sh'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib'
+[0.689s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'ld_library_path_lib')
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.ps1'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.dsv'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.sh'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/bin'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig/auto_aim_interfaces.pc'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/python3.10/site-packages'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/bin'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.ps1'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.sh'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.bash'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/package.zsh'
+[0.692s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/colcon-core/packages/auto_aim_interfaces)
+[0.693s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/meiling_control' with build type 'catkin'
+[0.693s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/meiling_control'
+[0.693s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.693s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.700s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/meiling_detect' with build type 'ament_python'
+[0.700s] Level 1:colcon.colcon_core.shell:create_environment_hook('meiling_detect', 'ament_prefix_path')
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/hook/ament_prefix_path.ps1'
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/hook/ament_prefix_path.dsv'
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/hook/ament_prefix_path.sh'
+[0.702s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.702s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.706s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface)
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface' for CMake module files
+[0.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/interface' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/interface
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface' for CMake config files
+[0.707s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'cmake_prefix_path')
+[0.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/cmake_prefix_path.ps1'
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/cmake_prefix_path.dsv'
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/cmake_prefix_path.sh'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/lib'
+[0.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'ld_library_path_lib')
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/ld_library_path_lib.ps1'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/ld_library_path_lib.dsv'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/ld_library_path_lib.sh'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/bin'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/lib/pkgconfig/interface.pc'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/lib/python3.10/site-packages'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/bin'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.ps1'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.dsv'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.sh'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.bash'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.zsh'
+[0.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/interface/share/colcon-core/packages/interface)
+[0.711s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interface)
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface' for CMake module files
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface' for CMake config files
+[0.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'cmake_prefix_path')
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/cmake_prefix_path.ps1'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/cmake_prefix_path.dsv'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/cmake_prefix_path.sh'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/lib'
+[0.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('interface', 'ld_library_path_lib')
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/ld_library_path_lib.ps1'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/ld_library_path_lib.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/hook/ld_library_path_lib.sh'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/bin'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/lib/pkgconfig/interface.pc'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/lib/python3.10/site-packages'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/interface/bin'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.ps1'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.dsv'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.sh'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.bash'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/package.zsh'
+[0.716s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/interface/share/colcon-core/packages/interface)
+[0.717s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/hba' with build type 'ament_cmake'
+[0.717s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/hba'
+[0.717s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.717s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.720s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/localizer' with build type 'ament_cmake'
+[0.720s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/localizer'
+[0.720s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.720s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.723s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/pgo' with build type 'ament_cmake'
+[0.723s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/pgo'
+[0.723s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.723s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.726s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_ros_driver2)
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2' for CMake module files
+[0.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2' for CMake config files
+[0.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'cmake_prefix_path')
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.ps1'
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.dsv'
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.sh'
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib'
+[0.729s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'ld_library_path_lib')
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.ps1'
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.dsv'
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.sh'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/bin'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib/pkgconfig/livox_ros_driver2.pc'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib/python3.10/site-packages'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/bin'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.ps1'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.sh'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.bash'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.zsh'
+[0.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/colcon-core/packages/livox_ros_driver2)
+[0.732s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_ros_driver2)
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2' for CMake module files
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2' for CMake config files
+[0.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'cmake_prefix_path')
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.ps1'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.dsv'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.sh'
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib'
+[0.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'ld_library_path_lib')
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.ps1'
+[0.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.dsv'
+[0.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.sh'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/bin'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib/pkgconfig/livox_ros_driver2.pc'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib/python3.10/site-packages'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/bin'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.ps1'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.sh'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.bash'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.zsh'
+[0.737s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/share/colcon-core/packages/livox_ros_driver2)
+[0.739s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2' with build type 'ament_cmake'
+[0.739s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/fastlio2'
+[0.740s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.740s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/meiling_control -- -j8 -l8
+[0.941s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu-nuc/rc2_ws/src/meiling_detect'
+[0.942s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.942s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/hba': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/hba -- -j8 -l8
+[0.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/localizer': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/localizer -- -j8 -l8
+[0.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/pgo': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/pgo -- -j8 -l8
+[0.959s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/fastlio2 -- -j8 -l8
+[0.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/pgo' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/pgo -- -j8 -l8
+[0.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/pgo': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/pgo
+[1.001s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pgo)
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo' for CMake module files
+[1.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/pgo' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/pgo
+[1.003s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo' for CMake config files
+[1.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('pgo', 'cmake_prefix_path')
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/hook/cmake_prefix_path.ps1'
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/hook/cmake_prefix_path.dsv'
+[1.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/hook/cmake_prefix_path.sh'
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/lib'
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/bin'
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/lib/pkgconfig/pgo.pc'
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/lib/python3.10/site-packages'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/bin'
+[1.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.ps1'
+[1.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.dsv'
+[1.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.sh'
+[1.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.bash'
+[1.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.zsh'
+[1.007s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/pgo/share/colcon-core/packages/pgo)
+[1.008s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pgo)
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo' for CMake module files
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo' for CMake config files
+[1.008s] Level 1:colcon.colcon_core.shell:create_environment_hook('pgo', 'cmake_prefix_path')
+[1.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/hook/cmake_prefix_path.ps1'
+[1.009s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/hook/cmake_prefix_path.dsv'
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/hook/cmake_prefix_path.sh'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/lib'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/bin'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/lib/pkgconfig/pgo.pc'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/lib/python3.10/site-packages'
+[1.010s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/pgo/bin'
+[1.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.ps1'
+[1.011s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.dsv'
+[1.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.sh'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.bash'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/pgo/share/pgo/package.zsh'
+[1.012s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/pgo/share/colcon-core/packages/pgo)
+[1.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/localizer' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/localizer -- -j8 -l8
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/localizer': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/localizer
+[1.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/hba' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/hba -- -j8 -l8
+[1.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/hba': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/hba
+[1.018s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/fastlio2 -- -j8 -l8
+[1.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/fastlio2
+[1.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(localizer)
+[1.023s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer' for CMake module files
+[1.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/localizer' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/localizer
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer' for CMake config files
+[1.027s] Level 1:colcon.colcon_core.shell:create_environment_hook('localizer', 'cmake_prefix_path')
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/hook/cmake_prefix_path.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/hook/cmake_prefix_path.dsv'
+[1.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/hook/cmake_prefix_path.sh'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/lib'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/bin'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/lib/pkgconfig/localizer.pc'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/lib/python3.10/site-packages'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/bin'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.ps1'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.dsv'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.sh'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.bash'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.zsh'
+[1.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/localizer/share/colcon-core/packages/localizer)
+[1.030s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(localizer)
+[1.031s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer' for CMake module files
+[1.031s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer' for CMake config files
+[1.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('localizer', 'cmake_prefix_path')
+[1.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/hook/cmake_prefix_path.ps1'
+[1.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/hook/cmake_prefix_path.dsv'
+[1.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/hook/cmake_prefix_path.sh'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/lib'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/bin'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/lib/pkgconfig/localizer.pc'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/lib/python3.10/site-packages'
+[1.032s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/localizer/bin'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.ps1'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.dsv'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.sh'
+[1.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.bash'
+[1.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.zsh'
+[1.034s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/localizer/share/colcon-core/packages/localizer)
+[1.035s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hba)
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba' for CMake module files
+[1.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/hba' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/hba
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba' for CMake config files
+[1.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('hba', 'cmake_prefix_path')
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/hook/cmake_prefix_path.ps1'
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/hook/cmake_prefix_path.dsv'
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/hook/cmake_prefix_path.sh'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/lib'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/bin'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/lib/pkgconfig/hba.pc'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/lib/python3.10/site-packages'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/bin'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.ps1'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.dsv'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.sh'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.bash'
+[1.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.zsh'
+[1.039s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/hba/share/colcon-core/packages/hba)
+[1.039s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hba)
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba' for CMake module files
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba' for CMake config files
+[1.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('hba', 'cmake_prefix_path')
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/hook/cmake_prefix_path.ps1'
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/hook/cmake_prefix_path.dsv'
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/hook/cmake_prefix_path.sh'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/lib'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/bin'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/lib/pkgconfig/hba.pc'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/lib/python3.10/site-packages'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/hba/bin'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.ps1'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.dsv'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.sh'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.bash'
+[1.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/hba/share/hba/package.zsh'
+[1.043s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/hba/share/colcon-core/packages/hba)
+[1.044s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastlio2)
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2' for CMake module files
+[1.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/fastlio2' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/fastlio2
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2' for CMake config files
+[1.045s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastlio2', 'cmake_prefix_path')
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/hook/cmake_prefix_path.ps1'
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/hook/cmake_prefix_path.dsv'
+[1.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/hook/cmake_prefix_path.sh'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/lib'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/bin'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/lib/pkgconfig/fastlio2.pc'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/lib/python3.10/site-packages'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/bin'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.ps1'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.dsv'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.sh'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.bash'
+[1.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.zsh'
+[1.048s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/colcon-core/packages/fastlio2)
+[1.048s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastlio2)
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2' for CMake module files
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2' for CMake config files
+[1.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastlio2', 'cmake_prefix_path')
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/hook/cmake_prefix_path.ps1'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/hook/cmake_prefix_path.dsv'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/hook/cmake_prefix_path.sh'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/lib'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/bin'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/lib/pkgconfig/fastlio2.pc'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/lib/python3.10/site-packages'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/fastlio2/bin'
+[1.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.ps1'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.dsv'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.sh'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.bash'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/fastlio2/package.zsh'
+[1.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/fastlio2/share/colcon-core/packages/fastlio2)
+[1.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu-nuc/rc2_ws/src/meiling_detect': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/build/meiling_detect/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meiling_detect build --build-base /home/ubuntu-nuc/rc2_ws/build/meiling_detect/build install --record /home/ubuntu-nuc/rc2_ws/build/meiling_detect/install.log --install-scripts $base/lib/meiling_detect --single-version-externally-managed install_data
+[1.490s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_detect' for CMake module files
+[1.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/src/meiling_detect' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/build/meiling_detect/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meiling_detect build --build-base /home/ubuntu-nuc/rc2_ws/build/meiling_detect/build install --record /home/ubuntu-nuc/rc2_ws/build/meiling_detect/install.log --install-scripts $base/lib/meiling_detect --single-version-externally-managed install_data
+[1.491s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_detect' for CMake config files
+[1.492s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib'
+[1.492s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/bin'
+[1.492s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/pkgconfig/meiling_detect.pc'
+[1.492s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages'
+[1.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('meiling_detect', 'pythonpath')
+[1.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/hook/pythonpath.ps1'
+[1.493s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/hook/pythonpath.dsv'
+[1.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/hook/pythonpath.sh'
+[1.494s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/bin'
+[1.494s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(meiling_detect)
+[1.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/package.ps1'
+[1.495s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/package.dsv'
+[1.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/package.sh'
+[1.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/package.bash'
+[1.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/meiling_detect/package.zsh'
+[1.497s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/meiling_detect/share/colcon-core/packages/meiling_detect)
+[8.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/meiling_control -- -j8 -l8
+[8.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('meiling_control', 'ros_package_path')
+[8.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/ros_package_path.ps1'
+[8.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/ros_package_path.dsv'
+[8.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/ros_package_path.sh'
+[8.945s] Level 1:colcon.colcon_core.shell:create_environment_hook('meiling_control', 'pkg_config_path')
+[8.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/pkg_config_path.ps1'
+[8.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/pkg_config_path.dsv'
+[8.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/pkg_config_path.sh'
+[8.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('meiling_control', 'pkg_config_path_multiarch')
+[8.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/pkg_config_path_multiarch.ps1'
+[8.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/pkg_config_path_multiarch.dsv'
+[8.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/pkg_config_path_multiarch.sh'
+[8.947s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(meiling_control)
+[8.947s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_control' for CMake module files
+[8.947s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_control' for CMake config files
+[8.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('meiling_control', 'cmake_prefix_path')
+[8.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/cmake_prefix_path.ps1'
+[8.948s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/cmake_prefix_path.dsv'
+[8.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/hook/cmake_prefix_path.sh'
+[8.948s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib'
+[8.948s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_control/bin'
+[8.948s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig/meiling_control.pc'
+[8.948s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/python3.10/site-packages'
+[8.949s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu-nuc/rc2_ws/install/meiling_control/bin'
+[8.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.ps1'
+[8.949s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.dsv'
+[8.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.sh'
+[8.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.bash'
+[8.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.zsh'
+[8.950s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu-nuc/rc2_ws/install/meiling_control/share/colcon-core/packages/meiling_control)
+[8.961s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.961s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.961s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[8.961s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.967s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.968s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[8.969s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.969s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu-nuc/rc2_ws/install/local_setup.ps1'
+[8.970s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu-nuc/rc2_ws/install/_local_setup_util_ps1.py'
+[8.972s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu-nuc/rc2_ws/install/setup.ps1'
+[8.974s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu-nuc/rc2_ws/install/local_setup.sh'
+[8.975s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu-nuc/rc2_ws/install/_local_setup_util_sh.py'
+[8.975s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu-nuc/rc2_ws/install/setup.sh'
+[8.977s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu-nuc/rc2_ws/install/local_setup.bash'
+[8.978s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu-nuc/rc2_ws/install/setup.bash'
+[8.979s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu-nuc/rc2_ws/install/local_setup.zsh'
+[8.980s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu-nuc/rc2_ws/install/setup.zsh'

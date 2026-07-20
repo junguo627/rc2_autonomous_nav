@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ubuntu-nuc/rc2_ws/build/interface/cmake_install.cmake",
+		"/home/ubuntu-nuc/rc2_ws/build/interface/interface__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,19 @@
+[0.014s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/interface': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/interface -- -j8 -l8
+[0.038s] [ 11%] Built target interface__rosidl_generator_c
+[0.039s] [ 12%] Built target interface__cpp
+[0.046s] [ 12%] Built target ament_cmake_python_copy_interface
+[0.072s] [ 23%] Built target interface__rosidl_typesupport_introspection_c
+[0.072s] [ 34%] Built target interface__rosidl_typesupport_cpp
+[0.078s] [ 50%] Built target interface__rosidl_typesupport_introspection_cpp
+[0.081s] [ 61%] Built target interface__rosidl_typesupport_c
+[0.083s] [ 68%] Built target interface__rosidl_typesupport_fastrtps_c
+[0.083s] [ 79%] Built target interface__rosidl_typesupport_fastrtps_cpp
+[0.106s] [ 79%] Built target interface
+[0.113s] gmake[2]: *** No rule to make target 'rosidl_adapter/interface/srv/SaveMaps.idl', needed by 'rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c'.  Stop.
+[0.114s] gmake[1]: *** [CMakeFiles/Makefile2:725: interface__py/CMakeFiles/interface__py.dir/all] Error 2
+[0.114s] gmake[1]: *** Waiting for unfinished jobs....
+[0.293s] running egg_info
+[0.293s] error: [Errno 2] No such file or directory
+[0.310s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_interface_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_interface_egg] Error 1
+[0.310s] gmake[1]: *** [CMakeFiles/Makefile2:546: CMakeFiles/ament_cmake_python_build_interface_egg.dir/all] Error 2
+[0.310s] gmake: *** [Makefile:146: all] Error 2

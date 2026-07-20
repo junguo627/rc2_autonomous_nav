@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ubuntu-nuc/rc2_ws/build/hba/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

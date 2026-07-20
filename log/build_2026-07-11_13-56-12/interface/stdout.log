@@ -1,0 +1,11 @@
+[ 11%] Built target interface__rosidl_generator_c
+[ 12%] Built target interface__cpp
+[ 12%] Built target ament_cmake_python_copy_interface
+[ 23%] Built target interface__rosidl_typesupport_introspection_c
+[ 34%] Built target interface__rosidl_typesupport_cpp
+[ 50%] Built target interface__rosidl_typesupport_introspection_cpp
+[ 61%] Built target interface__rosidl_typesupport_c
+[ 68%] Built target interface__rosidl_typesupport_fastrtps_c
+[ 79%] Built target interface__rosidl_typesupport_fastrtps_cpp
+[ 79%] Built target interface
+running egg_info

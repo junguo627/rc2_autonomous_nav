@@ -1,0 +1,290 @@
+[0.011s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.090s] -- The CXX compiler identification is GNU 11.4.0
+[0.096s] -- Detecting C compiler ABI info
+[0.138s] -- Detecting C compiler ABI info - done
+[0.154s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.155s] -- Detecting C compile features
+[0.155s] -- Detecting C compile features - done
+[0.164s] -- Detecting CXX compiler ABI info
+[0.215s] -- Detecting CXX compiler ABI info - done
+[0.228s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.228s] -- Detecting CXX compile features
+[0.228s] -- Detecting CXX compile features - done
+[0.234s] -- livox_ros_driver2 version: 1.2.6
+[0.235s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.360s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.870s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.892s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.026s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.299s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.304s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.481s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[1.584s] -- Found FastRTPS: /opt/ros/humble/include
+[1.702s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.726s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.905s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.906s] -- Found Threads: TRUE
+[2.280s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[2.280s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[2.280s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[2.280s]   cmake_policy command to set the policy and suppress this warning.
+[2.280s] 
+[2.280s]   CMake variable EIGEN_ROOT is set to:
+[2.280s] 
+[2.281s]     /usr/include/eigen3
+[2.281s] 
+[2.281s]   For compatibility, find_package is ignoring the variable, but code in a
+[2.281s]   .cmake module might still use it.
+[2.281s] Call Stack (most recent call first):
+[2.281s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[2.281s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[2.281s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.281s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[2.281s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[2.281s]   CMakeLists.txt:225 (ament_auto_find_build_dependencies)
+[2.281s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.281s] [0m
+[2.286s] -- Checking for module 'eigen3'
+[2.321s] --   Found eigen3, version 3.4.0
+[2.392s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")
+[2.393s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.393s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):
+[2.393s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[2.393s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[2.393s]   set the policy and suppress this warning.
+[2.393s] 
+[2.393s] Call Stack (most recent call first):
+[2.394s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)
+[2.394s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[2.394s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.394s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[2.394s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[2.394s]   CMakeLists.txt:225 (ament_auto_find_build_dependencies)
+[2.394s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.394s] [0m
+[2.473s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[2.473s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[2.474s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[2.474s]   cmake_policy command to set the policy and suppress this warning.
+[2.474s] 
+[2.474s]   CMake variable FLANN_ROOT is set to:
+[2.474s] 
+[2.474s]     /usr
+[2.474s] 
+[2.474s]   For compatibility, find_package is ignoring the variable, but code in a
+[2.474s]   .cmake module might still use it.
+[2.474s] Call Stack (most recent call first):
+[2.474s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[2.474s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[2.474s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[2.474s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.474s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[2.475s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[2.475s]   CMakeLists.txt:225 (ament_auto_find_build_dependencies)
+[2.475s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.475s] [0m
+[2.514s] -- Checking for module 'flann'
+[2.548s] --   Found flann, version 1.9.1
+[2.675s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+[2.675s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[5.389s] -- Checking for module 'libusb-1.0'
+[5.426s] --   Found libusb-1.0, version 1.0.25
+[5.525s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+[5.526s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.673s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.222s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):
+[7.222s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[7.223s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[7.225s]   set the policy and suppress this warning.
+[7.225s] 
+[7.225s] Call Stack (most recent call first):
+[7.226s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)
+[7.226s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[7.226s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[7.226s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[7.226s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[7.226s]   CMakeLists.txt:225 (ament_auto_find_build_dependencies)
+[7.226s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[7.226s] [0m
+[7.286s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[7.321s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.346s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[9.162s] -- Found Qhull version 8.0.2
+[10.527s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[12.640s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+[12.655s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+[12.676s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+[12.692s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+[12.708s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+[12.722s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+[12.723s] -- Found PCL_2D: /usr/include/pcl-1.12
+[12.735s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12
+[12.753s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+[12.769s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+[12.788s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+[12.807s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+[12.818s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+[12.833s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+[12.860s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+[12.875s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+[12.890s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+[12.907s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+[12.923s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+[12.936s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+[12.949s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12
+[12.949s] -- Found PCL_MODELER: /usr/include/pcl-1.12
+[12.950s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12
+[12.965s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+[12.992s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+[13.246s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+[13.259s] -- Checking for module 'apr-1'
+[13.306s] --   Found apr-1, version 1.7.0
+[13.406s] [0m/usr/include/apr-1.0[0m
+[13.406s] [0mapr-1[0m
+[14.511s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[15.547s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[16.559s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.567s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[16.567s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[16.567s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[16.567s]   the cmake_policy command to set the policy and suppress this warning.
+[16.567s] 
+[16.567s] Call Stack (most recent call first):
+[16.567s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[16.567s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[16.568s]   CMakeLists.txt:241 (rosidl_generate_interfaces)
+[16.568s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.570s] [0m
+[16.632s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[16.639s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[16.640s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[16.640s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[16.640s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[16.640s]   the cmake_policy command to set the policy and suppress this warning.
+[16.640s] 
+[16.640s] Call Stack (most recent call first):
+[16.641s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[16.641s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[16.641s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[16.641s]   CMakeLists.txt:241 (rosidl_generate_interfaces)
+[16.641s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.647s] [0m
+[16.707s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[16.707s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[16.707s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[16.707s]   the cmake_policy command to set the policy and suppress this warning.
+[16.707s] 
+[16.707s] Call Stack (most recent call first):
+[16.707s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[16.707s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[16.707s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[16.708s]   CMakeLists.txt:241 (rosidl_generate_interfaces)
+[16.708s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[16.708s] [0m
+[16.729s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[16.729s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[16.730s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[16.730s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[16.791s] -- Found PythonExtra: .so
+[17.062s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[17.109s] -- Added test 'copyright' to check source files copyright and LICENSE
+[17.127s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[17.128s] -- Configured cppcheck include dirs: /home/ubuntu-nuc/rc2_ws/src/livox_ros_driver2/3rdparty;/home/ubuntu-nuc/rc2_ws/src/livox_ros_driver2/src
+[17.128s] -- Configured cppcheck exclude dirs and/or files: 
+[17.144s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[17.144s] -- Configured cpplint exclude dirs and/or files: 
+[17.147s] -- Added test 'flake8' to check Python code syntax and style conventions
+[17.150s] -- Added test 'lint_cmake' to check CMake code style
+[17.152s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[17.161s] -- Added test 'uncrustify' to check C / C++ code style
+[17.161s] -- Configured uncrustify additional arguments: 
+[17.164s] -- Added test 'xmllint' to check XML markup files
+[17.169s] -- Configuring done (17.2s)
+[17.308s] -- Generating done (0.1s)
+[17.333s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2
+[17.378s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2
+[17.379s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_ros_driver2 -- -j8 -l8
+[17.426s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[18.251s] [  1%] Built target livox_interfaces2__cpp
+[18.287s] [  3%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2_node.dir/rclcpp_components/node_main_livox_ros_driver2_node.cpp.o[0m
+[23.017s] [  5%] [32m[1mLinking CXX executable livox_ros_driver2_node[0m
+[23.203s] [  5%] Built target livox_ros_driver2_node
+[23.209s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[23.826s] [  8%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp.o[0m
+[24.344s] [ 10%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp.o[0m
+[25.117s] [ 12%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so[0m
+[25.215s] [ 12%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[25.222s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[25.897s] [ 15%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o[0m
+[26.557s] [ 17%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o[0m
+[27.294s] [ 19%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so[0m
+[27.378s] [ 19%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[27.383s] [ 21%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[27.946s] [ 22%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[28.187s] [ 24%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[28.480s] [ 26%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_cpp.so[0m
+[28.515s] [ 26%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[28.530s] [ 26%] Built target ament_cmake_python_copy_livox_ros_driver2
+[28.546s] [ 28%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/livox_ros_driver2.cpp.o[0m
+[34.565s] [ 29%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/comm.cpp.o[0m
+[35.474s] [ 31%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds_lidar.cpp.o[0m
+[37.557s] [ 33%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/semaphore.cpp.o[0m
+[38.227s] [ 35%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/lidar_imu_data_queue.cpp.o[0m
+[38.924s] [ 36%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/cache_index.cpp.o[0m
+[39.916s] [ 38%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/pub_handler.cpp.o[0m
+[41.648s] [ 40%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_cfg_file.cpp.o[0m
+[42.405s] [ 42%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_livox_lidar_cfg.cpp.o[0m
+[43.302s] [ 43%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/lidar_common_callback.cpp.o[0m
+[43.875s] [ 45%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/livox_lidar_callback.cpp.o[0m
+[44.591s] [ 47%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/ldq.cpp.o[0m
+[45.517s] [ 49%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds.cpp.o[0m
+[46.548s] [ 50%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/driver_node.cpp.o[0m
+[55.952s] [ 52%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o[0m
+[67.538s] [ 54%] [32m[1mLinking CXX shared library liblivox_ros_driver2.so[0m
+[68.892s] [ 54%] Built target livox_ros_driver2
+[68.901s] [ 56%] [34m[1mGenerating C code for ROS interfaces[0m
+[69.340s] running egg_info
+[69.341s] creating livox_ros_driver2.egg-info
+[69.341s] writing livox_ros_driver2.egg-info/PKG-INFO
+[69.341s] writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt
+[69.342s] writing top-level names to livox_ros_driver2.egg-info/top_level.txt
+[69.342s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[69.345s] reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[69.346s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[69.379s] [ 56%] Built target ament_cmake_python_build_livox_ros_driver2_egg
+[69.648s] [ 59%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_point__functions.c.o[0m
+[69.648s] [ 59%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_msg__functions.c.o[0m
+[69.709s] [ 61%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_generator_c.so[0m
+[69.741s] [ 61%] Built target livox_interfaces2__rosidl_generator_c
+[69.747s] [ 64%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[69.747s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[70.403s] [ 68%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__type_support_c.cpp.o[0m
+[70.404s] [ 68%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_msg__type_support_c.cpp.o[0m
+[70.525s] [ 70%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_point__type_support.c.o[0m
+[70.531s] [ 71%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_msg__type_support.c.o[0m
+[70.596s] [ 73%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_typesupport_introspection_c.so[0m
+[70.632s] [ 73%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[70.641s] [ 75%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[70.994s] [ 77%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so[0m
+[71.073s] [ 77%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[71.287s] [ 78%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[71.288s] [ 80%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[71.317s] [ 82%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_c.so[0m
+[71.343s] [ 82%] Built target livox_interfaces2__rosidl_typesupport_c
+[71.353s] [ 82%] Built target livox_interfaces2
+[71.362s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[71.937s] [ 84%] Built target livox_interfaces2__py
+[71.946s] [ 85%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_point_s.c.o[0m
+[71.948s] [ 87%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_msg_s.c.o[0m
+[72.082s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so[0m
+[72.107s] [ 89%] Built target livox_interfaces2__rosidl_generator_py
+[72.117s] [ 91%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[72.117s] [ 92%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[72.222s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[72.253s] [ 94%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext
+[72.265s] [ 96%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c.o[0m
+[72.296s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[72.343s] [ 98%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext
+[72.371s] [100%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[72.401s] [100%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext

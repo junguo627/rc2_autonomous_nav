@@ -1,0 +1,23 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable meiling_node[0m
+[100%] Built target meiling_node
+-- Install configuration: ""
+-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/meiling_control/meiling_node
+-- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/meiling_control/meiling_node" to ""
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control//launch
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control//launch/meiling_launch.py
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/package_run_dependencies/meiling_control
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/parent_prefix_path/meiling_control
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/path.sh
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/environment/path.dsv
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.bash
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.sh
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.zsh
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/local_setup.dsv
+-- Installing: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.dsv
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/ament_index/resource_index/packages/meiling_control
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/cmake/meiling_controlConfig.cmake
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/cmake/meiling_controlConfig-version.cmake
+-- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/meiling_control/share/meiling_control/package.xml

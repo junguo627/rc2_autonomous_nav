@@ -1,0 +1,99 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at sdk_core/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at samples/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at samples/livox_lidar_quick_start/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at samples/multi_lidars_upgrade/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at samples/logger/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at samples/debug_point_cloud/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at samples/lidar_cmd_observer/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at samples/livox_lidar_rmc_time_sync/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    DISTRO_ROS
+    ROS_EDITION
+
+[0m
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:107: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/livox_lidar_sdk.cpp.o] Interrupt
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:121: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/params_check.cpp.o] Interrupt
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:135: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/parse_cfg_file.cpp.o] Interrupt
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:135: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/parse_cfg_file.cpp.o] Interrupt
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/build.make:93: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/device_manager.cpp.o] Interrupt
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:107: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/livox_lidar_sdk.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:266: sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/all] Interrupt
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:93: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/device_manager.cpp.o] Interrupt
+gmake[2]: *** [sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/build.make:121: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/params_check.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:298: sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/all] Interrupt
+gmake: *** [Makefile:136: all] Interrupt

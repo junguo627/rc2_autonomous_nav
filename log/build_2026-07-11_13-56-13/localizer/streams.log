@@ -1,0 +1,218 @@
+[0.047s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/localizer': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/localizer -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/localizer
+[0.333s] -- The C compiler identification is GNU 11.4.0
+[0.333s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.333s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.334s]   CMake.
+[0.334s] 
+[0.334s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.334s]   to tell CMake that the project requires at least <min> but has been updated
+[0.334s]   to work with policies introduced by <max> or earlier.
+[0.334s] 
+[0.334s] [0m
+[0.442s] -- The CXX compiler identification is GNU 11.4.0
+[0.474s] -- Detecting C compiler ABI info
+[0.679s] -- Detecting C compiler ABI info - done
+[0.756s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.756s] -- Detecting C compile features
+[0.757s] -- Detecting C compile features - done
+[0.799s] -- Detecting CXX compiler ABI info
+[1.063s] -- Detecting CXX compiler ABI info - done
+[1.120s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.120s] -- Detecting CXX compile features
+[1.121s] -- Detecting CXX compile features - done
+[1.144s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.486s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.825s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[2.000s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.025s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.069s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.133s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.223s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.385s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.579s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.693s] -- Found message_filters: 4.3.8 (/opt/ros/humble/share/message_filters/cmake)
+[2.919s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.938s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.310s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[3.462s] -- Found FastRTPS: /opt/ros/humble/include
+[3.689s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.720s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.900s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.903s] -- Found Threads: TRUE
+[4.137s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.706s] -- Found interface: 0.0.0 (/home/ubuntu-nuc/rc2_ws/install/interface/share/interface/cmake)
+[4.796s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[4.959s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[4.959s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[4.960s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[4.960s]   cmake_policy command to set the policy and suppress this warning.
+[4.960s] 
+[4.960s]   CMake variable EIGEN_ROOT is set to:
+[4.960s] 
+[4.960s]     /usr/include/eigen3
+[4.960s] 
+[4.960s]   For compatibility, find_package is ignoring the variable, but code in a
+[4.960s]   .cmake module might still use it.
+[4.960s] Call Stack (most recent call first):
+[4.968s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[4.968s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[4.968s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[4.969s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[4.969s]   CMakeLists.txt:25 (find_package)
+[4.969s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.969s] [0m
+[4.988s] -- Checking for module 'eigen3'
+[5.049s] --   Found eigen3, version 3.4.0
+[5.137s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")
+[5.138s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.138s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):
+[5.138s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[5.138s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[5.138s]   set the policy and suppress this warning.
+[5.138s] 
+[5.138s] Call Stack (most recent call first):
+[5.138s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)
+[5.138s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[5.138s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[5.139s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[5.139s]   CMakeLists.txt:25 (find_package)
+[5.139s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.139s] [0m
+[5.263s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[5.263s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[5.263s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[5.263s]   cmake_policy command to set the policy and suppress this warning.
+[5.263s] 
+[5.263s]   CMake variable FLANN_ROOT is set to:
+[5.263s] 
+[5.263s]     /usr
+[5.263s] 
+[5.265s]   For compatibility, find_package is ignoring the variable, but code in a
+[5.265s]   .cmake module might still use it.
+[5.265s] Call Stack (most recent call first):
+[5.265s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[5.265s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[5.265s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[5.266s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[5.266s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[5.266s]   CMakeLists.txt:25 (find_package)
+[5.266s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.266s] [0m
+[5.302s] -- Checking for module 'flann'
+[5.349s] --   Found flann, version 1.9.1
+[5.519s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+[5.520s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[10.104s] -- Checking for module 'libusb-1.0'
+[10.148s] --   Found libusb-1.0, version 1.0.25
+[10.261s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+[10.270s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[10.426s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[11.133s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:128 (find_package):
+[11.133s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[11.133s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[11.133s]   set the policy and suppress this warning.
+[11.133s] 
+[11.133s] Call Stack (most recent call first):
+[11.133s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:297 (find_boost)
+[11.133s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[11.133s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[11.133s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[11.133s]   CMakeLists.txt:25 (find_package)
+[11.133s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[11.133s] [0m
+[11.158s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[11.181s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[11.206s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[12.532s] -- Found Qhull version 8.0.2
+[13.199s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[14.346s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+[14.352s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+[14.359s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+[14.367s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+[14.369s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+[14.378s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+[14.379s] -- Found PCL_2D: /usr/include/pcl-1.12
+[14.381s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12
+[14.386s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+[14.393s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+[14.399s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+[14.402s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+[14.409s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+[14.419s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+[14.427s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+[14.434s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+[14.440s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+[14.449s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+[14.456s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+[14.464s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+[14.465s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12
+[14.466s] -- Found PCL_MODELER: /usr/include/pcl-1.12
+[14.472s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12
+[14.474s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+[14.484s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+[14.516s] [33mCMake Warning (dev) at CMakeLists.txt:28 (find_package):
+[14.516s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[14.516s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[14.516s]   command to set the policy and suppress this warning.
+[14.517s] 
+[14.517s]   CMake variable PCL_ROOT is set to:
+[14.517s] 
+[14.517s]     /usr
+[14.517s] 
+[14.517s]   For compatibility, CMake is ignoring the variable.
+[14.517s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[14.517s] [0m
+[14.595s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[14.986s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.987s] -- Configured cppcheck include dirs: 
+[14.987s] -- Configured cppcheck exclude dirs and/or files: 
+[14.988s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.992s] -- Added test 'lint_cmake' to check CMake code style
+[14.993s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.995s] -- Added test 'uncrustify' to check C / C++ code style
+[14.995s] -- Configured uncrustify additional arguments: 
+[15.001s] -- Added test 'xmllint' to check XML markup files
+[15.002s] -- Configuring done (14.9s)
+[15.090s] -- Generating done (0.1s)
+[15.090s] [33mCMake Warning:
+[15.090s]   Manually-specified variables were not used by the project:
+[15.090s] 
+[15.090s]     DISTRO_ROS
+[15.090s]     ROS_EDITION
+[15.090s] 
+[15.090s] [0m
+[15.095s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/localizer
+[15.144s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/localizer' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/FASTLIO2_ROS2/localizer -DROS_EDITION=ROS2 -DDISTRO_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/localizer
+[15.155s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/localizer': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/localizer -- -j8 -l8
+[15.252s] [ 25%] [32mBuilding CXX object CMakeFiles/localizer_node.dir/src/localizer_node.cpp.o[0m
+[15.266s] [ 50%] [32mBuilding CXX object CMakeFiles/localizer_node.dir/src/localizers/icp_localizer.cpp.o[0m
+[15.267s] [ 75%] [32mBuilding CXX object CMakeFiles/localizer_node.dir/src/localizers/commons.cpp.o[0m
+[61.492s] [100%] [32m[1mLinking CXX executable localizer_node[0m
+[62.457s] [100%] Built target localizer_node
+[62.463s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/localizer' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/localizer -- -j8 -l8
+[62.465s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/localizer': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/localizer
+[62.468s] -- Install configuration: "Release"
+[62.468s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/lib/localizer/localizer_node
+[62.470s] -- Set non-toolchain portion of runtime path of "/home/ubuntu-nuc/rc2_ws/install/localizer/lib/localizer/localizer_node" to ""
+[62.470s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/launch
+[62.470s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/launch/localizer_launch.py
+[62.470s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/config
+[62.470s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/config/localizer.yaml
+[62.470s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/rviz
+[62.470s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/rviz/localizer.rviz
+[62.471s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/ament_index/resource_index/package_run_dependencies/localizer
+[62.471s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/ament_index/resource_index/parent_prefix_path/localizer
+[62.471s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/environment/ament_prefix_path.sh
+[62.471s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/environment/ament_prefix_path.dsv
+[62.471s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/environment/path.sh
+[62.471s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/environment/path.dsv
+[62.472s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/local_setup.bash
+[62.472s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/local_setup.sh
+[62.472s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/local_setup.zsh
+[62.472s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/local_setup.dsv
+[62.472s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.dsv
+[62.472s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/ament_index/resource_index/packages/localizer
+[62.472s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/cmake/localizerConfig.cmake
+[62.473s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/cmake/localizerConfig-version.cmake
+[62.473s] -- Installing: /home/ubuntu-nuc/rc2_ws/install/localizer/share/localizer/package.xml
+[62.478s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/localizer' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/meiling_detect_debug:/home/ubuntu-nuc/rc2_ws/install/meiling_detect:/opt/ros/humble:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/interface/lib:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/localizer

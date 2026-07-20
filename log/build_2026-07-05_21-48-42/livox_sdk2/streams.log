@@ -1,0 +1,106 @@
+[0.022s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/livox_sdk2
+[0.045s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.045s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.045s]   CMake.
+[0.045s] 
+[0.045s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.045s]   to tell CMake that the project requires at least <min> but has been updated
+[0.045s]   to work with policies introduced by <max> or earlier.
+[0.045s] 
+[0.045s] [0m
+[0.061s] -- main project dir: /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2
+[0.061s] [0mCMake Deprecation Warning at sdk_core/CMakeLists.txt:1 (cmake_minimum_required):
+[0.062s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.062s]   CMake.
+[0.062s] 
+[0.062s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.062s]   to tell CMake that the project requires at least <min> but has been updated
+[0.062s]   to work with policies introduced by <max> or earlier.
+[0.062s] 
+[0.062s] [0m
+[0.063s] [0mCMake Deprecation Warning at samples/CMakeLists.txt:1 (cmake_minimum_required):
+[0.063s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.063s]   CMake.
+[0.063s] 
+[0.063s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.063s]   to tell CMake that the project requires at least <min> but has been updated
+[0.063s]   to work with policies introduced by <max> or earlier.
+[0.063s] 
+[0.063s] [0m
+[0.063s] [0mCMake Deprecation Warning at samples/livox_lidar_quick_start/CMakeLists.txt:1 (cmake_minimum_required):
+[0.064s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.064s]   CMake.
+[0.064s] 
+[0.064s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.064s]   to tell CMake that the project requires at least <min> but has been updated
+[0.064s]   to work with policies introduced by <max> or earlier.
+[0.064s] 
+[0.064s] [0m
+[0.064s] -- main project dir: /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2/samples
+[0.064s] [0mCMake Deprecation Warning at samples/multi_lidars_upgrade/CMakeLists.txt:1 (cmake_minimum_required):
+[0.064s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.064s]   CMake.
+[0.064s] 
+[0.064s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.064s]   to tell CMake that the project requires at least <min> but has been updated
+[0.064s]   to work with policies introduced by <max> or earlier.
+[0.064s] 
+[0.064s] [0m
+[0.065s] [0mCMake Deprecation Warning at samples/logger/CMakeLists.txt:1 (cmake_minimum_required):
+[0.065s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.065s]   CMake.
+[0.065s] 
+[0.065s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.065s]   to tell CMake that the project requires at least <min> but has been updated
+[0.065s]   to work with policies introduced by <max> or earlier.
+[0.065s] 
+[0.065s] [0m
+[0.065s] [0mCMake Deprecation Warning at samples/debug_point_cloud/CMakeLists.txt:1 (cmake_minimum_required):
+[0.065s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.065s]   CMake.
+[0.065s] 
+[0.065s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.065s]   to tell CMake that the project requires at least <min> but has been updated
+[0.065s]   to work with policies introduced by <max> or earlier.
+[0.066s] 
+[0.066s] [0m
+[0.066s] [0mCMake Deprecation Warning at samples/lidar_cmd_observer/CMakeLists.txt:1 (cmake_minimum_required):
+[0.066s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.066s]   CMake.
+[0.066s] 
+[0.066s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.066s]   to tell CMake that the project requires at least <min> but has been updated
+[0.066s]   to work with policies introduced by <max> or earlier.
+[0.066s] 
+[0.066s] [0m
+[0.066s] [0mCMake Deprecation Warning at samples/livox_lidar_rmc_time_sync/CMakeLists.txt:1 (cmake_minimum_required):
+[0.066s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.066s]   CMake.
+[0.066s] 
+[0.066s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.066s]   to tell CMake that the project requires at least <min> but has been updated
+[0.066s]   to work with policies introduced by <max> or earlier.
+[0.067s] 
+[0.067s] [0m
+[0.067s] -- Configuring done (0.0s)
+[0.100s] -- Generating done (0.0s)
+[0.103s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/livox_sdk2
+[0.105s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake /home/ubuntu-nuc/rc2_ws/src/Livox-SDK2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu-nuc/rc2_ws/install/livox_sdk2
+[0.106s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_sdk2 -- -j8 -l8
+[0.177s] [ 50%] Built target livox_lidar_sdk_static
+[0.178s] [ 84%] Built target livox_lidar_sdk_shared
+[0.195s] [ 87%] Built target livox_lidar_quick_start
+[0.195s] [ 91%] Built target debug_point_cloud
+[0.196s] [ 91%] Built target multi_lidars_upgrade
+[0.196s] [ 94%] Built target lidar_cmd_observer
+[0.197s] [100%] Built target livox_lidar_rmc_time_sync
+[0.197s] [100%] Built target logger
+[0.203s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/livox_sdk2 -- -j8 -l8
+[0.208s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_sdk2
+[0.211s] -- Install configuration: ""
+[0.211s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+[0.211s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_def.h
+[0.211s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_api.h
+[0.211s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/include/livox_lidar_cfg.h
+[0.212s] -- Up-to-date: /home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so
+[0.214s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/livox_sdk2' returned '0': /usr/local/bin/cmake --install /home/ubuntu-nuc/rc2_ws/build/livox_sdk2

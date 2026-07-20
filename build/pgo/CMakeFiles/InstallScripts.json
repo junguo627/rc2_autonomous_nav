@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ubuntu-nuc/rc2_ws/build/pgo/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

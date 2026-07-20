@@ -1,0 +1,30 @@
+[  7%] Built target livox_interfaces2__rosidl_generator_c
+[  8%] Built target livox_interfaces2__cpp
+[ 12%] Built target livox_ros_driver2_node
+[ 12%] Built target ament_cmake_python_copy_livox_ros_driver2
+[ 19%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[ 26%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[ 33%] Built target livox_interfaces2__rosidl_typesupport_c
+[ 40%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[ 47%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[ 54%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[ 54%] Built target livox_interfaces2
+[ 56%] Built target livox_interfaces2__py
+[ 84%] Built target livox_ros_driver2
+Built target livox_interfaces2__rosidl_generator_py
+gmake[2]: CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/build.make: No such file or directory
+gmake[2]: *** No rule to make target 'CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/build.make'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:697: CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/build.make:70: CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/flags.make: No such file or directory
+gmake[2]: *** No rule to make target 'CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/flags.make'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:660: CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/all] Error 2
+CMake Error: Target DependInfo.cmake file not found
+gmake[2]: CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/build.make: No such file or directory
+gmake[2]: *** No rule to make target 'CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/build.make'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:623: CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/all] Error 2
+running egg_info
+error: [Errno 2] No such file or directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_livox_ros_driver2_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_livox_ros_driver2_egg] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:552: CMakeFiles/ament_cmake_python_build_livox_ros_driver2_egg.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

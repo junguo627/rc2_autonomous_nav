@@ -1,0 +1,71 @@
+[0.011s] Invoking command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/meiling_control -- -j8 -l8
+[0.027s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.197s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.238s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.242s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.247s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.256s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.266s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.312s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.314s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.427s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.496s] -- Found auto_aim_interfaces: 0.0.1 (/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake)
+[0.585s] -- Configuring done (0.6s)
+[0.597s] -- Generating done (0.0s)
+[0.599s] -- Build files have been written to: /home/ubuntu-nuc/rc2_ws/build/meiling_control
+[0.625s] [ 33%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o[0m
+[0.625s] [ 66%] [32mBuilding CXX object CMakeFiles/meiling_node.dir/src/luoji.cpp.o[0m
+[2.606s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:[m[K In member function ‘[01m[Kvoid SUM::qianjin(gez&, std::tuple<float, float>)[m[K’:
+[2.606s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/luoji.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kqj_pd[m[K’ was not declared in this scope
+[2.607s]    49 |     [01;31m[Kqj_pd[m[K(get<0>(d.z),get<1>(d.z));
+[2.607s]       |     [01;31m[K^~~~~[m[K
+[2.755s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::publish_fas()[m[K’:
+[2.755s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:70:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_current_grid[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_current_dir_name[m[K’?
+[2.755s]    70 |     m.n = [01;31m[Kget_current_grid[m[K();
+[2.755s]       |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.755s]       |           [32m[Kget_current_dir_name[m[K
+[2.755s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K At global scope:
+[2.755s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:87:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint SUM::get_current_grid()[m[K’
+[2.755s]    87 | int [01;31m[KSUM[m[K::get_current_grid(){
+[2.755s]       |     [01;31m[K^~~[m[K
+[2.755s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:87:5:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kint SUM::get_current_grid()[m[K’
+[2.755s] In file included from [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:1[m[K:
+[2.755s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/include/meiling_control/luoji.h:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass SUM[m[K’ defined here
+[2.755s]    30 | class [01;36m[KSUM[m[K: public rclcpp::Node{
+[2.755s]       |       [01;36m[K^~~[m[K
+[2.760s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::timer_cb()[m[K’:
+[2.760s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:118:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy[m[K’ was not declared in this scope; did you mean ‘[01m[Kny[m[K’?
+[2.760s]   118 |         if([01;31m[Kcy[m[K==5){ sm=RET; cout<<"arrive y5"<<endl; return; }
+[2.760s]       |            [01;31m[K^~[m[K
+[2.760s]       |            [32m[Kny[m[K
+[2.764s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kfy[m[K’ was not declared in this scope; did you mean ‘[01m[Kfy_[m[K’?
+[2.764s]   119 |         cout<<"CHK_FWD g:"<<b.b<<" fg:"<<[01;31m[Kfy[m[K*10+fx<<" h:"<<abs(a[fy][fx].h-a[cy][cx].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+[2.764s]       |                                          [01;31m[K^~[m[K
+[2.764s]       |                                          [32m[Kfy_[m[K
+[2.768s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kfx[m[K’ was not declared in this scope; did you mean ‘[01m[Kfx_[m[K’?
+[2.768s]   119 |         cout<<"CHK_FWD g:"<<b.b<<" fg:"<<fy*10+[01;31m[Kfx[m[K<<" h:"<<abs(a[fy][fx].h-a[cy][cx].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+[2.768s]       |                                                [01;31m[K^~[m[K
+[2.768s]       |                                                [32m[Kfx_[m[K
+[2.772s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy[m[K’ was not declared in this scope; did you mean ‘[01m[Kny[m[K’?
+[2.772s]   119 | K_FWD g:"<<b.b<<" fg:"<<fy*10+fx<<" h:"<<abs(a[fy][fx].h-a[[01;31m[Kcy[m[K][cx].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+[2.772s]       |                                                            [01;31m[K^~[m[K
+[2.772s]       |                                                            [32m[Kny[m[K
+[2.775s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:119:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kcx[m[K’ was not declared in this scope; did you mean ‘[01m[Knx[m[K’?
+[2.775s]   119 | D g:"<<b.b<<" fg:"<<fy*10+fx<<" h:"<<abs(a[fy][fx].h-a[cy][[01;31m[Kcx[m[K].h)<<" b:"<<a[fy][fx].b<<" a:"<<a[fy][fx].a<<endl;
+[2.775s]       |                                                            [01;31m[K^~[m[K
+[2.775s]       |                                                            [32m[Knx[m[K
+[2.780s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:228:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[2.781s]   228 | int main(int argc, char* argv[])[01;31m[K{[m[K
+[2.781s]       |                                 [01;31m[K^[m[K
+[2.784s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:234:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.784s]   234 | }
+[2.784s]       |  [01;31m[K^[m[K
+[2.784s] [01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:100:21:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.784s]   100 | void SUM::timer_cb()[01;36m[K{[m[K
+[2.784s]       |                     [01;36m[K^[m[K
+[2.951s] gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:93: CMakeFiles/meiling_node.dir/src/luoji.cpp.o] Error 1
+[2.951s] gmake[2]: *** Waiting for unfinished jobs....
+[5.347s] gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+[5.347s] gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+[5.347s] gmake: *** [Makefile:146: all] Error 2
+[5.349s] Invoked command in '/home/ubuntu-nuc/rc2_ws/build/meiling_control' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces:/home/ubuntu-nuc/rc2_ws/install/pgo:/home/ubuntu-nuc/rc2_ws/install/meiling_control:/home/ubuntu-nuc/rc2_ws/install/localizer:/home/ubuntu-nuc/rc2_ws/install/fastlio2:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2:/home/ubuntu-nuc/rc2_ws/install/hba:/home/ubuntu-nuc/rc2_ws/install/interface:/home/ubuntu-nuc/rc_ws/install/fast_lio:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu:/home/ubuntu-nuc/rc2_ws/install/livox_sdk2/lib:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/lib:/home/ubuntu-nuc/rc2_ws/install/interface/lib:/home/ubuntu-nuc/rc_ws/install/fast_lio/lib:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PKG_CONFIG_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/lib/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu-nuc/rc2_ws/install/meiling_control/lib/pkgconfig PYTHONPATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/meiling_detect/lib/python3.10/site-packages:/home/ubuntu-nuc/rc2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc2_ws/install/interface/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/fast_lio/local/lib/python3.10/dist-packages:/home/ubuntu-nuc/rc_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages ROS_PACKAGE_PATH=/home/ubuntu-nuc/rc2_ws/install/auto_aim_interfaces/share:/home/ubuntu-nuc/rc2_ws/install/meiling_control/share /usr/local/bin/cmake --build /home/ubuntu-nuc/rc2_ws/build/meiling_control -- -j8 -l8

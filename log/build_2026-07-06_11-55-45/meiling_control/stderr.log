@@ -1,0 +1,62 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::sum_begin()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:151:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kf_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_x[m[K’?
+  151 |             zhuangxiang(c_x, c_y, 1, [01;31m[Kf_x[m[K, f_y);
+      |                                      [01;31m[K^~~[m[K
+      |                                      [32m[Kp_x[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:151:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kf_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_y[m[K’?
+  151 |             zhuangxiang(c_x, c_y, 1, f_x, [01;31m[Kf_y[m[K);
+      |                                           [01;31m[K^~~[m[K
+      |                                           [32m[Kp_y[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:172:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kl_h[m[K’ was not declared in this scope
+  172 |                             if ([01;31m[Kl_h[m[K == -1) {
+      |                                 [01;31m[K^~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:204:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  204 |             } [01;31m[Kelse[m[K {
+      |               [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kc_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_x[m[K’?
+  209 |                     zhuangxiang([01;31m[Kc_x[m[K, c_y, d, f_x, f_y);
+      |                                 [01;31m[K^~~[m[K
+      |                                 [32m[Kp_x[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kc_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_y[m[K’?
+  209 |                     zhuangxiang(c_x, [01;31m[Kc_y[m[K, d, f_x, f_y);
+      |                                      [01;31m[K^~~[m[K
+      |                                      [32m[Kp_y[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kf_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_x[m[K’?
+  209 |                     zhuangxiang(c_x, c_y, d, [01;31m[Kf_x[m[K, f_y);
+      |                                              [01;31m[K^~~[m[K
+      |                                              [32m[Kp_x[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:209:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kf_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_y[m[K’?
+  209 |                     zhuangxiang(c_x, c_y, d, f_x, [01;31m[Kf_y[m[K);
+      |                                                   [01;31m[K^~~[m[K
+      |                                                   [32m[Kp_y[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[K宸[m[K’
+  222 |                         cout<<"杞悜:"<<(d==4?"鍙?:"[01;31m[K宸[m[K?)<<endl;
+      |                                                     [01;31m[K^[m[K[32m[K~[m[K
+      |                                                     [32m[K:[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:53:[m[K [01;31m[Kerror: [m[K‘[01m[K宸[m[K’ was not declared in this scope
+  222 |                         cout<<"杞悜:"<<(d==4?"鍙?:"[01;31m[K宸[m[K?)<<endl;
+      |                                                     [01;31m[K^~[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:56:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  222 |                         cout<<"杞悜:"<<(d==4?"鍙?:"宸?[01;31m[K)[m[K<<endl;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[K)[m[K’ token
+  222 |                         cout<<"杞悜:"<<(d==4?"鍙?:"宸?[01;31m[K)[m[K<<endl;
+      |                                                        [01;31m[K^[m[K
+      |                                                        [32m[K:[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:222:56:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K At global scope:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:272:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  272 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

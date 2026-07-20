@@ -1,0 +1,21 @@
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::publish_fas()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:72:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpxy[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_y[m[K’?
+   72 |     [01;31m[Kpxy[m[K = p_x * 0.001f;  // pixel to meter锛屽彸瑙掑害鍙樻崲杞负x锛寉
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kp_y[m[K
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:[m[K In member function ‘[01m[Kvoid SUM::timer_cb()[m[K’:
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:309:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ka_yaw[m[K’
+  309 |                 a_yaw=yaw_target(b.x)
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+  310 |                 [32m[Ka_yaw[m[K += 180.0f;
+      |                 [32m[K~~~~~[m[K                 
+[01m[K/home/ubuntu-nuc/rc2_ws/src/meiling_control/src/meiling_node.cpp:326:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ka_yaw[m[K’
+  326 |             a_yaw=yaw_target(b.x)
+      |                                  [01;31m[K^[m[K
+      |                                  [32m[K;[m[K
+  327 |             [32m[Ka_yaw[m[K -= 180.0f; if(a_yaw < 0) a_yaw += 360.0f;
+      |             [32m[K~~~~~[m[K                 
+gmake[2]: *** [CMakeFiles/meiling_node.dir/build.make:79: CMakeFiles/meiling_node.dir/src/meiling_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/meiling_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
